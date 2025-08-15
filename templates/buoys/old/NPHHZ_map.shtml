@@ -1,0 +1,12 @@
+<MAP NAME="buoys">
+<AREA SHAPE="rect" COORDS=" 185, 166, 195, 176" HREF="" alt="" onClick="gotoBuoy('51001','nph') ; return false" onMouseOver="showbuoy('51001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 272, 290, 282, 300" HREF="" alt="" onClick="gotoBuoy('51002','nph') ; return false" onMouseOver="showbuoy('51002')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 214, 252, 224, 262" HREF="" alt="" onClick="gotoBuoy('51003','nph') ; return false" onMouseOver="showbuoy('51003')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 375, 286, 385, 296" HREF="" alt="" onClick="gotoBuoy('51004','nph') ; return false" onMouseOver="showbuoy('51004')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 268, 154, 278, 164" HREF="" alt="" onClick="gotoBuoy('HNL01','nph') ; return false" onMouseOver="showbuoy('HNL01')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 365, 184, 375, 194" HREF="" alt="" onClick="gotoBuoy('HNL02','nph') ; return false" onMouseOver="showbuoy('HNL02')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 273, 194, 283, 204" HREF="" alt="" onClick="gotoBuoy('HNL10','nph') ; return false" onMouseOver="showbuoy('HNL10')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 263, 214, 273, 224" HREF="" alt="" onClick="gotoBuoy('HNL11','nph') ; return false" onMouseOver="showbuoy('HNL11')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 297, 239, 307, 249" HREF="" alt="" onClick="gotoBuoy('HNL12','nph') ; return false" onMouseOver="showbuoy('HNL12')" onMouseOut="showbuoy('')">
+
+</MAP>

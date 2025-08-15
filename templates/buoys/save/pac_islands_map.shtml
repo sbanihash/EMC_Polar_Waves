@@ -1,0 +1,33 @@
+<map name="buoys">
+<area shape="rect" COORDS="133,177,141,185" href="" alt="" onClick="gotoBuoy('52200','pac_islands') ; return false" onMouseOver="showbuoy('52200')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="427,318,435,326" href="" alt="" onClick="gotoBuoy('52201','pac_islands') ; return false" onMouseOver="showbuoy('52201')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="134,169,142,177" href="" alt="" onClick="gotoBuoy('52202','pac_islands') ; return false" onMouseOver="showbuoy('52202')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="143,134,151,142" href="" alt="" onClick="gotoBuoy('52211','pac_islands') ; return false" onMouseOver="showbuoy('52211')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="122,207,130,215" href="" alt="" onClick="gotoBuoy('GUAM','pac_islands') ; return false" onMouseOver="showbuoy('GUAM')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="163,117,171,125" href="" alt="" onClick="gotoBuoy('SAIPAN','pac_islands') ; return false" onMouseOver="showbuoy('SAIPAN')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="136,146,144,154" href="" alt="" onClick="gotoBuoy('SAIPAN_W','pac_islands') ; return false" onMouseOver="showbuoy('SAIPAN_W')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="142,155,150,163" href="" alt="" onClick="gotoBuoy('SAIPAN_E','pac_islands') ; return false" onMouseOver="showbuoy('SAIPAN_E')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="373,38,381,46" href="" alt="" onClick="gotoBuoy('WAKE','pac_islands') ; return false" onMouseOver="showbuoy('WAKE')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="39,275,47,283" href="" alt="" onClick="gotoBuoy('PALAU','pac_islands') ; return false" onMouseOver="showbuoy('PALAU')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="59,261,67,269" href="" alt="" onClick="gotoBuoy('YAP','pac_islands') ; return false" onMouseOver="showbuoy('YAP')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="63,261,71,269" href="" alt="" onClick="gotoBuoy('YAP_E','pac_islands') ; return false" onMouseOver="showbuoy('YAP_E')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="218,297,226,305" href="" alt="" onClick="gotoBuoy('CHUUK','pac_islands') ; return false" onMouseOver="showbuoy('CHUUK')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="204,311,212,319" href="" alt="" onClick="gotoBuoy('CHUUK_W','pac_islands') ; return false" onMouseOver="showbuoy('CHUUK_W')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="214,306,222,314" href="" alt="" onClick="gotoBuoy('CHUUK_E','pac_islands') ; return false" onMouseOver="showbuoy('CHUUK_E')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="274,320,282,328" href="" alt="" onClick="gotoBuoy('POHNPEI','pac_islands') ; return false" onMouseOver="showbuoy('POHNPEI')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="284,317,292,325" href="" alt="" onClick="gotoBuoy('POHNPEI_E','pac_islands') ; return false" onMouseOver="showbuoy('POHNPEI_E')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="334,362,342,370" href="" alt="" onClick="gotoBuoy('KOSRAE','pac_islands') ; return false" onMouseOver="showbuoy('KOSRAE')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="332,344,340,352" href="" alt="" onClick="gotoBuoy('KOSRAE_W','pac_islands') ; return false" onMouseOver="showbuoy('KOSRAE_W')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="387,263,395,271" href="" alt="" onClick="gotoBuoy('KWAJALEIN','pac_islands') ; return false" onMouseOver="showbuoy('KWAJALEIN')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="384,282,392,290" href="" alt="" onClick="gotoBuoy('KWAJ_W1','pac_islands') ; return false" onMouseOver="showbuoy('KWAJ_W1')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="378,282,386,290" href="" alt="" onClick="gotoBuoy('KWAJ_W2','pac_islands') ; return false" onMouseOver="showbuoy('KWAJ_W2')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="391,282,399,290" href="" alt="" onClick="gotoBuoy('KWAJ_E','pac_islands') ; return false" onMouseOver="showbuoy('KWAJ_E')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="371,271,379,279" href="" alt="" onClick="gotoBuoy('WOTHO','pac_islands') ; return false" onMouseOver="showbuoy('WOTHO')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="389,271,397,279" href="" alt="" onClick="gotoBuoy('ROI_NAMUR','pac_islands') ; return false" onMouseOver="showbuoy('ROI_NAMUR')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="428,271,436,279" href="" alt="" onClick="gotoBuoy('WOTJE_E','pac_islands') ; return false" onMouseOver="showbuoy('WOTJE_E')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="425,297,433,305" href="" alt="" onClick="gotoBuoy('MAJURO','pac_islands') ; return false" onMouseOver="showbuoy('MAJURO')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="427,306,435,314" href="" alt="" onClick="gotoBuoy('MAJURO_02','pac_islands') ; return false" onMouseOver="showbuoy('MAJURO_02')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="428,329,436,337" href="" alt="" onClick="gotoBuoy('MAJURO_03','pac_islands') ; return false" onMouseOver="showbuoy('MAJURO_03')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="343,185,351,193" href="" alt="" onClick="gotoBuoy('ENEWETAK','pac_islands') ; return false" onMouseOver="showbuoy('ENEWETAK')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="456,455,464,463" href="" alt="" onClick="gotoBuoy('TARAWA','pac_islands') ; return false" onMouseOver="showbuoy('TARAWA')" onMouseOut="showbuoy('')">
+</map>

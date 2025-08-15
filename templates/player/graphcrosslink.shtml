@@ -1,0 +1,215 @@
+<!--#if expr="$BASIN = AT" -->
+  <!--#set var="GRAFFILE" value="/refresh/graphics_at${WALLET}+shtml/${GRAPHLINK}.shtml" -->
+  <!--#set var="FILEROOT" value="AL${LONGNUM}${YEAR}" -->
+  <!--#set var="LONGFILEROOT" value="/storm_graphics/AT${LONGNUM}/refresh/${FILEROOT}" -->
+<!--#else -->
+  <!--#set var="GRAFFILE" value="/refresh/graphics_ep${WALLET}+shtml/${GRAPHLINK}.shtml" -->
+  <!--#set var="FILEROOT" value="EP${LONGNUM}${YEAR}" -->
+  <!--#set var="LONGFILEROOT" value="/storm_graphics/EP${LONGNUM}/refresh/${FILEROOT}" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING != /text/" -->
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<tr align="center" valign="top">
+<td width="100" class="reg">
+<i class="tiny">Experimental</i><br>
+<!--#if expr="$GLINKS = /-_PROB64_F120-/" -->
+<!--#if expr="$QUERY_STRING != /hwind/" -->
+<a href="<!--#echo var="GRAFFILE" -->?hwind120">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->_PROB64_F120_sm1+gif/<!--#echo var="GRAPHLINK" -->_sm.gif" width="60" height="48" border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1"><br clear="left">
+<!--#endif -->
+Hurr Wind Prob<br> </a>
+</td>
+<td width="100" class="reg">
+<i class="tiny">Experimental</i><br>
+<!--#if expr="$GLINKS = /-_PROB50_F120-/" -->
+<!--#if expr="$QUERY_STRING != /50wind/" -->
+<a href="<!--#echo var="GRAFFILE" -->?50wind120">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->_PROB50_F120_sm1+gif/<!--#echo var="GRAPHLINK" -->_sm.gif" width="60" height="48" border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+50kt Wind Prob<br> </a>
+</td>
+<td width="100" class="reg">
+<i class="tiny">Experimental</i><br>
+<!--#if expr="$GLINKS = /-_PROB34_F120-/" -->
+<!--#if expr="$QUERY_STRING != /tswind/" -->
+<a href="<!--#echo var="GRAFFILE" -->?tswind120">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->_PROB34_F120_sm1+gif/<!--#echo var="GRAPHLINK" -->_sm.gif" width="60" height="48" border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+TS Wind Prob<br> </a>
+</td>
+<td width="100" class="reg"><i class="tiny">&nbsp;</i><br>
+<!--#if expr="$GLINKS = /-W-/" -->
+<!--#if expr="$QUERY_STRING != /3day/" -->
+<a href="<!--#echo var="GRAFFILE" -->?3day">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->W_sm1+gif/<!--#echo var="GRAPHLINK" -->W_sm.gif" width="60" height="48" border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+Warnings and 3-Day Cone</a>
+</td>
+<td width="100" class="reg"><i class="tiny">&nbsp;</i><br>
+<!--#if expr="$GLINKS = /-W5-/" -->
+<!--#if expr="$QUERY_STRING != /5day/" -->
+<a href="<!--#echo var="GRAFFILE" -->?5day">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->W5_sm1+gif/<!--#echo var="GRAPHLINK" -->W5_sm.gif" width="60" height="48"border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+Warnings and 5-Day Cone</a>
+</td>
+<tr align="center">
+<!--#if expr="$BASIN = AT" -->
+<td width="100" class="reg">
+<!--#if expr="$GLINKS = /-P-/" -->
+<!--#if expr="$QUERY_STRING != /prob/" -->
+<a href="<!--#echo var="GRAFFILE" -->?prob">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->P_sm1+gif/<!--#echo var="GRAPHLINK" -->P_sm.gif" width="60" height="48"border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+Strike Prob</a>
+</td>
+<!--#else -->
+<td width="100">
+</td>
+<!--#endif -->
+
+<td width="100" class="reg">
+<!--#if expr="$QUERY_STRING != /basin/" -->
+<a href="<!--#echo var="GRAFFILE" -->?basin">
+<!--#endif -->
+<!--#if expr="$BASIN = AT" -->
+<img src="/tafb_latest/refresh/danger_atl_latestBW_sm1+gif/<!--#echo var="GRAPHLINK" -->.gif" width="60" height="48"border="1"><br clear="left">
+<!--#else -->
+<img src="/tafb_latest/refresh/danger_pac_latestBW_sm1+gif/<!--#echo var="GRAPHLINK" -->.gif" width="60" height="48"border="1"><br clear="left">
+<!--#endif -->
+1-2-3 Rule</a></td>
+<td width="100" class="reg">
+<!--#if expr="$GLINKS = /-T-/" -->
+<!--#if expr="$QUERY_STRING != /table/" -->
+<a href="<!--#echo var="GRAFFILE" -->?table">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->T_sm1+gif/<!--#echo var="GRAPHLINK" -->T_sm.gif" width="60" height="48"border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+Wind Table</a>
+</td>
+<td width="100" class="reg">
+<!--#if expr="$GLINKS = /-I-/" -->
+<!--#if expr="$QUERY_STRING != /chart/" -->
+<a href="<!--#echo var="GRAFFILE" -->?chart">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->I_sm1+gif/<!--#echo var="GRAPHLINK" -->I_sm.gif" width="60" height="48"border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+Wind Chart</a>
+</td>
+<td width="100" class="reg">
+<!--#if expr="$GLINKS = /-S-/" -->
+<!--#if expr="$QUERY_STRING != /swath/" -->
+<a href="<!--#echo var="GRAFFILE" -->?swath">
+<!--#endif -->
+<img src="<!--#echo var="LONGFILEROOT" -->S_sm1+gif/<!--#echo var="GRAPHLINK" -->S_sm.gif" width="60" height="48"border="1">
+<br clear="left">
+<!--#else -->
+<img src="/graphics/notready.jpg" width="60" height="48" border="1">
+<br clear="left">
+<!--#endif -->
+Wind Swath</a></td>
+</tr>
+</table>
+<!-- Text-only section -->
+<!--#else -->
+<center class="tiny">
+<!--#if expr="$GLINKS = /-_PROB64_F120-/" -->
+<!--#if expr="$QUERY_STRING != /hwind/" -->
+<a href="<!--#echo var="GRAFFILE" -->?hwind120?text">
+<!--#endif -->
+Hurr Wind Prob</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-_PROB50_F120-/" -->
+<!--#if expr="$QUERY_STRING != /50wind/" -->
+<a href="<!--#echo var="GRAFFILE" -->?50wind120?text">
+<!--#endif -->
+50kt Wind Prob</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-_PROB34_F120-/" -->
+<!--#if expr="$QUERY_STRING != /tswind/" -->
+<a href="<!--#echo var="GRAFFILE" -->?tswind120?text">
+<!--#endif -->
+TS Wind Prob</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-W-/" -->
+<!--#if expr="$QUERY_STRING != /3day/" -->
+<a href="<!--#echo var="GRAFFILE" -->?3day?text">
+<!--#endif -->
+Warnings and 3-Day Cone</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-W5-/" -->
+<!--#if expr="$QUERY_STRING != /5day/" -->
+<a href="<!--#echo var="GRAFFILE" -->?5day?text">
+<!--#endif -->
+Warnings and 5-Day Cone</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$QUERY_STRING != /basin/" -->
+<a href="<!--#echo var="GRAFFILE" -->?basin?text">
+<!--#endif -->
+<br>
+1-2-3 Rule</a>
+<!--#if expr="$GLINKS = /-P-/" -->
+<!--#if expr="$QUERY_STRING != /prob/" -->
+<a href="<!--#echo var="GRAFFILE" -->?prob?text">
+<!--#endif -->
+Strike Prob</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-S-/" -->
+<!--#if expr="$QUERY_STRING != /swath/" -->
+<a href="<!--#echo var="GRAFFILE" -->?swath?text">
+<!--#endif -->
+Wind Swath</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-T-/" -->
+<!--#if expr="$QUERY_STRING != /table/" -->
+<a href="<!--#echo var="GRAFFILE" -->?table?text">
+<!--#endif -->
+Wind Table</a>&nbsp;
+<!--#endif -->
+<!--#if expr="$GLINKS = /-I-/" -->
+<!--#if expr="$QUERY_STRING != /chart/" -->
+<a href="<!--#echo var="GRAFFILE" -->?chart?text">
+<!--#endif -->
+Wind Chart</a>
+<!--#endif -->
+</center>
+<hr noshade>
+<!--#endif -->

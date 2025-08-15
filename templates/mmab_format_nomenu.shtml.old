@@ -1,0 +1,166 @@
+<!--#set var="FORMATLOAD" value="TRUE" -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+  <base href="http://polar.ncep.noaa.gov/waves/">
+<!--#if expr="$TITLE = mainpage" -->
+  <title>Environmental Modeling Center / Marine Modeling and Analysis Branch</title>
+  <meta name="DC.title" content="Environmental Modeling Center / Marine Modeling and Analysis Branch home page.">
+  <meta name="DC.description" content=" home page.">
+<!--#else -->
+  <!--#if expr="$TITLE = wwmainpage" -->
+    <title>WAVEWATCH III<sup>&reg;</sup> Model</title>
+    <meta name="DC.title" content="WAVEWATCH III<sup>&reg;</sup> Model">
+    <meta name="DC.description" content="WAVEWATCH III<sup>&reg;</sup> Model">
+  <!--#else -->
+    <title><!--#echo var="TITLE" --></title>
+    <meta name="DC.title" content="<!--#echo var="TITLE" -->">
+    <meta name="DC.description" content="<!--#echo var="TITLE" -->">
+  <!--#endif -->
+<!--#endif -->
+  <meta name="DC.creator" content="NOAA's National Weather Service">
+  <meta name="DC.date.created" scheme="ISO8601" content="2005-10-01">
+  <meta name="DC.date.reviewed" scheme="ISO8601" content="2005-12-09">
+  <meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+  <meta name="DC.publisher" content="NOAA National Centers for Environmental Prediction ">
+  <meta name="DC.contributor" content="Environmental Modeling Center / Marine Modeling Branch ">
+  <meta name="DC.rights" content="http://www.weather.gov/disclaimer.php">
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <!--#if expr="$EXPIRE != $NULL" -->
+  <meta http-equiv="Expires" content="<!--#echo var="EXPIRE" -->">
+  <!--#endif -->
+  <!--#if expr="($HTTP_USER_AGENT = /MSIE/) || ($HTTP_USER_AGENT = /Mozilla\/4/) || ($HTTP_USER_AGENT = /Netscape\/7/)" -->
+    <!--#set var="CLIENT" value="ie" -->
+    <link href="templates/main_ie.css" type="text/css" rel="stylesheet">
+  <!--#else -->
+    <!--#set var="CLIENT" value="moz" -->
+    <link href="templates/main_moz.css" type="text/css" rel="stylesheet">
+  <!--#endif -->
+</head>
+<!--#if expr="$DOCUMENT_URI = /viewer.shtml/" -->
+<body leftMargin="0" background="images/background.gif" 
+topMargin="0" rightMargin="0" marginheight="0" marginwidth="0"
+onLoad="if (self != top) top.location = self.location; animation()">
+<!--#else -->
+<body leftMargin="0" background="images/background.gif" 
+topMargin="0" rightMargin="0" marginheight="0" marginwidth="0"
+onLoad="if (self != top) top.location = self.location;">
+<!--#endif -->
+
+<!--#include virtual="mmab_header.shtml" -->
+
+<table cellSpacing="0" cellPadding="1" width="670" border="0">
+  <tbody>
+  <tr valign="top" align="left">
+    <td width="130"><br>
+    
+    <!--#include virtual="mmab_std_menu_top.shtml" -->
+
+    <tr>
+    <td class="white" id="menuitem" colspan="2" align="center">      
+      <a href="<!--#echo var="REQUEST_URI" -->?text">Text-only version</a>
+      <br>
+    </td>
+    </tr>
+    
+    <!--#if expr="$USE_MENU = $NULL" -->
+      <!--#include virtual="mmab_std_menu_bottom.shtml" -->
+    <!--#else -->
+      <!--#include virtual="menus/${USE_MENU}.shtml" -->
+      <!--#include virtual="mmab_std_menu_bottom.shtml" -->
+    <!--#endif -->
+    
+    </td>
+    <td valign="top" align="center" width="540"><a name="contents"></a><br>
+
+<!-- main body -->
+
+<!-- breadcrumb section -->
+
+<table cellspacing="0" cellpadding="0" width="525" border="0">
+  <tbody>
+  <tr>
+  <td>
+
+    <table border="0" cellspacing="0" cellpadding="0" width="500">
+      <tbody>
+      <tr>
+      <td>
+
+      <!-- start of content -->
+      
+    <table border="0" cellspacing="0" cellpadding="0" width="500">
+    <tr align="center">
+    <td>
+      <a href="http://polar.ncep.noaa.gov/waves/index2.shtml">
+      <!--#if expr="$DOCUMENT_URI = /\/wavewatch\//" -->
+        <img src="/waves/images/wwnonoaa2.jpg" width="500" height="70" alt="Wave Watch III logo" border="0">
+      <!--#else -->
+        <img src="/waves/images/wwmain2.jpg" width="500" height="70" alt="NOAA Wave Watch III logo" border="0">
+      <!--#endif -->
+      </a>
+      <!--#if expr="($TITLE != mainpage)  && ($TITLE != wwmainpage)" -->
+        <h2 align="center" style="width: 500;"><!--#echo var="TITLE" --></h2>
+      <!--#else -->
+        <!--#if expr="($TITLE = mainpage)" -->        
+          <h2 align="center">MMAB Operational Wave Models</h2>
+        <!--#elif expr="($TITLE = wwmainpage)" -->
+          <h2 align="center">WAVEWATCH III<sup>&reg;</sup> Model</h2>
+        <!--#endif -->
+      <!--#endif -->
+
+      </td>
+      </tr>
+      </table>
+            
+      <!--#include virtual="$DOCUMENT_URI" -->
+
+      <!-- end of content -->
+      </td>
+      </tr>
+      </tbody>
+    </table>
+    <br>
+    <table cellspacing="0" cellpadding="0" border="0" width="500"
+    style="border-top: 1px solid black; border-bottom: 1px solid black;
+    padding-top: 3px; padding-bottom: 3px;">
+      <tbody>
+        <tr align="center">
+          <td>EMC/MMAB Information Topics:<br>
+	    <a href="#ww3products">WAVEWATCH III<sup>&reg;</sup> Products</a>,
+	    <a href="#allproducts">All Products</a>,
+	    <a href="#mmabinfo">About Us</a>,
+	    <a href="mailto:ncep.list.waves@noaa.gov">Contact Us</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table border="0" cellSpacing="0" cellPadding="0" width="504"
+    style="padding-top: 3px; padding-bottom: 3px;">
+        <tbody>
+        <!--#include virtual="mmab_footer.shtml" -->
+        <tr valign="top">
+          <td class="gray" colspan="3">
+            Page last modified: <!--#flastmod virtual="$DOCUMENT_URI" -->
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+    </tr>
+    </td>
+    <td>
+</td>
+</tr>
+</tbody>
+</table>
+    
+<!-- End of main body -->
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

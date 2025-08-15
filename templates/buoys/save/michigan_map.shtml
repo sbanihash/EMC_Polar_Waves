@@ -1,0 +1,5 @@
+<map name="buoys">
+<area shape="rect" COORDS="276,112,284,120" href="" alt="" onClick="gotoBuoy('45002','michigan') ; return false" title="45002" ">
+<area shape="rect" COORDS="234,323,242,331" href="" alt="" onClick="gotoBuoy('45007','michigan') ; return false" title="45007" ">
+<area shape="rect" COORDS="187,238,195,246" href="" alt="" onClick="gotoBuoy('SGNW3','michigan') ; return false" title="SGNW3" ">
+</map>

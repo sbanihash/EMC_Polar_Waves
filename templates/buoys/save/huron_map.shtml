@@ -1,0 +1,9 @@
+<map name="buoys">
+<area shape="rect" COORDS="221,91,229,99" href="" alt="" onClick="gotoBuoy('45154','huron') ; return false" title="45154" ">
+<area shape="rect" COORDS="356,141,364,149" href="" alt="" onClick="gotoBuoy('45137','huron') ; return false" title="45137" ">
+<area shape="rect" COORDS="388,199,396,207" href="" alt="" onClick="gotoBuoy('45143','huron') ; return false" title="45143" ">
+<area shape="rect" COORDS="204,159,212,167" href="" alt="" onClick="gotoBuoy('45003','huron') ; return false" title="45003" ">
+<area shape="rect" COORDS="239,262,247,270" href="" alt="" onClick="gotoBuoy('45008','huron') ; return false" title="45008" ">
+<area shape="rect" COORDS="268,335,276,343" href="" alt="" onClick="gotoBuoy('45149','huron') ; return false" title="45149" ">
+<area shape="rect" COORDS="478,362,486,370" href="" alt="" onClick="gotoBuoy('45139','huron') ; return false" title="45139" ">
+</map>

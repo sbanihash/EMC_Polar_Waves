@@ -1,0 +1,106 @@
+<!--#if expr="$QUERY_STRING != /text/" -->
+<center class="tiny" style="width: 500; white-space: nowrap;"><b>
+<a href="/index.shtml?">
+<!--#set var="ISTEXT" value="" -->
+<!--#else -->
+<center class="tiny" style="white-space: nowrap;"><b>
+<a href="/index.shtml?text">
+<!--#set var="ISTEXT" value="text" -->
+<!--#endif -->
+Home</a>&nbsp;&nbsp;
+<!--#if expr="$LINKS = /tcp/" -->
+  <!--#if expr="$DOCUMENT_NAME != /MIATCP/" -->
+    <a href="/text/refresh/MIATCP<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="tcplink" -->.shtml?<!--#echo var="ISTEXT" -->">
+    Public Adv</a>&nbsp;&nbsp;
+  <!--#else -->
+    Public Adv&nbsp;&nbsp;
+  <!--#endif -->
+<!--#endif -->
+<!--#if expr="$LINKS = /tcm/" -->
+  <!--#if expr="$DOCUMENT_NAME != /MIATCM/" -->
+    <a href="/text/refresh/MIATCM<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="tcmlink" -->.shtml?<!--#echo var="ISTEXT" -->">
+    Fcst/Adv</a>&nbsp;&nbsp;
+  <!--#else -->
+    Fcst/Adv&nbsp;&nbsp;
+  <!--#endif -->
+<!--#endif -->
+<!--#if expr="$LINKS = /tcd/" -->
+  <!--#if expr="$DOCUMENT_NAME != /MIATCD/" -->
+    <a href="/text/refresh/MIATCD<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="tcdlink" -->.shtml?<!--#echo var="ISTEXT" -->">
+    Discussion</a>&nbsp;&nbsp;
+  <!--#else -->
+    Discussion&nbsp;&nbsp;
+  <!--#endif -->
+<!--#endif -->
+<!--#if expr="($LINKS = /spf/) && ($BASIN = AT)" -->
+  <!--#if expr="$DOCUMENT_NAME != /MIASPF/" -->
+    <a href="/text/refresh/MIASPF<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="spflink" -->.shtml?<!--#echo var="ISTEXT" -->">
+    Strike Probs</a>&nbsp;&nbsp;
+  <!--#else -->
+    Strike Probs&nbsp;&nbsp;
+  <!--#endif -->
+<!--#endif -->
+<!--#if expr="$LINKS = /pws/" -->
+  <!--#if expr="$DOCUMENT_NAME != /MIAPWS/" -->
+    <a href="/text/refresh/MIAPWS<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="pwslink" -->.shtml?<!--#echo var="ISTEXT" -->">
+    Wind Probs</a>&nbsp;&nbsp;
+  <!--#else -->
+    Wind Probs&nbsp;&nbsp;
+  <!--#endif -->
+<!--#endif -->
+<!--#if expr="$LINKS = /graph/" -->
+  <!--#if expr="$DOCUMENT_NAME != /graphics_/" -->
+    <!--#if expr="$BASIN = AT" -->
+      <a href="/refresh/graphics_at<!--#echo var="WALLET" -->+shtml/<!--#echo var="graphlink" -->.shtml?<!--#echo var="ISTEXT" -->3day">
+    <!--#else -->
+      <a href="/refresh/graphics_ep<!--#echo var="WALLET" -->+shtml/<!--#echo var="graphlink" -->.shtml?<!--#echo var="ISTEXT" -->3day">
+    <!--#endif -->
+    Maps/Charts</a>&nbsp;&nbsp;
+  <!--#else -->
+    Maps/Charts&nbsp;&nbsp;
+  <!--#endif -->
+<!--#endif -->
+<!--#if expr="$LINKS = /arch/" -->
+  <a href="/archive/2005/refresh/<!--#echo var="STORM" -->+shtml/<!--#echo var="archlink" -->.shtml?<!--#echo var="ISTEXT" -->">Archive</a>
+<!--#endif -->
+<!--#if expr="$LINKS = /tcu/ || $LINKS = /tce/ || $LINKS = /tcv/" -->
+<br><br>
+  <!--#if expr="$LINKS = /tcu/" -->
+    <!--#if expr="$DOCUMENT_NAME != /MIATCU/" -->
+      <a href="/text/refresh/MIATCU<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="tculink" -->.shtml?<!--#echo var="ISTEXT" -->">
+      UPDATE</a>&nbsp;&nbsp;
+    <!--#else -->
+      UPDATE&nbsp;&nbsp;
+    <!--#endif -->
+  <!--#endif -->
+  <!--#if expr="$LINKS = /tce/" -->
+    <!--#if expr="$DOCUMENT_NAME != /MIATCE/" -->
+      <a href="/text/refresh/MIATCE<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="tcelink" -->.shtml?<!--#echo var="ISTEXT" -->">
+      Position Estimate</a>&nbsp;&nbsp;
+    <!--#else -->
+      Position Estimate&nbsp;&nbsp;
+    <!--#endif -->
+  <!--#endif -->
+  <!--#if expr="$LINKS = /tcv/" -->
+    <!--#if expr="$DOCUMENT_NAME != /MIATCV/" -->
+      <a href="/text/refresh/MIATCV<!--#echo var="BASIN" --><!--#echo var="WALLET" -->+shtml/<!--#echo var="tcvlink" -->.shtml?<!--#echo var="ISTEXT" -->">
+      US Watch/Warning</a>
+    <!--#else -->
+      US Watch/Warning 
+    <!--#endif -->
+  <!--#endif -->
+<!--#endif -->
+</b></center>
+<!--#if expr="$QUERY_STRING != /text/" -->
+<hr align="left" noshade style="width: 500;">
+<!--#else -->
+<hr noshade>
+
+<!--#endif -->
+<!--#if expr="$DOCUMENT_NAME = /MIAPWS/" -->
+<center><h4><a href="/feedback-pws.shtml">Click here to provide feedback on this experimental product</a></h4></center>
+<!--#endif -->
+<!--#if expr="$DOCUMENT_NAME = /MIATCV/" -->
+<center><h4><a href="/feedback-tcv.shtml">Click here to provide feedback on this experimental product</a></h4></center>
+<!--#endif -->
+

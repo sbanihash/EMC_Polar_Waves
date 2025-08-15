@@ -1,0 +1,33 @@
+
+<!-- Standard EMC/MMAB footer -->
+
+    <tr valign="top">
+    <td class="gray">
+      <a href="//www.noaa.gov/"><span class="gray">NOAA/</span></a>
+      <a href="//www.nws.noaa.gov/"><span class="gray">National Weather Service</span></a><br>
+      <a href="//www.ncep.noaa.gov/"><span class="gray">National Centers for Environmental Prediction</span></a><br>
+      <a href="//www.emc.ncep.noaa.gov"><span class="gray">Environmental Modeling Center</span></a><br>
+      <a href="//polar.ncep.noaa.gov"><span class="gray">Marine Modeling and Analysis Branch</span></a><br>
+      5830 University Research Court<br>
+      College Park, MD 20740<br>
+    </td>
+    <td>
+    <a href="//www.weather.gov/admin.php">
+    <span class="gray">About Us</span></a><br>
+    <a href="//www.weather.gov/disclaimer">
+    <span class="gray">Disclaimer</span></a><br>
+    <a href="//www.weather.gov/credits.php">
+    <span class="gray">Credits</span></a><br>
+    <a href="//www.weather.gov/careers.php">
+    <span class="gray">Career Opportunities</span></a><br>
+    <a href="//www.weather.gov/glossary/">
+    <span class="gray">Glossary</span></a>
+    </td>     
+    <td align="right"><a href="//www.weather.gov/privacy">
+      <span class="gray">Privacy Policy</span></a><br>
+      <a href="mailto:ncep.list.waves@noaa.gov?subject="WW3 Website Comments"><span class="gray">Comments/Feedback</span></a><br>
+    </td>
+    </tr>
+
+<!-- End of standard EMC/MMAB footer -->
+

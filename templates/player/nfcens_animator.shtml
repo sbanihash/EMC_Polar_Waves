@@ -1,0 +1,319 @@
+<script language="Javascript">
+// <!--
+//============================================================
+//                >> jsImagePlayer 1.0 <<
+//            for Netscape3.0+, September 1996
+//============================================================
+//                  by (c)BASTaRT 1996
+//             Praha, Czech Republic, Europe
+//
+// feel free to copy and use as long as the credits are given
+//          by having this header in the code
+//
+//          contact: xholecko@sgi.felk.cvut.cz
+//          https://sgi.felk.cvut.cz/~xholecko
+//
+//============================================================
+// Thanx to Karel & Martin for beta testing and suggestions!
+//============================================================
+//  New GUI Design by Brian Hughes, NOAA/NESDIS/SAB 12/17/99
+//  Assorted hacks added by T. Spindler NHC/TPC 7/25/00
+//============================================================
+
+//********* SET UP VARIABLES *********************
+
+var divfcst = document.getElementById("frame_nr");
+var sp2 = '<img src="images/spacer.gif" width="16" height="1">';
+var sp1 = '<img src="images/spacer.gif" width="8" height="1">';
+
+<!--#if expr="$TYPE = mesp" -->
+image_name = "<!--#echo var="BASEDIR" -->/nfcens.<!--#echo var="RUNDAY" -->/plots/<!--#echo var="IMAGE" -->_<!--#echo var="TYPE" -->.";
+<!--#else -->
+image_name = "<!--#echo var="BASEDIR" -->/nfcens.<!--#echo var="RUNDAY" -->/plots/<!--#echo var="IMAGE" -->_<!--#echo var="TYPE" -->_<!--#echo var="LEV" -->.";
+<!--#endif -->
+first_image = 0;
+last_image = 240;
+
+//**************************************************************************
+ 
+//=== THE CODE STARTS HERE - no need to change anything below ===
+ 
+//=== global variables ====
+theImages = new Array();      //holds the images
+imageNum = new Array();       //keeps track of which images to omit from loop
+normal_delay = 250;
+delay = normal_delay;         //delay between frames in 1/100 seconds
+delay_step = 25;
+delay_max = 4000;
+delay_min = 50;
+dwell_multipler = 5;
+dwell_step = 1;
+end_dwell_multipler   = dwell_multipler;
+start_dwell_multipler   = 1;
+current_image = first_image;     //number of the current image
+image_increment = 6;
+timeID = null;
+status = 0;                      // 0-stopped, 1-playing
+size_valid = 0;
+num_loops = 0;			   // initializes loop number counter
+ 
+//===> Make sure the first image number is not bigger than the last image number
+if (first_image > last_image)
+{
+   var help = last_image;
+   last_image = first_image;
+   first_image = help;
+}
+ 
+//===> Preload the first image (while page is downloading)
+   theImages[0] = new Image();
+   theImages[0].src = "/waves/images/loading_small.png";
+   imageNum[0] = true;
+ 
+//==============================================================
+//== All previous statements are performed as the page loads. ==
+//== The following functions are also defined at this time.   ==
+//==============================================================
+ 
+//===> Stop the animation
+function stop()
+{
+   //== cancel animation (timeID holds the expression which calls the fwd or bkwd function) ==
+   if (status == 1)
+      clearTimeout (timeID);
+   status = 0;
+//   setTimeout("history.back()", 60000);      //when stop function called, "kicksback" to previous document 
+}					       //after 60 seconds
+ 
+//===> Display animation in fwd direction
+function animate_fwd()
+{
+   current_image += image_increment;        //increment image number
+ 
+   //== check if current image has exceeded loop bound ==
+   if (current_image > last_image)
+         current_image = first_image;
+  
+   document.animation.src = theImages[current_image].src;   //display image onto screen
+   show_number(current_image);
+
+   delay_time = delay;
+   if ( current_image == first_image) delay_time = start_dwell_multipler*delay;
+   if (current_image == last_image)   delay_time = end_dwell_multipler*delay;
+ 
+   //== call "animate_fwd()" again after a set time (delay_time) has elapsed ==
+   timeID = setTimeout(animate_fwd, delay_time);
+}
+ 
+ 
+//===> Display animation in reverse direction
+function animate_rev()
+{
+   current_image -= image_increment;          //decrement image number
+ 
+   //== check if image number is before lower loop bound ==
+   if (current_image < first_image)
+        current_image = last_image;
+  
+   document.animation.src = theImages[current_image].src;   //display image onto screen
+   show_number(current_image);
+   
+   delay_time = delay;
+   if (current_image == first_image) delay_time = start_dwell_multipler*delay;
+   if (current_image == last_image)   delay_time = end_dwell_multipler*delay;
+ 
+   //== call "animate_rev()" again after a set amount of time (delay_time) has elapsed ==
+   timeID = setTimeout(animate_rev, delay_time);
+}
+ 
+ 
+//===> Changes playing speed by adding to or substracting from the delay between frames
+function change_speed(dv)
+{
+   delay+=dv;
+   //== check to ensure max and min delay constraints have not been crossed ==
+   if(delay > delay_max) delay = delay_max;
+   if(delay < delay_min) delay = delay_min;
+}
+ 
+//===> functions that changed the dwell rates.
+function change_end_dwell(dv) {
+   end_dwell_multipler+=dv;
+   if ( end_dwell_multipler < 1 ) end_dwell_multipler = 0;
+   }
+ 
+function change_start_dwell(dv) {
+   start_dwell_multipler+=dv;
+   if ( start_dwell_multipler < 1 ) start_dwell_multipler = 0;
+   }
+ 
+//===> rewind to start of image sequence
+function rewind()
+{
+   stop();
+   current_image = first_image;
+   document.animation.src = theImages[current_image].src;   //display image
+   show_number(current_image);
+}
+
+//===> fast forward to end of image sequence
+function ffwd()
+{
+   stop(); 
+   current_image = last_image;
+   document.animation.src = theImages[current_image].src;   //display image
+   show_number(current_image);
+}
+
+//===> Increment to next image
+function incrementImage(number)
+{
+   stop();
+ 
+   number += image_increment;
+   if (number > last_image) number = first_image; 
+ 
+   current_image = number;
+   document.animation.src = theImages[current_image].src;   //display image
+   show_number(current_image);
+}
+ 
+//===> Decrement to next image
+function decrementImage(number)
+{
+   stop();
+ 
+   number -= image_increment;
+   if (number < first_image) number = last_image;
+   
+   current_image = number;
+   document.animation.src = theImages[current_image].src;   //display image
+   show_number(current_image);
+
+}
+ 
+//===> "Play forward"
+function fwd()
+{
+   stop();
+   status = 1;
+   animate_fwd();
+}
+ 
+//===> "Play reverse"
+function rev()
+{
+   stop();
+   status = 1;
+   animate_rev();
+}
+
+//===> Load and initialize everything once page is downloaded (called from 'onLoad' in <BODY>)
+function launch()
+{
+   var numargs = launch.arguments.length;
+   var i_name = "f00";
+
+   for (var i = first_image; i <= last_image; i += image_increment)
+   {
+      if (i < 0 )
+         i_name = "h00" + Math.abs(i);
+      else if (i >= 0 & i <= 10)
+         i_name = "f00" + i;
+      else if (i > 10 & i <= 100)
+         i_name = "f0" + i;
+      else i_name = "f" + i;
+      theImages[i] = new Image();
+      theImages[i].src = image_name + i_name + ".png";
+      imageNum[i] = true;
+      document.animation.src = theImages[i].src;
+      
+      show_number(i);
+   }
+      
+}
+ 
+//===> Check selection status of image in animation loop
+function checkImage(status,i)
+{
+   if (status == true)
+      imageNum[i] = false;
+   else imageNum[i] = true;
+}
+
+//==> Empty function - used to deal with image buttons rather than HTML buttons
+function func()
+{
+}
+ 
+//===> Sets up interface - this is the one function called from the HTML body
+function animation()
+{
+  count = first_image;
+  launch();
+  fwd();
+}
+ 
+//===> Reload graphics with new image_type
+function switch_image()
+{
+  stop();
+  launch();
+  fwd();
+}
+
+//===> Reload graphics with new image_type
+function go2image(number)
+{
+   stop();
+   current_image = number;
+   document.animation.src = theImages[number].src;   //display image
+   show_number(current_image);
+}
+//===> resize graphic
+function enlargeImage()
+{
+   document.animation.height="716";
+   document.animation.width="895";
+} 
+function shrinkImage()
+{
+   document.animation.height="400";
+   document.animation.width="500";
+} 
+
+//===> Reload graphics with new image_type
+function show_number(i)
+{
+  if (current_image >= 100)
+    divfcst.innerHTML = i;
+  else if (current_image >= 10)
+    divfcst.innerHTML = sp1+i;
+  else
+    divfcst.innerHTML = sp2+i;
+}
+
+/* --------------------------------------------------------------------- */
+
+// handle selection dropdown menu jumps
+
+function MM_jumpMenu(targ,selObj,restore){
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+    if (restore) selObj.selectedIndex=0;
+}
+
+// -->
+</script>
+<noscript>
+<br>
+<center style="border-style: solid; border-color: black; border-width: 5px;">
+<br>
+<span class="hdr" style="color: red;">
+<i>You must have Javascript enabled in your browser<br>in order to use the Product Viewer</i></span>
+<br><br>
+<b>You can access the individual images and buoy data in the 
+<a href="/waves/product_table.shtml">Product Table</a>.</b>
+<br><br>
+</center>
+<br>
+</noscript>

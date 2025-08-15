@@ -1,0 +1,119 @@
+<!--#if expr="$DOCUMENT_URI != /\/waves\/ensemble\//" -->
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr align="center" valign = "middle">
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/index.php/" -->
+  Home
+  <!--#else -->
+  <a href="/waves/index.php?<!--#echo var="ISTEXT" -->">
+  Home</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/viewer2.shtml/" -->
+  Product<br>Viewer  
+<!--#else -->
+    <a href="/waves/viewer.shtml?-<!--#echo var="MODEL" -->-<!--#echo var="ISTEXT" -->">
+    Product<br>Viewer</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/product_table2.shtml/ " -->
+  Product<br>Table
+  <!--#else -->
+  <a href="/waves/product_table.shtml?-<!--#echo var="MODEL" -->-<!--#echo var="ISTEXT" -->">
+  Product<br>Table</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/products2.shtml/ " --> 
+  Product<br>Descriptions
+  <!--#else -->
+  <a href="/waves/products2.shtml?<!--#echo var="ISTEXT" -->">
+  Product<br>Descriptions</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+  <a href="/waves/Model_Description.pdf">
+  Model<br>Description</a>
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/prod-validation/ " -->
+  Model<br>Validation
+  <!--#else -->
+  <a href="/waves/validation/gfsv16/buoys/?<!--#echo var="ISTEXT" -->">
+  Model<br>Validation</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px;">
+<!--#if expr="$DOCUMENT_URI = /download2.shtml/" -->
+  Model Data<br>Access
+  <!--#else -->
+  <a href="/waves/download2.shtml?<!--#echo var="ISTEXT" -->">
+  Model Data<br>Access</a>
+<!--#endif -->
+</td>
+</tr>
+</table>
+<!--#else -->
+<table border="0" cellspacing="0" cellpadding="3" width="500">
+<tr align="center" valign = "middle">
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/ensemble\/index.shtml/" -->
+  Home
+  <!--#else -->
+  <a href="/waves/ensemble/index.shtml?<!--#echo var="ISTEXT" -->">
+  Home</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /viewer.shtml/ " -->
+  Product<br>Viewer
+  <!--#else -->
+  <!-- <a href="/waves/viewer.shtml?-gwes-<!--#echo var="ISTEXT" -->"> -->
+  Product<br>Viewer
+  <!-- </a>-->
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/ensemble\/product_table.shtml/ " -->
+  Product<br>Table
+  <!--#else -->
+  Product<br>Table
+  <!--
+  <a href="/waves/ensemble/product_table.shtml?<!--#echo var="ISTEXT" -->">
+  Product<br>Table</a>
+  -->
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/ensemble\/products.shtml/ " --> 
+  Product<br>Descriptions
+  <!--#else -->
+  Product<br>Descriptions
+  <!--
+  <a href="/waves/ensemble/products.shtml?<!--#echo var="ISTEXT" -->">
+  Product<br>Descriptions</a>
+  -->
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/ensemble\/nsysu0611paper.pdf/ " -->
+  Model<br>Description (pdf)
+  <!--#else -->
+  <a href="/waves/ensemble/nsysu0611paper.pdf">
+  Model<br>Description</a> (pdf)
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px;">
+<!--#if expr="$DOCUMENT_URI = /download.shtml/" -->
+  Model Data<br>Access
+  <!--#else -->
+  <a href="/waves/ensemble/download.shtml?<!--#echo var="ISTEXT" -->">
+  Model Data<br>Access</a>
+<!--#endif -->
+</td>
+</tr>
+</table>
+<!--#endif -->
+<br>

@@ -1,0 +1,292 @@
+<!-- ATG NAG WNA WNAZ NAH NAHZ IOG -->
+
+<!--#set var="BASEDIR" value="/develop/waves/WEB_P" -->
+
+<!--#set var="MODEL" value="multi_1" -->
+
+<!--#if expr="$QUERY_STRING = /-alaska-/" -->
+  <!--#set var="REGION" value="alaska" -->
+  <!--#set var="BASIN" value="Alaska" -->
+<!--#elif expr="$QUERY_STRING = /-atlantic-/" -->
+  <!--#set var="REGION" value="atlantic" -->
+  <!--#set var="BASIN" value="Atlantic" -->
+<!--#elif expr="$QUERY_STRING = /-aus_ind_phi-/" -->
+  <!--#set var="REGION" value="aus_ind_phi" -->
+  <!--#set var="BASIN" value="Australia" -->
+<!--#elif expr="$QUERY_STRING = /-gmex-/" -->
+  <!--#set var="REGION" value="gmex" -->
+  <!--#set var="BASIN" value="Gulf of America" -->
+<!--#elif expr="$QUERY_STRING = /-hawaii-/" -->
+  <!--#set var="REGION" value="hawaii" -->
+  <!--#set var="BASIN" value="Hawaii" -->
+<!--#elif expr="$QUERY_STRING = /-indian_o-/" -->
+  <!--#set var="REGION" value="indian_o" -->
+  <!--#set var="BASIN" value="Indian Ocean" -->
+<!--#elif expr="$QUERY_STRING = /-NE_atlantic-/" -->
+  <!--#set var="REGION" value="NE_atlantic" -->
+  <!--#set var="BASIN" value="NE Atlantic" -->
+<!--#elif expr="$QUERY_STRING = /-NE_pacific-/" -->
+  <!--#set var="REGION" value="NE_pacific" -->
+  <!--#set var="BASIN" value="NE Pacific" -->
+<!--#elif expr="$QUERY_STRING = /-NW_atlantic-/" -->
+  <!--#set var="REGION" value="NW_atlantic" -->
+  <!--#set var="BASIN" value="NW Atlantic" -->
+<!--#elif expr="$QUERY_STRING = /-pacific-/" -->
+  <!--#set var="REGION" value="pacific" -->
+  <!--#set var="BASIN" value="Pacific" -->
+<!--#elif expr="$QUERY_STRING = /-US_eastcoast-/" -->
+  <!--#set var="REGION" value="US_eastcoast" -->
+  <!--#set var="BASIN" value="US East Coast" -->
+<!--#elif expr="$QUERY_STRING = /-US_wc_zm1-/" -->
+  <!--#set var="REGION" value="US_wc_zm1" -->
+  <!--#set var="BASIN" value="US West Coast Zoom 1" -->
+<!--#elif expr="$QUERY_STRING = /-US_wc_zm2-/" -->
+  <!--#set var="REGION" value="US_wc_zm2" -->
+  <!--#set var="BASIN" value="US West Coast Zoom 2" -->
+  
+<!--#elif expr="$QUERY_STRING = /-grl-/" -->
+  <!--#set var="REGION" value="grl" -->
+  <!--#set var="BASIN" value="Great Lakes" -->
+  <!--#set var="MODEL" value="grl" -->
+<!--#elif expr="$QUERY_STRING = /-erie-/" -->
+  <!--#set var="REGION" value="erie" -->
+  <!--#set var="BASIN" value="Lake Erie" -->
+  <!--#set var="MODEL" value="grl" -->
+<!--#elif expr="$QUERY_STRING = /-huron-/" -->
+  <!--#set var="REGION" value="huron" -->
+  <!--#set var="BASIN" value="Lake Huron" -->
+  <!--#set var="MODEL" value="grl" -->
+<!--#elif expr="$QUERY_STRING = /-michigan-/" -->
+  <!--#set var="REGION" value="michigan" -->
+  <!--#set var="BASIN" value="Lake Michigan" -->
+  <!--#set var="MODEL" value="grl" -->
+<!--#elif expr="$QUERY_STRING = /-ontario-/" -->
+  <!--#set var="REGION" value="ontario" -->
+  <!--#set var="BASIN" value="Lake Ontario" -->
+  <!--#set var="MODEL" value="grl" -->
+<!--#elif expr="$QUERY_STRING = /-superior-/" -->
+  <!--#set var="REGION" value="superior" -->
+  <!--#set var="BASIN" value="Lake Superior" -->
+  <!--#set var="MODEL" value="grl" -->
+<!--#else -->
+  <!--#set var="REGION" value="atlantic" -->
+  <!--#set var="BASIN" value="Atlantic" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING = /-latest-/" -->
+  <!--#set var="RUN" value="latest_run" -->
+<!--#elif expr="$QUERY_STRING = /-1_back-/" -->
+  <!--#set var="RUN" value="cycle.1_back" -->
+<!--#elif expr="$QUERY_STRING = /-2_back-/" -->
+  <!--#set var="RUN" value="cycle.2_back" -->
+<!--#elif expr="$QUERY_STRING = /-3_back-/" -->
+  <!--#set var="RUN" value="cycle.3_back" -->
+<!--#elif expr="$QUERY_STRING = /-4_back-/" -->
+  <!--#set var="RUN" value="cycle.4_back" -->
+<!--#elif expr="$QUERY_STRING = /-5_back-/" -->
+  <!--#set var="RUN" value="cycle.5_back" -->
+<!--#else -->
+  <!--#set var="RUN" value="latest_run" -->
+<!--#endif -->
+
+<!--#set var="WIDTH" value="500" -->
+<!--#set var="HEIGHT" value="667" -->
+
+<!--#if expr="$QUERY_STRING = /-hs-/" -->
+  <!--#set var="IMAGE" value="hs" -->
+  <!--#set var="IMAGE_TITLE" value="Wind Sea Wave Height and Peak Direction" -->
+<!--#elif expr="$QUERY_STRING = /-mesp-/" -->
+  <!--#set var="IMAGE" value="mesp" -->
+  <!--#set var="IMAGE_TITLE" value="Mean Significant Wave Height and Spread" -->
+<!--#elif expr="$QUERY_STRING = /-hs_ws-/" -->
+  <!--#set var="IMAGE" value="hs_ws" -->
+  <!--#set var="IMAGE_TITLE" value="Wind Sea Wave Height and Mean Direction" -->
+<!--#elif expr="$QUERY_STRING = /-hs_sw1-/" -->
+  <!--#set var="IMAGE" value="hs_sw2" -->
+  <!--#set var="IMAGE_TITLE" value="Primary Swell Wave Height and Mean Direction" -->
+<!--#elif expr="$QUERY_STRING = /-hs_sw2-/" -->
+  <!--#set var="IMAGE" value="hs_sw2" -->
+  <!--#set var="IMAGE_TITLE" value="Primary Swell Wave Height and Mean Direction" -->
+<!--#elif expr="$QUERY_STRING = /-tp-/" -->
+  <!--#set var="IMAGE" value="tp" -->
+  <!--#set var="IMAGE_TITLE" value="Peak Wave Period and Direction" -->
+<!--#elif expr="$QUERY_STRING = /-tp_ws-/" -->
+  <!--#set var="IMAGE" value="tp_ws" -->
+  <!--#set var="IMAGE_TITLE" value="Wind Sea Period and Mean Direction" -->
+<!--#elif expr="$QUERY_STRING = /-tp_sw1-/" -->
+  <!--#set var="IMAGE" value="tp_sw1" -->
+  <!--#set var="IMAGE_TITLE" value="Primary Swell Peak Period and Mean Direction" -->
+<!--#elif expr="$QUERY_STRING = /-tp_sw2-/" -->
+  <!--#set var="IMAGE" value="tp_sw2" -->
+  <!--#set var="IMAGE_TITLE" value="Secondary Swell Peak Period and Mean Direction" -->
+<!--#elif expr="$QUERY_STRING = /-u10-/" -->
+  <!--#set var="IMAGE" value="u10" -->
+  <!--#set var="IMAGE_TITLE" value="Wind Speed" -->
+<!--#else -->
+  <!--#set var="IMAGE" value="hs" -->
+  <!--#set var="IMAGE_TITLE" value="Wind Sea Wave Height and Peak Direction" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING = /text/" -->
+  <!--#set var="ISTEXT" value="1" -->
+<!--#else
+  <!--#set var="ISTEXT" value="0" -->
+<!--#endif -->
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr align="left" valign="top">
+<td class="searchinput" nowrap align="center" valign="middle"
+style="border-bottom: 1px solid black;border-right: 1px solid black;">
+<form>
+<select name="gourl" onChange="MM_jumpMenu('parent',this,0)">
+<option class="searchinput" disabled>Choose Region</option>
+<option class="searchinput" disabled>-----------</option>
+<option class="searchinput" value="wave_graphics.shtml?-alaska-">Alaska</option>
+<option class="searchinput" value="wave_graphics.shtml?-atlantic-">Atlantic</option>
+<option class="searchinput" value="wave_graphics.shtml?-aus_ind_phi-">Australia</option>
+<option class="searchinput" value="wave_graphics.shtml?-gmex-">Gulf of America</option>
+<option class="searchinput" value="wave_graphics.shtml?-hawaii-">Hawaii</option>
+<option class="searchinput" value="wave_graphics.shtml?-indian_o-">Indian Ocean</option>
+<option class="searchinput" value="wave_graphics.shtml?-NE_atlantic-">North East Atlantic</option>
+<option class="searchinput" value="wave_graphics.shtml?-NE_pacific-">North East Pacific</option>
+<option class="searchinput" value="wave_graphics.shtml?-NW_atlantic-">North West Atlantic</option>
+<option class="searchinput" value="wave_graphics.shtml?-pacific-">Pacific</option>
+<option class="searchinput" value="wave_graphics.shtml?-US_eastcoast-">US East Coast</option>
+<option class="searchinput" value="wave_graphics.shtml?-US_wc_zm1-">US West Coast Zoom</option>
+<option class="searchinput" disabled>-----------</option>
+<option class="searchinput" value="wave_graphics.shtml?-grl-">Great Lakes</option>
+<option class="searchinput" value="wave_graphics.shtml?-erie-">Lake Erie</option>
+<option class="searchinput" value="wave_graphics.shtml?-huron-">Lake Huron</option>
+<option class="searchinput" value="wave_graphics.shtml?-michigan-">Lake Michigan</option>
+<option class="searchinput" value="wave_graphics.shtml?-ontario-">Lake Ontario</option>
+<option class="searchinput" value="wave_graphics.shtml?-superior-">Lake Superior</option>
+</select><br><br>
+<select name="gourl" onChange="MM_jumpMenu('parent',this,0)">
+<option class="searchinput" disabled>Choose Run</option>
+<option class="searchinput" disabled>-----------</option>
+<option class="searchinput" value="wave_graphics.shtml?-latest-">Latest</option>
+<option class="searchinput" value="wave_graphics.shtml?-1_back-">6 Hours back</option>
+<option class="searchinput" value="wave_graphics.shtml?-2_back-">12 Hours back</option>
+<option class="searchinput" value="wave_graphics.shtml?-3_back-">18 Hours back</option>
+<option class="searchinput" value="wave_graphics.shtml?-4_back-">24 Hours back</option>
+<option class="searchinput" value="wave_graphics.shtml?-5_back-">36 Hours back</option>
+</select>
+</form>
+</td>
+
+<td class="tiny" nowrap style="border-bottom: 1px solid black; padding-left: 4px">
+
+<!--#if expr="$IMAGE != hs" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-hs-">Significant Wave Height</a>
+<!--#else -->
+<u>Significant Wave Height</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != mesp" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-mesp-">Mean Hs and Spread</a>
+<!--#else -->
+<u>Mean Hs and Spread</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != hs_ws" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-hs_ws-">Wind Sea Wave Height</a>
+<!--#else -->
+<u>Wind Sea Wave Height</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != hs_sw1" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-hs_sw1-">Primary Swell Wave Height</a>
+<!--#else -->
+<u>Primary Swell Wave Height</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != hs_sw2" -->
+<a href="/develop/waves/wave_graphics.shtml?-<!--#echo var="REGION"-->-hs_sw2-">Secondary Swell Wave Height</a>
+<!--#else -->
+<u>Secondary Swell Wave Height</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != u10" -->
+<a href="/develop/waves/wave_graphics.shtml?-<!--#echo var="REGION"-->-u10-">Wind Speed</a>
+<!--#else -->
+<u>Wind Speed</u>
+<!--#endif -->
+
+</td>
+<td class="tiny" nowrap style="border-bottom: 1px solid black;">
+
+<!--#if expr="$IMAGE != tp" -->
+<a href="/develop/waves/wave_graphics.shtml?-<!--#echo var="REGION"-->-tp-">Peak Wave Period</a>
+<!--#else -->
+<u>Peak Wave Period</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != tp_ws" -->
+<a href="/develop/waves/wave_graphics.shtml?-<!--#echo var="REGION"-->-tp_ws-">Wind Sea Period</a>
+<!--#else -->
+<u>Wind Sea Period</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != tp_sw1" -->
+<a href="/develop/waves/wave_graphics.shtml?-<!--#echo var="REGION"-->-tp_sw1-">Primary Swell Period</a>
+<!--#else -->
+<u>Primary Swell Period</u>
+<!--#endif -->
+<br>
+
+<!--#if expr="$IMAGE != tp_sw2" -->
+<a href="/develop/waves/wave_graphics.shtml?-<!--#echo var="REGION"-->-tp_sw2-">Secondary Swell Period</a>
+<!--#else -->
+<u>Secondary Swell Period</u>
+<!--#endif -->
+
+</td>
+</tr>
+</table>
+
+<table border="0" cellspacing="1" cellpadding="0" width="100%">
+<tr align="center" valign="middle">
+<td colspan="4">
+<form method="post" name="control_form">
+<span class="hdr" style="font-size: larger;"><!--#echo var="BASIN" --></span><br>
+<span class="std"><!--#echo var="IMAGE_TITLE" -->
+forecast for
+<input class="std" style="font-size: 14px; text-align: center;" type="text" name="frame_nr" value="" size="2" onFocus="this.select()" onChange="go2image(this.value)"></input>
+Hours</span>
+<table border="0" cellpadding="2" cellspacing="0"
+style="border-style: solid; border-color: black; border-width: 1px;
+border-right-width: 0px; border-left-width: 0px;">
+<tr><td>
+&nbsp;&nbsp;<b>Buoy</b>
+<input class="tiny" style="text-align: center;" type="text" name="buoy_id" value="Buoy ID" size="14"></input>
+&nbsp;&nbsp;
+<input class="tiny" type="checkbox" name="bull" notchecked>Bulletin&nbsp;</input>
+<input class="tiny" type="checkbox" name="spec" notchecked>Spectra&nbsp;</input>
+<input class="tiny" type="checkbox" name="srce" notchecked>Sources&nbsp;</input>
+</td></tr></table>
+</form>
+</td>
+</tr>
+</table>
+
+<!--#include virtual="/develop/waves/templates/player/animator.shtml" -->
+
+<!--include virtual="/develop/waves/templates/buoys/${REGION}_map.shtml" -->
+
+<img name="animation" border="0" width="<!--#echo var="WIDTH" -->" height="<!--#echo var="HEIGHT" -->" 
+src="/develop/waves/images/loading.jpg" alt="Loading Storm Graphics Loops" usemap="#buoys" ismap>
+
+<h3>About this product:</h3>
+<p class="reg" style="width: 500">
+Some stuff goes here
+</p>
+
+<!--#endif -->
+

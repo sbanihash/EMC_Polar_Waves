@@ -1,0 +1,69 @@
+<!--#set var="FORMATLOAD" value="TRUE" -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<base href="//polar.ncep.noaa.gov/waves/">
+<!--#if expr="$TITLE = mainpage" -->
+  <title>Environmental Modeling Center / Marine Modeling and Analysis Branch</title>
+<!--#else -->
+  <title><!--#echo var="TITLE" --> (Text)</title>
+<!--#endif -->
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <!--#if expr="$EXPIRE != $NULL" -->
+  <meta http-equiv="Expires" content="<!--#echo var="EXPIRE" -->">
+  <!--#endif -->
+  <!--#if expr="($HTTP_USER_AGENT = /MSIE/) || ($HTTP_USER_AGENT = /Mozilla\/4/)" -->
+    <link href="templates/main_ie_text.css" type="text/css" rel="stylesheet">
+  <!--#else -->
+    <link href="templates/main_moz_text.css" type="text/css" rel="stylesheet">
+  <!--#endif -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VVHZJ7M0X"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-2VVHZJ7M0X');
+  </script>
+</head>
+<!--#if expr="$DOCUMENT_URI = /viewer.shtml/" -->
+<body bgcolor="#ffffff" onLoad="if (self != top) top.location = self.location; animation()">
+<!--#else -->
+<body bgcolor="#ffffff" onLoad="if (self != top) top.location = self.location">
+<!--#endif -->
+  <hr noshade>
+<!-- start of content -->
+  
+  <!--#if expr="($TITLE = mainpage)" -->
+    <h2 align="center">MMAB Operational Wave Models (Text)</h2>
+  <!--#else -->
+    <h2 align="center"><!--#echo var="TITLE" --> (Text)</h2>
+  <!--#endif -->
+
+<hr noshade>
+<center>
+<!--#include virtual="mmab_ww3_menu.shtml" -->
+</center>
+
+<!--#include virtual="$DOCUMENT_URI" -->
+  
+  <!-- end of content -->
+  
+  <!--#include virtual="mmab_menu_text.shtml" -->
+
+  <p class="gray">
+  <a href="//www.noaa.gov/"><span class="gray">NOAA/</span></a>
+  <a href="//www.nws.noaa.gov/"><span class="gray">National Weather Service</span></a><br>
+  <a href="//www.ncep.noaa.gov/"><span class="gray">National Centers for Environmental Prediction</span></a><br>
+  Environmental Modeling Center<br>
+  Marine Modeling and Analysis Branch<br>
+  5200 Auth Road<br>
+  Camp Springs, Maryland 20746-4304 USA<br>
+  <a href="mailto:ncep.list.waves@noaa.gov?subject=WW3 Website Comments"><span class="gray">Comments/Feedback</span></a><br>
+  <a href="//www.nws.noaa.gov/disclaimer.html"><span class="gray">Disclaimer</span></a><br>
+  <a href="//www.nws.noaa.gov/notice.html"><span class="gray">Privacy Policy</span></a><br>
+  Page last modified: <!--#flastmod virtual="/$DOCUMENT_URI" -->
+  </p>
+</body>
+</html>

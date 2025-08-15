@@ -1,0 +1,27 @@
+<map name="buoys">
+<area shape="rect" COORDS="172,46,180,54" href="" alt="" onClick="gotoBuoy('45136','grl') ; return false" title="45136" ">
+<area shape="rect" COORDS="149,68,157,76" href="" alt="" onClick="gotoBuoy('45001','grl') ; return false" title="45001" ">
+<area shape="rect" COORDS="183,93,191,101" href="" alt="" onClick="gotoBuoy('45004','grl') ; return false" title="45004" ">
+<area shape="rect" COORDS="92,103,100,111" href="" alt="" onClick="gotoBuoy('45006','grl') ; return false" title="45006" ">
+<area shape="rect" COORDS="133,61,141,69" href="" alt="" onClick="gotoBuoy('PILM4','grl') ; return false" title="PILM4" ">
+<area shape="rect" COORDS="106,78,114,86" href="" alt="" onClick="gotoBuoy('ROAM4','grl') ; return false" title="ROAM4" ">
+<area shape="rect" COORDS="165,112,173,120" href="" alt="" onClick="gotoBuoy('STDM4','grl') ; return false" title="STDM4" ">
+<area shape="rect" COORDS="67,117,75,125" href="" alt="" onClick="gotoBuoy('DISW3','grl') ; return false" title="DISW3" ">
+<area shape="rect" COORDS="187,202,195,210" href="" alt="" onClick="gotoBuoy('45002','grl') ; return false" title="45002" ">
+<area shape="rect" COORDS="170,330,178,338" href="" alt="" onClick="gotoBuoy('45007','grl') ; return false" title="45007" ">
+<area shape="rect" COORDS="152,278,160,286" href="" alt="" onClick="gotoBuoy('SGNW3','grl') ; return false" title="SGNW3" ">
+<area shape="rect" COORDS="293,167,301,175" href="" alt="" onClick="gotoBuoy('45154','grl') ; return false" title="45154" ">
+<area shape="rect" COORDS="338,191,346,199" href="" alt="" onClick="gotoBuoy('45137','grl') ; return false" title="45137" ">
+<area shape="rect" COORDS="349,221,357,229" href="" alt="" onClick="gotoBuoy('45143','grl') ; return false" title="45143" ">
+<area shape="rect" COORDS="287,201,295,209" href="" alt="" onClick="gotoBuoy('45003','grl') ; return false" title="45003" ">
+<area shape="rect" COORDS="299,252,307,260" href="" alt="" onClick="gotoBuoy('45008','grl') ; return false" title="45008" ">
+<area shape="rect" COORDS="309,289,317,297" href="" alt="" onClick="gotoBuoy('45149','grl') ; return false" title="45149" ">
+<area shape="rect" COORDS="454,276,462,284" href="" alt="" onClick="gotoBuoy('45135','grl') ; return false" title="45135" ">
+<area shape="rect" COORDS="439,285,447,293" href="" alt="" onClick="gotoBuoy('45012','grl') ; return false" title="45012" ">
+<area shape="rect" COORDS="379,302,387,310" href="" alt="" onClick="gotoBuoy('45139','grl') ; return false" title="45139" ">
+<area shape="rect" COORDS="385,327,393,335" href="" alt="" onClick="gotoBuoy('45142','grl') ; return false" title="45142" ">
+<area shape="rect" COORDS="385,340,393,348" href="" alt="" onClick="gotoBuoy('DBLN6','grl') ; return false" title="DBLN6" ">
+<area shape="rect" COORDS="333,340,341,348" href="" alt="" onClick="gotoBuoy('45132','grl') ; return false" title="45132" ">
+<area shape="rect" COORDS="300,379,308,387" href="" alt="" onClick="gotoBuoy('45005','grl') ; return false" title="45005" ">
+<area shape="rect" COORDS="287,381,295,389" href="" alt="" onClick="gotoBuoy('SBIO1','grl') ; return false" title="SBIO1" ">
+</map>

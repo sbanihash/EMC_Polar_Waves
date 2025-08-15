@@ -1,0 +1,30 @@
+<map name="buoys">
+<area shape="rect" COORDS="237,333,245,341" href="" alt="" onClick="gotoBuoy('46002','US_wc_zm1') ; return false" onMouseOver="showbuoy('46002')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="214,203,222,211" href="" alt="" onClick="gotoBuoy('46005','US_wc_zm1') ; return false" onMouseOver="showbuoy('46005')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="122,117,130,125" href="" alt="" onClick="gotoBuoy('46036','US_wc_zm1') ; return false" onMouseOver="showbuoy('46036')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="311,65,319,73" href="" alt="" onClick="gotoBuoy('46132','US_wc_zm1') ; return false" onMouseOver="showbuoy('46132')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="372,99,380,107" href="" alt="" onClick="gotoBuoy('46206','US_wc_zm1') ; return false" onMouseOver="showbuoy('46206')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="436,459,444,467" href="" alt="" onClick="gotoBuoy('46014','US_wc_zm1') ; return false" onMouseOver="showbuoy('46014')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="408,327,416,335" href="" alt="" onClick="gotoBuoy('46015','US_wc_zm1') ; return false" onMouseOver="showbuoy('46015')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="418,401,426,409" href="" alt="" onClick="gotoBuoy('46022','US_wc_zm1') ; return false" onMouseOver="showbuoy('46022')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="423,361,431,369" href="" alt="" onClick="gotoBuoy('46027','US_wc_zm1') ; return false" onMouseOver="showbuoy('46027')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="419,201,427,209" href="" alt="" onClick="gotoBuoy('46029','US_wc_zm1') ; return false" onMouseOver="showbuoy('46029')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="418,414,426,422" href="" alt="" onClick="gotoBuoy('46030','US_wc_zm1') ; return false" onMouseOver="showbuoy('46030')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="411,155,419,163" href="" alt="" onClick="gotoBuoy('46041','US_wc_zm1') ; return false" onMouseOver="showbuoy('46041')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="418,257,426,265" href="" alt="" onClick="gotoBuoy('46050','US_wc_zm1') ; return false" onMouseOver="showbuoy('46050')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="412,112,420,120" href="" alt="" onClick="gotoBuoy('46087','US_wc_zm1') ; return false" onMouseOver="showbuoy('46087')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="379,210,387,218" href="" alt="" onClick="gotoBuoy('46089','US_wc_zm1') ; return false" onMouseOver="showbuoy('46089')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="428,173,436,181" href="" alt="" onClick="gotoBuoy('46211','US_wc_zm1') ; return false" onMouseOver="showbuoy('46211')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="412,419,420,427" href="" alt="" onClick="gotoBuoy('46213','US_wc_zm1') ; return false" onMouseOver="showbuoy('46213')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="418,289,426,297" href="" alt="" onClick="gotoBuoy('46229','US_wc_zm1') ; return false" onMouseOver="showbuoy('46229')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="431,197,439,205" href="" alt="" onClick="gotoBuoy('46243','US_wc_zm1') ; return false" onMouseOver="showbuoy('46243')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="424,397,432,405" href="" alt="" onClick="gotoBuoy('46244','US_wc_zm1') ; return false" onMouseOver="showbuoy('46244')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="414,200,422,208" href="" alt="" onClick="gotoBuoy('46248','US_wc_zm1') ; return false" onMouseOver="showbuoy('46248')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="230,127,238,135" href="" alt="" onClick="gotoBuoy('OPCP01','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP01')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="353,127,361,135" href="" alt="" onClick="gotoBuoy('OPCP02','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP02')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="255,231,263,239" href="" alt="" onClick="gotoBuoy('OPCP03','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP03')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="385,231,393,239" href="" alt="" onClick="gotoBuoy('OPCP04','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP04')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="249,365,257,373" href="" alt="" onClick="gotoBuoy('OPCP05','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP05')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="378,359,386,367" href="" alt="" onClick="gotoBuoy('OPCP06','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP06')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="388,460,396,468" href="" alt="" onClick="gotoBuoy('OPCP08','US_wc_zm1') ; return false" onMouseOver="showbuoy('OPCP08')" onMouseOut="showbuoy('')">
+</map>

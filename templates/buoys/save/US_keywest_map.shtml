@@ -1,0 +1,17 @@
+<map name="buoys">
+<area shape="rect" COORDS="29,192,37,200" href="" alt="" onClick="gotoBuoy('42003','US_keywest') ; return false" onMouseOver="showbuoy('42003')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="107,55,115,63" href="" alt="" onClick="gotoBuoy('42036','US_keywest') ; return false" onMouseOver="showbuoy('42036')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="249,286,257,294" href="" alt="" onClick="gotoBuoy('42080','US_keywest') ; return false" onMouseOver="showbuoy('42080')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="122,121,130,129" href="" alt="" onClick="gotoBuoy('42099','US_keywest') ; return false" onMouseOver="showbuoy('42099')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="260,308,268,316" href="" alt="" onClick="gotoBuoy('EYW01','US_keywest') ; return false" onMouseOver="showbuoy('EYW01')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="232,252,240,260" href="" alt="" onClick="gotoBuoy('EYW02','US_keywest') ; return false" onMouseOver="showbuoy('EYW02')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="347,55,355,63" href="" alt="" onClick="gotoBuoy('41009','US_keywest') ; return false" onMouseOver="showbuoy('41009')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="441,30,449,38" href="" alt="" onClick="gotoBuoy('41010','US_keywest') ; return false" onMouseOver="showbuoy('41010')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="327,61,335,69" href="" alt="" onClick="gotoBuoy('41113','US_keywest') ; return false" onMouseOver="showbuoy('41113')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="344,109,352,117" href="" alt="" onClick="gotoBuoy('41114','US_keywest') ; return false" onMouseOver="showbuoy('41114')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="384,126,392,134" href="" alt="" onClick="gotoBuoy('MLB01','US_keywest') ; return false" onMouseOver="showbuoy('MLB01')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="384,182,392,190" href="" alt="" onClick="gotoBuoy('MIA01','US_keywest') ; return false" onMouseOver="showbuoy('MIA01')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="370,252,378,260" href="" alt="" onClick="gotoBuoy('MIA02','US_keywest') ; return false" onMouseOver="showbuoy('MIA02')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="356,308,364,316" href="" alt="" onClick="gotoBuoy('TPC25','US_keywest') ; return false" onMouseOver="showbuoy('TPC25')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="25,365,33,373" href="" alt="" onClick="gotoBuoy('TPC26','US_keywest') ; return false" onMouseOver="showbuoy('TPC26')" onMouseOut="showbuoy('')">
+</map>

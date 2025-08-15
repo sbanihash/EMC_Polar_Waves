@@ -1,0 +1,5 @@
+<MAP NAME="buoys">
+<AREA SHAPE="rect" COORDS=" 501, 116, 511, 126" HREF="" alt="" onClick="gotoBuoy('PALAU','nww3')" onMouseOver="showbuoy('PALAU')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 508, 114, 518, 124" HREF="" alt="" onClick="gotoBuoy('YAP','nww3')" onMouseOver="showbuoy('YAP')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  74, 288,  84, 298" HREF="" alt="" onClick="gotoBuoy('AGULHAS_FA','nww3')" onMouseOver="showbuoy('AGULHAS_FA')" onMouseOut="showbuoy('')">
+</MAP>

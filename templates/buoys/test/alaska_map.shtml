@@ -1,0 +1,37 @@
+<map name="buoys">
+<area shape="rect" COORDS="430,319,438,327" href="" alt="" onClick="gotoBuoy('46001','alaska') ; return false" onMouseOver="showbuoy('46001')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="570,462,578,470" href="" alt="" onClick="gotoBuoy('46002','alaska') ; return false" onMouseOver="showbuoy('46002')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="524,375,532,383" href="" alt="" onClick="gotoBuoy('46004','alaska') ; return false" onMouseOver="showbuoy('46004')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="564,426,572,434" href="" alt="" onClick="gotoBuoy('46005','alaska') ; return false" onMouseOver="showbuoy('46005')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="513,481,521,489" href="" alt="" onClick="gotoBuoy('46006','alaska') ; return false" onMouseOver="showbuoy('46006')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="273,323,281,331" href="" alt="" onClick="gotoBuoy('46020','alaska') ; return false" onMouseOver="showbuoy('46020')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="198,311,206,319" href="" alt="" onClick="gotoBuoy('46035','alaska') ; return false" onMouseOver="showbuoy('46035')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="541,402,549,410" href="" alt="" onClick="gotoBuoy('46036','alaska') ; return false" onMouseOver="showbuoy('46036')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="440,278,448,286" href="" alt="" onClick="gotoBuoy('46061','alaska') ; return false" onMouseOver="showbuoy('46061')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="376,357,384,365" href="" alt="" onClick="gotoBuoy('46066','alaska') ; return false" onMouseOver="showbuoy('46066')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="142,333,150,341" href="" alt="" onClick="gotoBuoy('46070','alaska') ; return false" onMouseOver="showbuoy('46070')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="172,373,180,381" href="" alt="" onClick="gotoBuoy('46071','alaska') ; return false" onMouseOver="showbuoy('46071')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="244,361,252,369" href="" alt="" onClick="gotoBuoy('46072','alaska') ; return false" onMouseOver="showbuoy('46072')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="242,333,250,341" href="" alt="" onClick="gotoBuoy('46073','alaska') ; return false" onMouseOver="showbuoy('46073')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="330,344,338,352" href="" alt="" onClick="gotoBuoy('46075','alaska') ; return false" onMouseOver="showbuoy('46075')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="431,286,439,294" href="" alt="" onClick="gotoBuoy('46076','alaska') ; return false" onMouseOver="showbuoy('46076')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="396,322,404,330" href="" alt="" onClick="gotoBuoy('46078','alaska') ; return false" onMouseOver="showbuoy('46078')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="415,301,423,309" href="" alt="" onClick="gotoBuoy('46080','alaska') ; return false" onMouseOver="showbuoy('46080')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="467,284,475,292" href="" alt="" onClick="gotoBuoy('46082','alaska') ; return false" onMouseOver="showbuoy('46082')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="509,299,517,307" href="" alt="" onClick="gotoBuoy('46083','alaska') ; return false" onMouseOver="showbuoy('46083')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="524,316,532,324" href="" alt="" onClick="gotoBuoy('46084','alaska') ; return false" onMouseOver="showbuoy('46084')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="473,313,481,321" href="" alt="" onClick="gotoBuoy('46085','alaska') ; return false" onMouseOver="showbuoy('46085')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="398,283,406,291" href="" alt="" onClick="gotoBuoy('46106','alaska') ; return false" onMouseOver="showbuoy('46106')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="562,366,570,374" href="" alt="" onClick="gotoBuoy('46147','alaska') ; return false" onMouseOver="showbuoy('46147')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="502,344,510,352" href="" alt="" onClick="gotoBuoy('46184','alaska') ; return false" onMouseOver="showbuoy('46184')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="289,175,297,183" href="" alt="" onClick="gotoBuoy('48012','alaska') ; return false" onMouseOver="showbuoy('48012')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="262,228,270,236" href="" alt="" onClick="gotoBuoy('48114','alaska') ; return false" onMouseOver="showbuoy('48114')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="446,172,454,180" href="" alt="" onClick="gotoBuoy('48211','alaska') ; return false" onMouseOver="showbuoy('48211')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="413,166,421,174" href="" alt="" onClick="gotoBuoy('48212','alaska') ; return false" onMouseOver="showbuoy('48212')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="304,160,312,168" href="" alt="" onClick="gotoBuoy('48213','alaska') ; return false" onMouseOver="showbuoy('48213')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="295,166,303,174" href="" alt="" onClick="gotoBuoy('48214','alaska') ; return false" onMouseOver="showbuoy('48214')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="274,157,282,165" href="" alt="" onClick="gotoBuoy('48216','alaska') ; return false" onMouseOver="showbuoy('48216')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="336,155,344,163" href="" alt="" onClick="gotoBuoy('Alaska_NS1','alaska') ; return false" onMouseOver="showbuoy('Alaska_NS1')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="415,155,423,163" href="" alt="" onClick="gotoBuoy('Alaska_NS2','alaska') ; return false" onMouseOver="showbuoy('Alaska_NS2')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="493,155,501,163" href="" alt="" onClick="gotoBuoy('Alaska_NS3','alaska') ; return false" onMouseOver="showbuoy('Alaska_NS3')" onMouseOut="showbuoy('')">
+</map>

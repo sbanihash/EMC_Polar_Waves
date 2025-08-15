@@ -1,0 +1,93 @@
+<!--#if expr="$QUERY_STRING != /text/" -->
+<div class="tiny" style="width: 500; white-space: nowrap; text-align: center; font-weight: bold;">
+<!--#else -->
+<div class="tiny" style="white-space: nowrap; text-align: center">
+<!--#endif -->
+<!--#if expr="$DOCUMENT_URI != /\/ofs\/index.shtml/" -->
+  <a href="index.shtml?<!--#echo var="ISTEXT" -->">
+  Home</a>
+  <!--#else -->
+  <span style="background-color: red; color: yellow">
+  Home</span>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="($REMOTE_ADDR = /140.90.192./) ||
+              ($REMOTE_ADDR = /140.90.98./) ||
+              ($REMOTE_ADDR = /140.90.193./) ||
+              ($REMOTE_ADDR = /140.90.194./) ||
+              ($REMOTE_ADDR = /140.90.108./)" -->
+
+<!--#if expr="$DOCUMENT_URI = /\/ofs\/hurr\/index.shtml/ " -->
+  <span style="background-color: red; color: yellow">
+  Hurr</span>
+  <!--#else -->
+  <a href="hurr/?<!--#echo var="ISTEXT" -->">
+  Hurr</a>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_URI = /\/ofs\/eval\/index.shtml/ " -->
+  <span style="background-color: red; color: yellow">
+  Eval</span>
+  <!--#else -->
+  <a href="eval/index.shtml?small+aofs<!--#echo var="ISTEXT" -->">
+  Eval</a>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_URI != /\/ofs\/assim/" -->
+  <a href="assim/assim_sst.shtml?<!--#echo var="ISTEXT" -->">
+  Assim</a>
+  <!--#else -->
+  <span style="background-color: red; color: yellow">
+  Assim</span>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_URI = /\/ofs\/monitor/ || $DOCUMENT_URI = /\/ofs\/para/ " -->
+  <span style="background-color: red; color: yellow">
+  Monitor</span>
+  <!--#else -->
+  <a href="monitor?<!--#echo var="ISTEXT" -->">
+  Monitor</a>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_URI = /\/ofs\/woce\/index.shtml/ " -->
+  <span style="background-color: red; color: yellow">
+  WOCE</span>
+  <!--#else -->
+  <a href="woce?<!--#echo var="ISTEXT" -->">
+  WOCE</a>
+<!--#endif -->
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_NAME != /products.shtml/" -->
+  <a href="products.shtml?<!--#echo var="ISTEXT" -->">
+  Graphics</a>
+  <!--#else -->
+  <span style="background-color: red; color: yellow">
+  Graphics</span>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_NAME != /products3d.shtml/" -->
+  <a href="products3d.shtml?<!--#echo var="ISTEXT" -->">
+  3-D</a>
+  <!--#else -->
+  <span style="background-color: red; color: yellow">
+  3-D</span>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_NAME != /download.shtml/" -->
+  <a href="download.shtml?<!--#echo var="ISTEXT" -->">
+  Model Data</a>
+  <!--#else -->
+  <span style="background-color: red; color: yellow">
+  Model Data</span>
+<!--#endif -->
+<img src="images/spacer.gif" width="1" height="1">
+<!--#if expr="$DOCUMENT_NAME != /about_aofs.shtml/" -->
+  <a href="about_aofs.shtml?<!--#echo var="ISTEXT" -->">
+  About the Model</a>
+  <!--#else -->
+  <span style="background-color: red; color: yellow">
+  About the Model</span>
+<!--#endif -->
+</div>
+<hr noshade width="500" align="left">

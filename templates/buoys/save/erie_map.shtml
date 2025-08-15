@@ -1,0 +1,14 @@
+<map name="buoys">
+<area shape="rect" COORDS="127,24,135,32" href="" alt="" onClick="gotoBuoy('45008','erie') ; return false" title="45008" ">
+<area shape="rect" COORDS="162,110,170,118" href="" alt="" onClick="gotoBuoy('45149','erie') ; return false" title="45149" ">
+<area shape="rect" COORDS="413,142,421,150" href="" alt="" onClick="gotoBuoy('45139','erie') ; return false" title="45139" ">
+<area shape="rect" COORDS="420,146,428,154" href="" alt="" onClick="gotoBuoy('45159','erie') ; return false" title="45159" ">
+<area shape="rect" COORDS="404,124,412,132" href="" alt="" onClick="gotoBuoy('45160','erie') ; return false" title="45160" ">
+<area shape="rect" COORDS="432,202,440,210" href="" alt="" onClick="gotoBuoy('45142','erie') ; return false" title="45142" ">
+<area shape="rect" COORDS="432,230,440,238" href="" alt="" onClick="gotoBuoy('DBLN6','erie') ; return false" title="DBLN6" ">
+<area shape="rect" COORDS="246,232,254,240" href="" alt="" onClick="gotoBuoy('45132','erie') ; return false" title="45132" ">
+<area shape="rect" COORDS="129,323,137,331" href="" alt="" onClick="gotoBuoy('45005','erie') ; return false" title="45005" ">
+<area shape="rect" COORDS="86,328,94,336" href="" alt="" onClick="gotoBuoy('SBIO1','erie') ; return false" title="SBIO1" ">
+<area shape="rect" COORDS="102,237,110,245" href="" alt="" onClick="gotoBuoy('45147','erie') ; return false" title="45147" ">
+<area shape="rect" COORDS="94,232,102,240" href="" alt="" onClick="gotoBuoy('LSCM4','erie') ; return false" title="LSCM4" ">
+</map>

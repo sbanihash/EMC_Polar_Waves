@@ -1,0 +1,34 @@
+<MAP NAME="buoys">
+<AREA SHAPE="rect" COORDS="  69, 217,  79, 227" HREF="" alt="" onClick="gotoBuoy('42001','nww3') ; return false" onMouseOver="showbuoy('42001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  53, 220,  63, 230" HREF="" alt="" onClick="gotoBuoy('42002','nww3') ; return false" onMouseOver="showbuoy('42002')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  82, 217,  92, 227" HREF="" alt="" onClick="gotoBuoy('42003','nww3') ; return false" onMouseOver="showbuoy('42003')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 126, 188, 136, 198" HREF="" alt="" onClick="gotoBuoy('41001','nww3') ; return false" onMouseOver="showbuoy('41001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 118, 196, 128, 206" HREF="" alt="" onClick="gotoBuoy('41002','nww3') ; return false" onMouseOver="showbuoy('41002')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 133, 175, 143, 185" HREF="" alt="" onClick="gotoBuoy('44004','nww3') ; return false" onMouseOver="showbuoy('44004')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 137, 168, 147, 178" HREF="" alt="" onClick="gotoBuoy('44008','nww3') ; return false" onMouseOver="showbuoy('44008')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 146, 166, 156, 176" HREF="" alt="" onClick="gotoBuoy('44011','nww3') ; return false" onMouseOver="showbuoy('44011')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 190, 156, 200, 166" HREF="" alt="" onClick="gotoBuoy('44138','nww3') ; return false" onMouseOver="showbuoy('44138')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 175, 160, 185, 170" HREF="" alt="" onClick="gotoBuoy('44141','nww3') ; return false" onMouseOver="showbuoy('44141')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 154, 162, 164, 172" HREF="" alt="" onClick="gotoBuoy('44142','nww3') ; return false" onMouseOver="showbuoy('44142')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 354, 153, 364, 163" HREF="" alt="" onClick="gotoBuoy('62001','nww3') ; return false" onMouseOver="showbuoy('62001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 329, 141, 339, 151" HREF="" alt="" onClick="gotoBuoy('62029','nww3') ; return false" onMouseOver="showbuoy('62029')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 326, 133, 336, 143" HREF="" alt="" onClick="gotoBuoy('62081','nww3') ; return false" onMouseOver="showbuoy('62081')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 328, 118, 338, 128" HREF="" alt="" onClick="gotoBuoy('62105','nww3') ; return false" onMouseOver="showbuoy('62105')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 337, 113, 347, 123" HREF="" alt="" onClick="gotoBuoy('62106','nww3') ; return false" onMouseOver="showbuoy('62106')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 305, 125, 315, 135" HREF="" alt="" onClick="gotoBuoy('62108','nww3') ; return false" onMouseOver="showbuoy('62108')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 342, 145, 352, 155" HREF="" alt="" onClick="gotoBuoy('62163','nww3') ; return false" onMouseOver="showbuoy('62163')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 376, 105, 386, 115" HREF="" alt="" onClick="gotoBuoy('63111','nww3') ; return false" onMouseOver="showbuoy('63111')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 331, 106, 341, 116" HREF="" alt="" onClick="gotoBuoy('64045','nww3') ; return false" onMouseOver="showbuoy('64045')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 207, 412, 217, 422" HREF="" alt="" onClick="gotoBuoy('RIO_GRANDE','nww3') ; return false" onMouseOver="showbuoy('RIO_GRANDE')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 215, 399, 225, 409" HREF="" alt="" onClick="gotoBuoy('FLORIPA','nww3') ; return false" onMouseOver="showbuoy('FLORIPA')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 223, 389, 233, 399" HREF="" alt="" onClick="gotoBuoy('SANTOS','nww3') ; return false" onMouseOver="showbuoy('SANTOS')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 240, 375, 250, 385" HREF="" alt="" onClick="gotoBuoy('CAMPOS','nww3') ; return false" onMouseOver="showbuoy('CAMPOS')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 249, 348, 259, 358" HREF="" alt="" onClick="gotoBuoy('SALVADOR','nww3') ; return false" onMouseOver="showbuoy('SALVADOR')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 261, 331, 271, 341" HREF="" alt="" onClick="gotoBuoy('RECIFE','nww3') ; return false" onMouseOver="showbuoy('RECIFE')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 249, 315, 259, 325" HREF="" alt="" onClick="gotoBuoy('FORTALEZA','nww3') ; return false" onMouseOver="showbuoy('FORTALEZA')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 211, 294, 221, 304" HREF="" alt="" onClick="gotoBuoy('AMAZON','nww3') ; return false" onMouseOver="showbuoy('AMAZON')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 270, 301, 280, 311" HREF="" alt="" onClick="gotoBuoy('PETER_PAUL','nww3') ; return false" onMouseOver="showbuoy('PETER_PAUL')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 445, 422, 455, 432" HREF="" alt="" onClick="gotoBuoy('AGULHAS_FA','nww3') ; return false" onMouseOver="showbuoy('AGULHAS_FA')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  85, 355,  95, 365" HREF="" alt="" onClick="gotoBuoy('TPC01','nww3') ; return false" onMouseOver="showbuoy('TPC01')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  55, 304,  65, 314" HREF="" alt="" onClick="gotoBuoy('TPC04','nww3') ; return false" onMouseOver="showbuoy('TPC04')" onMouseOut="showbuoy('')">
+</MAP>

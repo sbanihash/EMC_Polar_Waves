@@ -1,0 +1,61 @@
+
+<!-- standard menu bottom -->
+
+    <tr>
+    <td class="white" id="menuitem" colspan="2"><a name="allproducts"></a>
+      <span class="yellow">All Products</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/">Operational</a><br>
+    </td>
+    </tr>
+    
+    <tr>
+    <td class="white" id="menuitem" colspan="2"><a name="mmabinfo"></a>
+      <span class="yellow">Meetings</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/waves/conferences">Conferences</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/waves/workshops">Workshops</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" id="menuitem" colspan="2"><a name="mmabinfo"></a>
+      <span class="yellow">About Us</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/mmab/tpbs/">Tech Procedure<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bulletins</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/mmab/notes.shtml">Publications</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" id="menuitem" colspan="2">
+      <a href="mailto:ncep.list.waves@noaa.gov?subject=WW3 Website Comments"><span class="yellow">Contact Us</span></a>      
+      <br><br>
+    </td>
+    </tr>
+    
+    <tr>
+    <td class="white" id="menuitem" colspan="2">
+<!-- Facebook Badge START -->
+<a href="//www.facebook.com/pages/NOAA-NWS-Environmental-Modeling-Center/151823641556512"
+target="_TOP" title="NOAA NWS Environmental Modeling Center">
+&nbsp;&nbsp;&nbsp;Visit EMC on<br clear="left">
+<img src="/ofs/images/fb_icon.png" width="120" height="26" border="0"
+alt="Facebook icon"></a>
+Facebook Badge END -->    
+    </td>
+    </tr>
+    
+    <tr>
+    <td class="white" id="menuitem" colspan="2">
+    <a href="//www.usa.gov/">
+    <img src="images/usagov_logo_color_110w.gif" 
+    alt="USA.gov is the U.S. government's official web portal to all federal,
+    state and local government web resources and services."
+    width="110" height="30" border="0">
+    </a>
+    </td>
+    </tr>                
+    
+  </tbody>
+</table>
+
+<!-- End of standard menu bottom -->
+

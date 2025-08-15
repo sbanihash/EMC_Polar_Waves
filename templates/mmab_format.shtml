@@ -1,0 +1,270 @@
+<!--#set var="FORMATLOAD" value="TRUE" -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+  <base href="//polar.ncep.noaa.gov/waves/">
+<!--#if expr="$TITLE = mainpage" -->
+  <title>Environmental Modeling Center</title>
+  <meta name="DC.title" content="Environmental Modeling Center / Marine Modeling home page.">
+  <meta name="DC.description" content=" home page.">
+<!--#else -->
+  <!--#if expr="$TITLE = wwmainpage" -->
+    <title>WAVEWATCH III&reg; Model</title>
+    <meta name="DC.title" content="WAVEWATCH III&reg; Model">
+    <meta name="DC.description" content="WAVEWATCH III&reg; Model">
+  <!--#elif expr="$TITLE = hindcast" -->
+    <title>NOAA WAVEWATCH III&reg; CFSR Reanalysis Hindcasts</title>
+    <meta name="DC.title" content="NOAA WAVEWATCH III&reg; CFSR Reanalysis Hindcasts">
+    <meta name="DC.description" content="NOAA WAVEWATCH III&reg; CFSR Reanalysis Hindcasts">
+  <!--#else -->
+    <title><!--#echo var="TITLE" --></title>
+    <meta name="DC.title" content="<!--#echo var="TITLE" -->">
+    <meta name="DC.description" content="<!--#echo var="TITLE" -->">
+  <!--#endif -->
+<!--#endif -->
+  <meta name="DC.creator" content="NOAA's National Weather Service">
+  <meta name="DC.date.created" scheme="ISO8601" content="2005-10-01">
+  <meta name="DC.date.reviewed" scheme="ISO8601" content="2005-12-09">
+  <meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+  <meta name="DC.publisher" content="NOAA National Centers for Environmental Prediction ">
+  <meta name="DC.contributor" content="Environmental Modeling Center ">
+  <meta name="DC.rights" content="//www.weather.gov/disclaimer.php">
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <!--#if expr="$EXPIRE != $NULL" -->
+  <meta http-equiv="Expires" content="<!--#echo var="EXPIRE" -->">  
+  <!--#endif -->
+  <!--#if expr="($HTTP_USER_AGENT = /MSIE/) || ($HTTP_USER_AGENT = /Mozilla\/4/) || ($HTTP_USER_AGENT = /Netscape\/7/)" -->
+    <!--#set var="CLIENT" value="ie" -->
+    <link href="templates/main_ie.css" type="text/css" rel="stylesheet">
+  <!--#else -->
+    <!--#set var="CLIENT" value="moz" -->
+    <link href="templates/main_moz.css" type="text/css" rel="stylesheet">
+  <!--#endif -->  
+  <link rel="stylesheet" type="text/css" href="/jQuery/jquery-ui-1.13.2/jquery-ui.css">
+  <script type="text/javascript" src="/jQuery/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="/jQuery/jquery-ui-1.13.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+  <script type="text/javascript" src="/js/dialog_ui.js"></script>
+  <script type="text/javascript" src="/js/jquery.ui.dialog-clickoutside.js"></script>
+  <script type="text/javascript" src="/js/nwsexit.js"></script>
+  <!-- DAP --script-->
+<script src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NOAA" id="_fed_an_ua_tag"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VVHZJ7M0X"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-2VVHZJ7M0X');
+  </script>
+
+</head>
+<!--#if expr="$DOCUMENT_URI = /viewer.shtml/" -->
+<body leftMargin="0" background="images/background.gif" 
+topMargin="0" rightMargin="0" marginheight="0" marginwidth="0"
+onLoad="if (self != top) top.location = self.location; animation()">
+<!--#else -->
+<body leftMargin="0" background="images/background.gif" 
+topMargin="0" rightMargin="0" marginheight="0" marginwidth="0"
+onLoad="if (self != top) top.location = self.location;">
+<!--#endif -->
+
+<!--#include virtual="mmab_header.shtml" -->
+
+<table cellSpacing="0" cellPadding="1" width="670" border="0">
+  <tbody>
+  <tr valign="top" align="left">
+    <td width="130"><br>
+    
+    <!--#include virtual="mmab_std_menu_top.shtml" -->
+
+    <tr>
+    <td class="white" id="menuitem" colspan="2" align="center">      
+      <a href="<!--#echo var="REQUEST_URI" -->?text">Text-only version</a>
+      <br>
+    </td>
+    </tr>
+    
+    <!--#if expr="$USE_MENU = $NULL" -->
+      <!--#include virtual="mmab_std_menu_bottom.shtml" -->
+    <!--#else -->
+      <!--#include virtual="menus/${USE_MENU}.shtml" -->
+      <!--#include virtual="mmab_std_menu_bottom.shtml" -->
+    <!--#endif -->
+    
+    </td>
+    <td valign="top" align="center" width="540"><a name="contents"></a><br>
+
+<!-- main body -->
+
+<!-- breadcrumb section -->
+
+<table cellspacing="0" cellpadding="0" width="525" border="0">
+  <tbody>
+  <tr>
+  <td>
+
+    <table border="0" cellspacing="0" cellpadding="0" width="500">
+      <tbody>
+      <tr>
+      <td>
+
+      <!-- start of content -->
+      
+    <table border="0" cellspacing="0" cellpadding="0" width="500">
+    <tr align="center">
+    <td>
+      <a href="/">
+      <!--#if expr="$DOCUMENT_URI = /\/wavewatch\//" -->
+        <img src="/waves/images/wwnonoaa2.jpg" width="500" height="70" alt="Wave Watch III logo" border="0">
+      <!--#else -->
+        <img src="/waves/images/wwmain2.jpg" width="500" height="70" alt="NOAA Wave Watch III logo" border="0">
+      <!--#endif -->
+      </a>      
+      <a href="/">Click here for the MMAB home page</a>
+      <!--#if expr="($TITLE != mainpage) && ($TITLE != wwmainpage) && ($TITLE != hindcast)" -->
+        <h2 align="center" style="width: 500;"><!--#echo var="TITLE" --></h2>
+      <!--#else -->
+        <!--#if expr="($TITLE = mainpage)" -->        
+          <h2 align="center">EMC Operational Wave Models</h2>
+        <!--#elif expr="($TITLE = wwmainpage)" -->
+          <h2 align="center">WAVEWATCH III<sup>&reg;</sup> Model</h2>
+        <!--#elif expr="($TITLE = hindcast)" -->
+          <h2 align="center">NOAA WAVEWATCH III<sup>&reg;</sup> CFSR Reanalysis Hindcasts</h2>
+        <!--#endif -->
+      <!--#endif -->
+
+      </td>
+      </tr>
+      </table>
+      
+      <!--
+      <div class="reg" style="border: 2px solid red; padding: 4px; text-align: justify;">
+      <h3 align="center">IMPORTANT NOTICE REGARDING THE WAVEWATCH III<sup>&reg</sup> MULTI-1 WEBSITE</h3>
+      The EMC WAVEWATCH III<sup>&reg</sup> global wave model Multi-1 was
+      decommissioned in NCEP operations on March 22, 2021.  It has been
+      replaced by a new configuration of the WAVEWATCH III global wave
+      model, called GFS-Wave, and coupled to the 
+      <a style="color: blue" href="https://www.emc.ncep.noaa.gov/users/meg/gfsv16">
+      Global Forecast System (GFSv16)</a>, as part of the 
+      <a style="color: blue" href="https://vlab.ncep.noaa.gov/web/environmental-modeling-center/unified-forecast-system">
+      Unified Forecast System.</a>      
+      <h3 style="font-style: italic; text-align: center;">THIS WEBSITE IS NOT DISPLAYING MULTI-1 OR GFS-WAVE GRAPHICS</h3>
+      <center>
+      It is being maintained for archival and verification purposes only.
+      </center>
+      <p class="hdr" style="text-align: center">
+      <a style="color: blue" href="/waves/Waves_Changes.pdf">
+      Here are the details (PDF)</a> on how this will affect users of this site.
+      </p>
+      <p class="reg">
+      Output of the new GFS-Wave model is available on NOMADS and Production FTP
+      <ul>
+      <li><a href="https://nomads.ncep.noaa.gov/dods/wave/gfswave">NOMADS OpenDAP</a></li>
+      <li><a href="https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod">NOMADS File Download*</a></li>
+      <li><a href="ftp://ftpprd.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/">Production FTP File Download*</a></li>
+      </ul>      
+      *under gfs.YYYYMMDD/CC/wave/gridded and gfs.YYYYMMDD/CC/wave/station
+      </p>
+      <p class="reg">
+      Graphics of the GFS-Wave model output will become available some time in April on the 
+      <a href="https://mag.ncep.noaa.gov/model-guidance-model-area.php#">
+      Model Analysis and Guidance (MAG)</a> site.  Note
+      that the current WW3 link on that page is to a preliminary set of GFS-Wave
+      graphics. New graphics with more options will be added with the coming
+      update in May, and will be under GFS-Wave instead of WW3.
+      </p>
+      
+      
+      </div>
+      -->
+      
+      <!--
+      <div class="reg" style="border: 2px solid red; padding: 4px; text-align: justify;">
+      <b>NOTICE:</b>            
+      The Global Wave Ensemble System (GWES) was discontinued on 23
+      Sep 2020 and has been replaced by an improved GEFS-Waves,
+      consisting of a one-way nesting of the WAVEWATCH III system with
+      the recently upgraded GFS Ensemble Forecast System. The NOAA
+      press release on the upgrade is 
+      <a style="color: blue" href="https://www.noaa.gov/media-release/noaa-upgrades-global-ensemble-forecast-system">
+      here</a>, and information on GEFS is available 
+      <a style="color: blue" href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php">
+      here</a>.
+      <br><br>
+      The GEFSv12 Service Change Notice (issued 8/20/2020, PDF) is 
+      <a style="color: blue" href="https://www.weather.gov/media/notification/SCN_20-75_GEFSv12_Changes.pdf">
+      here</a>, and you can find information on the evaluation of the GEFS-Waves portion
+      of the GEFS system in the 
+      <a style="color: blue" href="https://www.emc.ncep.noaa.gov/users/meg/home/">      
+      Model Evaluation Group (MEG)</a> Summary page on the
+      GEFSv12 upgrade 
+      <a style="color: blue" href="https://www.emc.ncep.noaa.gov/users/meg/gefsv12/">
+      here</a>.
+      <br><br>
+      The model data is available four times a day (0, 6, 12, 18)Z from:
+      <ul>
+      <li><a style="color: blue" href="ftp://ftpprd.ncep.noaa.gov/pub/data/nccf/com/gens/prod/">
+      Production FTP</a> (gefs.YYYYMMDD -- cycle-- waves)</li>
+      <li><a style="color: blue" href="https://nomads.ncep.noaa.gov/">
+      NOMADS</a> (Ocean Models-- GFS Ensemble Wave -- (grib filter or https file download).</li>
+      </ul>
+      Details on the products can be found 
+      <a style="color: blue" href="https://www.nco.ncep.noaa.gov/pmb/products/gens/">  
+      here</a> (scroll down to GEFS - Wave - Global).
+      </div>
+      -->
+
+
+      <!--#include virtual="$DOCUMENT_URI" -->
+
+      <!-- end of content -->
+      </td>
+      </tr>
+      </tbody>
+    </table>
+    <br>
+    <table cellspacing="0" cellpadding="0" border="0" width="500"
+    style="border-top: 1px solid black; border-bottom: 1px solid black;
+    padding-top: 3px; padding-bottom: 3px;">
+      <tbody>
+        <tr align="center">
+          <td>EMC/MMAB Information Topics:<br>
+	    <a href="#ww3products">WAVEWATCH III<sup>&reg;</sup> Products</a>,
+	    <a href="#allproducts">All Products</a>,
+	    <a href="#mmabinfo">About Us</a>,
+	    <a href="mailto:ncep.list.waves@noaa.gov?subject=WW3 Website Comments">Contact Us</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table border="0" cellSpacing="0" cellPadding="0" width="504"
+    style="padding-top: 3px; padding-bottom: 3px;">
+        <tbody>
+        <!--#include virtual="mmab_footer.shtml" -->
+        <tr valign="top">
+          <td class="gray" colspan="3">
+            Page last modified: <!--#flastmod virtual="$DOCUMENT_URI" -->
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+    </tr>
+    </td>
+    <td>
+</td>
+</tr>
+</tbody>
+</table>
+    
+<!-- End of main body -->
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

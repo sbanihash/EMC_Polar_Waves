@@ -1,0 +1,108 @@
+1) Use Python and pygrib 
+
+import pygrib
+import numpy as np
+from mpl_toolkits.basemap import Basemap
+import matplotlib.pyplot as plt
+
+# open the grib file and pick off the second record
+# (the values for the first record are all zeroes)
+gribs=pygrib.open('multi_1.at_10m.hs.201809.grb2')
+grb=gribs[2]
+data=grb.values
+
+# extract the grib lat/lon values
+lat, lon = grb.latlons()
+
+# now plot up some data on a map.  This will create a PNG file 
+# called at_10m_hs.png in your local directory.
+
+fig=plt.figure()
+m=Basemap(projection='mill',resolution='l',
+          llcrnrlon=lon.min(), urcrnrlon=lon.max(), 
+          llcrnrlat=lat.min(),urcrnrlat=lat.max())
+m.pcolormesh(lon,lat,data,shading='flat')
+m.drawcoastlines()
+m.fillcontinents()
+m.drawparallels(np.arange(-90,91,5),labels=[1,0,0,0])
+m.drawmeridians(np.arange(-180,180,15),labels=[0,0,0,1])
+m.colorbar()
+plt.title(grb.parameterName)
+plt.savefig('at_10m_hs.png')
+
+2) Use wgrib2 to convert grib2 file to NetCDF:
+  
+  wgrib2 multi_1.at_10m.hs.201809.grb2 -netcdf hs.nc
+
+Then use Python:
+    
+from netCDF4 import Dataset, num2date
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.basemap import Basemap
+
+filename='hs.nc'
+nco=Dataset(filename)
+nco.variables.keys()   # prints a list of the variables in the hs.nc file
+
+# choose a variable, in this case significant wave height.  The general indexing syntax is like this:
+# hs=nco['HTSGW_surface'][times,rows,cols]
+
+hs=nco['HTSGW_surface']
+hs
+# 
+#<type 'netCDF4._netCDF4.Variable'>
+#float32 HTSGW_surface(time, latitude, longitude)
+#_FillValue: 9.999e+20
+#short_name: HTSGW_surface
+#long_name: Significant Height of Combined Wind Waves and Swell
+#level: surface
+#units: m
+#unlimited dimensions: time
+#current shape = (241, 331, 301)
+#filling off
+
+lon=nco['longitude'][:]  # get all of them
+lat=nco['latitude'][:]
+lon.__class__
+# numpy.ndarray
+size(lon)
+# 301
+
+loni=((lon - 180) % 360) - 180  # convert to -180:180
+## find the indices for the area around T&T
+(xidx,)=np.where((loni>=-62.5) & (loni<=-59.5))
+(yidx,)=np.where((lat>=9.0) & (lat<=12.0))
+
+# to see the dates:
+time=nco['time']
+num2date(time[0],units=time.units)    # first time
+num2date(time[-1],units=time.units)   # last time 
+
+## Example of plotting a subfield
+
+first_hs=nco['HTSGW_surface'][0,yidx,xidx]   # get only the first time instance for the T&T area
+plt.figure()
+
+# First off, define a Basemap class:
+# For the whole field:
+# m=Basemap(projection='mill',llcrnrlon=lon.min(),urcrnrlon=lon.max(),llcrnrlat=lat.min(),urcrnrlat=lat.max(),resolution='i')
+
+# For T&T area:
+m=Basemap(projection='mill',llcrnrlon=-62.5,urcrnrlon=-59.5,llcrnrlat=9.0,urcrnrlat=12.0,resolution='l')
+x,y=m(loni[xidx],lat[yidx])  # this maps lat/lon vectors into the projection coordinates
+
+# now plot it:
+
+m.pcolormesh(x,y,first_hs)
+m.drawcoastlines()
+m.drawparallels(arange(10,12,1),labels=(1,0,0,0))
+m.drawmeridians(arange(-62.5,-59.5,1),labels=(0,0,0,1))
+m.drawcoastlines(color='w')
+m.colorbar()   # add a colorbar
+
+# add a title and save the figure:
+
+plt.title('NW Atlantic 10_min significant wave height')
+plt.savefig('at_10m_hs.png')
+

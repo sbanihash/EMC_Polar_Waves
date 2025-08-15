@@ -1,0 +1,47 @@
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr align="center" valign = "middle">
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/index.shtml/" -->
+  Home
+  <!--#else -->
+  <a href="/waves/index2.shtml?<!--#echo var="ISTEXT" -->">
+  Home</a>
+<!--#endif -->
+</td><td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/viewer.shtml/ " -->
+  Product<br>Viewer
+  <!--#else -->
+  <a href="/waves/viewer.shtml?<!--#echo var="ISTEXT" -->">
+  Product<br>Viewer</a>
+<!--#endif -->
+</td>
+</td><td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/product_table.shtml/ " -->
+  Product<br>Table
+  <!--#else -->
+  <a href="/waves/product_table.shtml?<!--#echo var="ISTEXT" -->">
+  Product<br>Table</a>
+<!--#endif -->
+</td>
+<td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/products.shtml/ " --> 
+  Product<br>Descriptions
+  <!--#else -->
+  <a href="/waves/products.shtml?<!--#echo var="ISTEXT" -->">
+  Product<br>Descriptions</a>
+<!--#endif -->
+</td><td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px; border-right-width: 0px">
+<!--#if expr="$DOCUMENT_URI = /\/waves\/implementations.shtml/ " -->
+  Model<br>Description
+  <!--#else -->
+  <a href="/waves/implementations.shtml?<!--#echo var="ISTEXT" -->">
+  Model<br>Description</a>
+<!--#endif -->
+</td><td class="tiny" style="font-weight: bold; border-style: solid; border-width: 1px;">
+<!--#if expr="$DOCUMENT_URI = /download.shtml/" -->
+  Model Data<br>Access
+  <!--#else -->
+  <a href="/waves/download.shtml?<!--#echo var="ISTEXT" -->">
+  Model Data<br>Access</a>
+<!--#endif -->
+</td></tr></table>

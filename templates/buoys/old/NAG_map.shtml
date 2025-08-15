@@ -1,0 +1,27 @@
+<MAP NAME="buoys">
+<AREA SHAPE="rect" COORDS="  71, 243,  81, 253" HREF="" alt="" onClick="gotoBuoy('42001','nww3') ; return false" onMouseOver="showbuoy('42001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  52, 246,  62, 256" HREF="" alt="" onClick="gotoBuoy('42002','nww3') ; return false" onMouseOver="showbuoy('42002')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  86, 243,  96, 253" HREF="" alt="" onClick="gotoBuoy('42003','nww3') ; return false" onMouseOver="showbuoy('42003')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 140, 209, 150, 219" HREF="" alt="" onClick="gotoBuoy('41001','nww3') ; return false" onMouseOver="showbuoy('41001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 129, 218, 139, 228" HREF="" alt="" onClick="gotoBuoy('41002','nww3') ; return false" onMouseOver="showbuoy('41002')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 148, 194, 158, 204" HREF="" alt="" onClick="gotoBuoy('44004','nww3') ; return false" onMouseOver="showbuoy('44004')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 153, 186, 163, 196" HREF="" alt="" onClick="gotoBuoy('44008','nww3') ; return false" onMouseOver="showbuoy('44008')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 164, 183, 174, 193" HREF="" alt="" onClick="gotoBuoy('44011','nww3') ; return false" onMouseOver="showbuoy('44011')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 217, 171, 227, 181" HREF="" alt="" onClick="gotoBuoy('44138','nww3') ; return false" onMouseOver="showbuoy('44138')" onMouseOut="showbuoy('')">
+
+<AREA SHAPE="rect" COORDS=" 199, 176, 209, 186" HREF="" alt="" onClick="gotoBuoy('44141','nww3') ; return false" onMouseOver="showbuoy('44141')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 174, 178, 184, 188" HREF="" alt="" onClick="gotoBuoy('44142','nww3') ; return false" onMouseOver="showbuoy('44142')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 414, 167, 424, 177" HREF="" alt="" onClick="gotoBuoy('62001','nww3') ; return false" onMouseOver="showbuoy('62001')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 384, 153, 394, 163" HREF="" alt="" onClick="gotoBuoy('62029','nww3') ; return false" onMouseOver="showbuoy('62029')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 380, 144, 390, 154" HREF="" alt="" onClick="gotoBuoy('62081','nww3') ; return false" onMouseOver="showbuoy('62081')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 383, 126, 393, 136" HREF="" alt="" onClick="gotoBuoy('62105','nww3') ; return false" onMouseOver="showbuoy('62105')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 394, 120, 404, 130" HREF="" alt="" onClick="gotoBuoy('62106','nww3') ; return false" onMouseOver="showbuoy('62106')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 355, 134, 365, 144" HREF="" alt="" onClick="gotoBuoy('62108','nww3') ; return false" onMouseOver="showbuoy('62108')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 400, 158, 410, 168" HREF="" alt="" onClick="gotoBuoy('62163','nww3') ; return false" onMouseOver="showbuoy('62163')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 440, 110, 450, 120" HREF="" alt="" onClick="gotoBuoy('63111','nww3') ; return false" onMouseOver="showbuoy('63111')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 387, 112, 397, 122" HREF="" alt="" onClick="gotoBuoy('64045','nww3') ; return false" onMouseOver="showbuoy('64045')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 287, 358, 297, 368" HREF="" alt="" onClick="gotoBuoy('FORTALEZA','nww3') ; return false" onMouseOver="showbuoy('FORTALEZA')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 242, 334, 252, 344" HREF="" alt="" onClick="gotoBuoy('AMAZON','nww3') ; return false" onMouseOver="showbuoy('AMAZON')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS=" 313, 342, 323, 352" HREF="" alt="" onClick="gotoBuoy('PETER_PAUL','nww3') ; return false" onMouseOver="showbuoy('PETER_PAUL')" onMouseOut="showbuoy('')">
+<AREA SHAPE="rect" COORDS="  54, 346,  64, 356" HREF="" alt="" onClick="gotoBuoy('TPC04','nww3') ; return false" onMouseOver="showbuoy('TPC04')" onMouseOut="showbuoy('')">
+</MAP>

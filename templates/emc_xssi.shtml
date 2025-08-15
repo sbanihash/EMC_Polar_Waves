@@ -1,0 +1,10 @@
+<!--#if expr="$QUERY_STRING != /^[a-z_A-Z0-9\-\=]+$/" -->
+  <!--#set var="QUERY_STRING" value="" -->
+<!--#endif -->
+<!--#if expr="$QUERY_STRING = /text/" -->
+  <!--#set var="ISTEXT" value="text" -->
+  <!--#include virtual="mmab_format_text.shtml" -->
+<!--#else -->
+  <!--#set var="ISTEXT" value="" -->
+  <!--#include virtual="emc_template.shtml" -->
+<!--#endif -->

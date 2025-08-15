@@ -1,0 +1,23 @@
+<p class="std"><u>Atlantic, Caribbean, and the Gulf of America</u>
+<form class="searchinput" action="null" method=post onSubmit="return dropdown(this.gourl)">
+<select name="gourl">
+<option value="">Choose Year
+<option value="">-----------
+<option value="2007atlan.shtml">2007
+<option value="2006atlan.shtml">2006
+<option value="2005atlan.shtml">2005
+<option value="2004atlan.shtml">2004
+<option value="2003atlan.shtml">2003
+<option value="2002atlan.shtml">2002
+<option value="2001.html">2001
+<option value="2000.html">2000
+<option value="1999.html">1999
+<option value="1998.html">1998
+<option value="1997.html">1997
+
+<option value="1996.html">1996
+<option value="1995.html">1995
+<option value="/archive/storm_wallets/atlantic/">1958-1994*
+</select>
+<input type=submit value="Go">
+</form>

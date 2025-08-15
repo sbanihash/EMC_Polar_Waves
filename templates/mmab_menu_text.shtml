@@ -1,0 +1,43 @@
+<!-- Standard MMAB menu (text) -->
+<center>
+<hr noshade>
+<span class="hdr">
+
+<!--#set var="NEWURI" value="${DOCUMENT_URI}?${NEW_QUERY_STRING}" -->
+
+<a href="<!--#echo var="NEWURI" -->">Graphical version of this page</a>
+</span>
+<hr noshade>
+<form method="get" action="//firstgovsearch.gov/search"
+style="margin-bottom:0; margin-top:0;">
+<label for="Search">
+<span class="reg">Search NWS</span>&nbsp;&nbsp;</label>
+<input type="hidden" name="affiliate" value="nws.noaa.gov" />
+<input type="hidden" name="v:project" value="firstgov" />
+<input name="query" type="text" value="" size="20"
+maxlength="256" id="Search"/>
+<input type="submit" value="Search"  />
+</form
+</center>
+
+<hr noshade>
+
+<!--#if expr="$USE_MENU != $NULL" -->
+  <!--#include virtual="/templates/menus/${USE_MENU}_text.shtml" -->
+<!--#endif -->
+
+
+<p class="reg">
+<b>About Us</b><br>
+<a href="/aboutintro.shtml?text">About the MMAB</a> -
+<a href="/mission.shtml?text">Mission</a> -
+<a href="//www.ncep.noaa.gov">Other NCEP Centers</a> -
+<a href="/aboutstaff.shtml?text">MMAB Personnel</a> -
+<a href="//pictor.rdc.noaa.gov:7001/extstaff/search">NOAA Locator</a>
+</p>
+
+<p class="reg">
+<b><a href="Deanna.Spindler@noaa.gov">Contact Us</a></b><br>
+</p>
+<hr noshade>
+<!-- End of Standard MMAB menu (text) -->

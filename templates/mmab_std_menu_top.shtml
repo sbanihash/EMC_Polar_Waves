@@ -1,0 +1,18 @@
+
+<!-- standard menu top -->
+
+<table cellspacing="0" cellpadding="2" width="130" border="0">
+  <tbody>
+  <tr align="left" valign="top">
+    <td class="searchinput" colspan="2">
+      <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+      <form method="POST" action="//www.srh.noaa.gov/zipcity.php">
+      <span class="yellow">Local forecast by<br>&quot;City, St&quot; or Zip Code</span><br>
+      <input type="text" name="inputstring" size="8" value="City, St">&nbsp;
+      <input type="submit" name="Go2" value="Go"><br>
+      </form>
+    </td>
+    </tr>
+
+<!-- end of standard menu top -->
+

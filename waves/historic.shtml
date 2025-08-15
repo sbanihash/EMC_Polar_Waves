@@ -1,0 +1,2460 @@
+<!--#set var="TITLE" value="NWW3 Historic Results" -->
+<!--#if expr="$FORMATLOAD = $NULL" -->
+<!--#include virtual="templates/emc_xssi.shtml" -->
+<!--#else -->
+
+<p class="reg">
+This web page gives access to animations of continuous hindcasts.  
+These hindcasts have been run after the fact with 
+archived wind and ice fields. The entire data set has been (re-) generated 
+with WAVEWATCH III version 2.22 (see <a href="changes.shtml">changes</a> page).
+Presented are the wave heights (Hs) and peak periods (Tp) at three hour 
+intervals. The animations start with a cold start of the model, and thus the 
+first month(s) show the model spin-up behavior. Particularly, the period maps 
+for the global model for Feb. 1997, shows that the global model needs 
+approximately 2 weeks to spin up its Pacific swell properly. Corresponding 
+binary wind and wave data (including peak directions) are available at the 
+<a href="ftp://polar.ncep.noaa.gov/pub/history/waves/">ftp site</a> at 
+three hour intervals.
+</p>
+
+<p class="reg">
+<span style="COLOR:#cc0000;">CAUTION:</span> The animation files are 3 to 6 MB
+in size. It will take considerable time to download such a file, depending 
+on the speed of your internet connection. It may be worth while to download 
+the files to local resources before viewing them.
+</p>
+
+<H2>Global Model</H2>
+
+<table border="1" width="100%" cellpadding="2" cellspacing="0">
+<tr align="center" valign="top">
+<th id="a1">Year</th>
+<th id="a2">Jan</th>
+<th id="a3">Feb</th>
+<th id="a4">Mar</th>
+<th id="a5">Apr</th>
+<th id="a6">May</th>
+<th id="a7">Jun</th>
+<th id="a8">Jul</th>
+<th id="a9">Aug</th>
+<th id="a10">Sep</th>
+<th id="a11">Oct</th>
+<th id="a12">Nov</th>
+<th id="a13">Dec</th>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">1997</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.199701.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199701.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.199702.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199702.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.199703.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199703.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.199704.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199704.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.199705.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199705.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.199706.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199706.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.199707.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199707.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.199708.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199708.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.199709.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199709.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.199710.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199710.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.199711.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199711.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.199712.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199712.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+1998
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.199801.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199801.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.199802.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199802.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.199803.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199803.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.199804.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199804.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.199805.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199805.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.199806.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199806.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.199807.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199807.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.199808.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199808.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.199809.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199809.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.199810.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199810.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.199811.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199811.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.199812.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199812.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+1999
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.199901.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199901.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.199902.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199902.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.199903.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199903.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.199904.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199904.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.199905.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199905.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.199906.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199906.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.199907.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199907.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.199908.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199908.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.199909.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199909.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.199910.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199910.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.199911.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199911.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.199912.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.199912.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2000
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200001.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200001.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200002.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200002.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200003.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200003.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200004.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200004.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200005.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200005.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200006.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200006.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200007.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200007.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200008.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200008.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200009.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200009.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200010.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200010.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200011.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200011.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200012.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200012.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2001
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200101.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200101.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200102.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200102.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200103.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200103.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200104.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200104.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200105.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200105.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200106.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200106.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200107.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200107.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200108.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200108.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200109.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200109.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200110.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200110.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200111.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200111.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200112.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200112.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2002
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200201.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200201.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200202.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200202.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200203.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200203.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200204.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200204.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200205.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200205.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200206.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200206.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200207.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200207.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200208.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200208.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200209.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200209.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200210.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200210.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200211.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200211.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200212.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200212.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2003
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200301.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200301.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200302.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200302.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200303.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200303.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200304.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200304.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200305.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200305.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200306.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200306.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200307.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200307.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200308.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200308.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200309.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200309.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200310.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200310.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200311.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200311.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200312.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200312.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2004
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200401.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200401.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200402.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200402.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200403.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200403.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200404.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200404.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200405.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200405.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200406.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200406.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200407.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200407.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200408.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200408.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200409.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200409.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200410.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200410.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200411.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200411.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200412.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200412.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2005
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200501.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200501.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200502.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200502.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200503.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200503.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200504.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200504.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200505.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200505.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200506.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200506.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200507.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200507.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200508.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200508.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200509.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200509.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200510.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200510.gif">tp</a>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200511.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200511.gif">tp</a>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200512.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200512.gif">tp</a>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2006
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200601.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200601.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200602.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200602.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200603.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200603.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200604.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200604.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200605.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200605.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200610.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200610.gif">tp</a>
+</td>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200611.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200611.gif">tp</a>
+</td>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200612.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200612.gif">tp</a>
+</td>
+</td>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="a1">
+2007
+</td>
+<td class="reg" headers="a2">
+<a href="/history/waves/nww3.hs.anim.200601.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200601.gif">tp</a>
+</td>
+<td class="reg" headers="a3">
+<a href="/history/waves/nww3.hs.anim.200602.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200602.gif">tp</a>
+</td>
+<td class="reg" headers="a4">
+<a href="/history/waves/nww3.hs.anim.200603.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200603.gif">tp</a>
+</td>
+<td class="reg" headers="a5">
+<a href="/history/waves/nww3.hs.anim.200604.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200604.gif">tp</a>
+</td>
+<td class="reg" headers="a6">
+<a href="/history/waves/nww3.hs.anim.200605.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200605.gif">tp</a>
+</td>
+<td class="reg" headers="a7">
+<a href="/history/waves/nww3.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="a8">
+<a href="/history/waves/nww3.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="a9">
+<a href="/history/waves/nww3.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="a10">
+<a href="/history/waves/nww3.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="a11">
+<a href="/history/waves/nww3.hs.anim.200610.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200610.gif">tp</a>
+</td>
+</td>
+<td class="reg" headers="a12">
+<a href="/history/waves/nww3.hs.anim.200611.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200611.gif">tp</a>
+</td>
+</td>
+<td class="reg" headers="a13">
+<a href="/history/waves/nww3.hs.anim.200612.gif">hs</a>
+<a href="/history/waves/nww3.tp.anim.200612.gif">tp</a>
+</td>
+</td>
+</tr>
+</table>
+
+<H2>Alaskan Waters model</H2>
+
+<table border="1" width="100%" cellpadding="2" cellspacing="0">
+<tr align="center" valign="top">
+<th id="b1">Year</th>
+<th id="b2">Jan</th>
+<th id="b3">Feb</th>
+<th id="b4">Mar</th>
+<th id="b5">Apr</th>
+<th id="b6">May</th>
+<th id="b7">Jun</th>
+<th id="b8">Jul</th>
+<th id="b9">Aug</th>
+<th id="b10">Sep</th>
+<th id="b11">Oct</th>
+<th id="b12">Nov</th>
+<th id="b13">Dec</th>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+1999
+</td>
+<td class="reg" headers="b2">
+--
+--
+</td>
+<td class="reg" headers="b3">
+--
+--
+</td>
+<td class="reg" headers="b4">
+--
+--
+</td>
+<td class="reg" headers="b5">
+--
+--
+</td>
+<td class="reg" headers="b6">
+--
+--
+</td>
+<td class="reg" headers="b7">
+--
+--
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.199907.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.199907.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.199908.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.199908.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.199909.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.199909.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.199910.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.199910.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.199911.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.199911.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.199912.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.199912.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2000
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200001.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200001.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200002.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200002.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200003.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200003.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200004.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200004.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200005.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200005.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200006.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200006.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200007.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200007.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200008.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200008.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200009.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200009.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.200010.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200010.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.200011.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200011.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.200012.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200012.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2001
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200101.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200101.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200102.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200102.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200103.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200103.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200104.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200104.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200105.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200105.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200106.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200106.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200107.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200107.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200108.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200108.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200109.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200109.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.200110.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200110.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.200111.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200111.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.200112.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200112.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2002
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200201.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200201.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200202.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200202.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200203.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200203.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200204.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200204.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200205.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200205.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200206.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200206.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200207.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200207.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200208.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200208.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200209.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200209.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.200210.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200210.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.200211.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200211.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.200212.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200212.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2003
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200301.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200301.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200302.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200302.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200303.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200303.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200304.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200304.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200305.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200305.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200306.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200306.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200307.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200307.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200308.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200308.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200309.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200309.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.200310.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200310.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.200311.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200311.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.200312.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200312.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2004
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200401.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200401.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200402.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200402.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200403.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200403.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200404.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200404.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200405.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200405.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200406.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200406.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200407.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200407.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200408.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200408.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200409.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200409.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.200410.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200410.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.200411.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200411.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.200412.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200412.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2005
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200501.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200501.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200502.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200502.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200503.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200503.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200504.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200504.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200505.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200505.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200506.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200506.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200507.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200507.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200508.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200508.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200509.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200509.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+<a href="/history/waves/akw.hs.anim.200510.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200510.gif">tp</a>
+</td>
+<td class="reg" headers="b12">
+<a href="/history/waves/akw.hs.anim.200511.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200511.gif">tp</a>
+</td>
+<td class="reg" headers="b13">
+<a href="/history/waves/akw.hs.anim.200512.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200512.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="b1">
+2006
+</td>
+<td class="reg" headers="b2">
+<a href="/history/waves/akw.hs.anim.200601.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200601.gif">tp</a>
+</td>
+<td class="reg" headers="b3">
+<a href="/history/waves/akw.hs.anim.200602.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200602.gif">tp</a>
+</td>
+<td class="reg" headers="b4">
+<a href="/history/waves/akw.hs.anim.200603.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200603.gif">tp</a>
+</td>
+<td class="reg" headers="b5">
+<a href="/history/waves/akw.hs.anim.200604.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200604.gif">tp</a>
+</td>
+<td class="reg" headers="b6">
+<a href="/history/waves/akw.hs.anim.200605.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200605.gif">tp</a>
+</td>
+<td class="reg" headers="b7">
+<a href="/history/waves/akw.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="b8">
+<a href="/history/waves/akw.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="b9">
+<a href="/history/waves/akw.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="b10">
+<a href="/history/waves/akw.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/akw.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="b11">
+--
+--
+</td>
+<td class="reg" headers="b12">
+--
+--
+</td>
+<td class="reg" headers="b13">
+--
+--
+</td>
+</tr>
+</table>
+
+<H2>Western North Atlantic model</H2>
+
+<table border="1" width="100%" cellpadding="2" cellspacing="0">
+<tr align="center" valign="top">
+<th id="c1">Year</th>
+<th id="c2">Jan</th>
+<th id="c3">Feb</th>
+<th id="c4">Mar</th>
+<th id="c5">Apr</th>
+<th id="c6">May</th>
+<th id="c7">Jun</th>
+<th id="c8">Jul</th>
+<th id="c9">Aug</th>
+<th id="c10">Sep</th>
+<th id="c11">Oct</th>
+<th id="c12">Nov</th>
+<th id="c13">Dec</th>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+1999
+</td>
+<td class="reg" headers="c2">
+--
+--
+</td>
+<td class="reg" headers="c3">
+--
+--
+</td>
+<td class="reg" headers="c4">
+--
+--
+</td>
+<td class="reg" headers="c5">
+--
+--
+</td>
+<td class="reg" headers="c6">
+--
+--
+</td>
+<td class="reg" headers="c7">
+--
+--
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.199907.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.199907.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.199908.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.199908.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.199909.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.199909.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.199910.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.199910.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.199911.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.199911.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.199912.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.199912.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2000
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200001.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200001.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200002.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200002.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200003.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200003.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200004.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200004.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200005.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200005.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200006.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200006.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200007.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200007.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200008.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200008.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200009.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200009.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.200010.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200010.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.200011.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200011.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.200012.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200012.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2001
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200101.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200101.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200102.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200102.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200103.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200103.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200104.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200104.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200105.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200105.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200106.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200106.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200107.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200107.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200108.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200108.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200109.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200109.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.200110.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200110.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.200111.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200111.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.200112.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200112.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2002
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200201.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200201.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200202.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200202.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200203.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200203.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200204.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200204.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200205.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200205.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200206.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200206.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200207.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200207.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200208.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200208.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200209.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200209.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.200210.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200210.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.200211.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200211.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.200212.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200212.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2003
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200301.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200301.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200302.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200302.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200303.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200303.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200304.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200304.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200305.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200305.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200306.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200306.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200307.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200307.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200308.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200308.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200309.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200309.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.200310.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200310.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.200311.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200311.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.200312.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200312.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2004
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200401.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200401.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200402.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200402.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200403.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200403.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200404.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200404.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200405.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200405.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200406.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200406.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200407.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200407.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200408.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200408.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200409.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200409.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.200410.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200410.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.200411.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200411.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.200412.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200412.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2005
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200501.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200501.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200502.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200502.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200503.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200503.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200504.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200504.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200505.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200505.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200506.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200506.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200507.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200507.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200508.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200508.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200509.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200509.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+<a href="/history/waves/wna.hs.anim.200510.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200510.gif">tp</a>
+</td>
+<td class="reg" headers="c12">
+<a href="/history/waves/wna.hs.anim.200511.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200511.gif">tp</a>
+</td>
+<td class="reg" headers="c13">
+<a href="/history/waves/wna.hs.anim.200512.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200512.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="c1">
+2006
+</td>
+<td class="reg" headers="c2">
+<a href="/history/waves/wna.hs.anim.200601.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200601.gif">tp</a>
+</td>
+<td class="reg" headers="c3">
+<a href="/history/waves/wna.hs.anim.200602.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200602.gif">tp</a>
+</td>
+<td class="reg" headers="c4">
+<a href="/history/waves/wna.hs.anim.200603.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200603.gif">tp</a>
+</td>
+<td class="reg" headers="c5">
+<a href="/history/waves/wna.hs.anim.200604.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200604.gif">tp</a>
+</td>
+<td class="reg" headers="c6">
+<a href="/history/waves/wna.hs.anim.200605.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200605.gif">tp</a>
+</td>
+<td class="reg" headers="c7">
+<a href="/history/waves/wna.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="c8">
+<a href="/history/waves/wna.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="c9">
+<a href="/history/waves/wna.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="c10">
+<a href="/history/waves/wna.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/wna.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="c11">
+--
+--
+</td>
+<td class="reg" headers="c12">
+--
+--
+</td>
+<td class="reg" headers="c13">
+--
+--
+</td>
+</tr>
+</table>
+
+<H2>Eastern North Pacific model</H2>
+
+<table border="1" width="100%" cellpadding="2" cellspacing="0">
+<tr align="center" valign="top">
+<th id="d1">Year</th>
+<th id="d2">Jan</th>
+<th id="d3">Feb</th>
+<th id="d4">Mar</th>
+<th id="d5">Apr</th>
+<th id="d6">May</th>
+<th id="d7">Jun</th>
+<th id="d8">Jul</th>
+<th id="d9">Aug</th>
+<th id="d10">Sep</th>
+<th id="d11">Oct</th>
+<th id="d12">Nov</th>
+<th id="d13">Dec</th>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="d1">
+2002
+</td>
+<td class="reg" headers="d2">
+--
+--
+</td>
+<td class="reg" headers="d3">
+--
+--
+</td>
+<td class="reg" headers="d4">
+--
+--
+</td>
+<td class="reg" headers="d5">
+--
+--
+</td>
+<td class="reg" headers="d6">
+--
+--
+</td>
+<td class="reg" headers="d7">
+--
+--
+</td>
+<td class="reg" headers="d8">
+--
+--
+</td>
+<td class="reg" headers="d9">
+<a href="/history/waves/enp.hs.anim.200208.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200208.gif">tp</a>
+</td>
+<td class="reg" headers="d10">
+<a href="/history/waves/enp.hs.anim.200209.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200209.gif">tp</a>
+</td>
+<td class="reg" headers="d11">
+<a href="/history/waves/enp.hs.anim.200210.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200210.gif">tp</a>
+</td>
+<td class="reg" headers="d12">
+<a href="/history/waves/enp.hs.anim.200211.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200211.gif">tp</a>
+</td>
+<td class="reg" headers="d13">
+<a href="/history/waves/enp.hs.anim.200212.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200212.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="d1">
+2003
+</td>
+<td class="reg" headers="d2">
+<a href="/history/waves/enp.hs.anim.200301.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200301.gif">tp</a>
+</td>
+<td class="reg" headers="d3">
+<a href="/history/waves/enp.hs.anim.200302.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200302.gif">tp</a>
+</td>
+<td class="reg" headers="d4">
+<a href="/history/waves/enp.hs.anim.200303.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200303.gif">tp</a>
+</td>
+<td class="reg" headers="d5">
+<a href="/history/waves/enp.hs.anim.200304.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200304.gif">tp</a>
+</td>
+<td class="reg" headers="d6">
+<a href="/history/waves/enp.hs.anim.200305.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200305.gif">tp</a>
+</td>
+<td class="reg" headers="d7">
+<a href="/history/waves/enp.hs.anim.200306.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200306.gif">tp</a>
+</td>
+<td class="reg" headers="d8">
+<a href="/history/waves/enp.hs.anim.200307.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200307.gif">tp</a>
+</td>
+<td class="reg" headers="d9">
+<a href="/history/waves/enp.hs.anim.200308.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200308.gif">tp</a>
+</td>
+<td class="reg" headers="d10">
+<a href="/history/waves/enp.hs.anim.200309.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200309.gif">tp</a>
+</td>
+<td class="reg" headers="d11">
+<a href="/history/waves/enp.hs.anim.200310.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200310.gif">tp</a>
+</td>
+<td class="reg" headers="d12">
+<a href="/history/waves/enp.hs.anim.200311.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200311.gif">tp</a>
+</td>
+<td class="reg" headers="d13">
+<a href="/history/waves/enp.hs.anim.200312.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200312.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="d1">
+2004
+</td>
+<td class="reg" headers="d2">
+<a href="/history/waves/enp.hs.anim.200401.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200401.gif">tp</a>
+</td>
+<td class="reg" headers="d3">
+<a href="/history/waves/enp.hs.anim.200402.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200402.gif">tp</a>
+</td>
+<td class="reg" headers="d4">
+<a href="/history/waves/enp.hs.anim.200403.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200403.gif">tp</a>
+</td>
+<td class="reg" headers="d5">
+<a href="/history/waves/enp.hs.anim.200404.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200404.gif">tp</a>
+</td>
+<td class="reg" headers="d6">
+<a href="/history/waves/enp.hs.anim.200405.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200405.gif">tp</a>
+</td>
+<td class="reg" headers="d7">
+<a href="/history/waves/enp.hs.anim.200406.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200406.gif">tp</a>
+</td>
+<td class="reg" headers="d8">
+<a href="/history/waves/enp.hs.anim.200407.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200407.gif">tp</a>
+</td>
+<td class="reg" headers="d9">
+<a href="/history/waves/enp.hs.anim.200408.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200408.gif">tp</a>
+</td>
+<td class="reg" headers="d10">
+<a href="/history/waves/enp.hs.anim.200409.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200409.gif">tp</a>
+</td>
+<td class="reg" headers="d11">
+<a href="/history/waves/enp.hs.anim.200410.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200410.gif">tp</a>
+</td>
+<td class="reg" headers="d12">
+<a href="/history/waves/enp.hs.anim.200411.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200411.gif">tp</a>
+</td>
+<td class="reg" headers="d13">
+<a href="/history/waves/enp.hs.anim.200412.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200412.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="d1">
+2005
+</td>
+<td class="reg" headers="d2">
+<a href="/history/waves/enp.hs.anim.200501.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200501.gif">tp</a>
+</td>
+<td class="reg" headers="d3">
+<a href="/history/waves/enp.hs.anim.200502.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200502.gif">tp</a>
+</td>
+<td class="reg" headers="d4">
+<a href="/history/waves/enp.hs.anim.200503.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200503.gif">tp</a>
+</td>
+<td class="reg" headers="d5">
+<a href="/history/waves/enp.hs.anim.200504.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200504.gif">tp</a>
+</td>
+<td class="reg" headers="d6">
+<a href="/history/waves/enp.hs.anim.200505.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200505.gif">tp</a>
+</td>
+<td class="reg" headers="d7">
+<a href="/history/waves/enp.hs.anim.200506.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200506.gif">tp</a>
+</td>
+<td class="reg" headers="d8">
+<a href="/history/waves/enp.hs.anim.200507.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200507.gif">tp</a>
+</td>
+<td class="reg" headers="d9">
+<a href="/history/waves/enp.hs.anim.200508.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200508.gif">tp</a>
+</td>
+<td class="reg" headers="d10">
+<a href="/history/waves/enp.hs.anim.200509.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200509.gif">tp</a>
+</td>
+<td class="reg" headers="d11">
+<a href="/history/waves/enp.hs.anim.200510.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200510.gif">tp</a>
+</td>
+<td class="reg" headers="d12">
+<a href="/history/waves/enp.hs.anim.200511.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200511.gif">tp</a>
+</td>
+<td class="reg" headers="d13">
+<a href="/history/waves/enp.hs.anim.200512.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200512.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="d1">
+2006
+</td>
+<td class="reg" headers="d2">
+<a href="/history/waves/enp.hs.anim.200601.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200601.gif">tp</a>
+</td>
+<td class="reg" headers="d3">
+<a href="/history/waves/enp.hs.anim.200602.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200602.gif">tp</a>
+</td>
+<td class="reg" headers="d4">
+<a href="/history/waves/enp.hs.anim.200603.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200603.gif">tp</a>
+</td>
+<td class="reg" headers="d5">
+<a href="/history/waves/enp.hs.anim.200604.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200604.gif">tp</a>
+</td>
+<td class="reg" headers="d6">
+<a href="/history/waves/enp.hs.anim.200605.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200605.gif">tp</a>
+</td>
+<td class="reg" headers="d7">
+<a href="/history/waves/enp.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="d8">
+<a href="/history/waves/enp.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="d9">
+<a href="/history/waves/enp.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="d10">
+<a href="/history/waves/enp.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/enp.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="d11">
+--
+--
+</td>
+<td class="reg" headers="d12">
+--
+--
+</td>
+<td class="reg" headers="d13">
+--
+--
+</td>
+</tr>
+</table>
+
+<H2>North Atlantic Hurricane Wave model</H2>
+
+<table border="1" width="100%" cellpadding="2" cellspacing="0">
+<tr align="center" valign="top">
+<th id="e1">Year</th>
+<th id="e2">Jan</th>
+<th id="e3">Feb</th>
+<th id="e4">Mar</th>
+<th id="e5">Apr</th>
+<th id="e6">May</th>
+<th id="e7">Jun</th>
+<th id="e8">Jul</th>
+<th id="e9">Aug</th>
+<th id="e10">Sep</th>
+<th id="e11">Oct</th>
+<th id="e12">Nov</th>
+<th id="e13">Dec</th>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2000
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+--
+--
+</td>
+<td class="reg" headers="e8">
+--
+--
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200008.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200008.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200009.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200009.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nah.hs.anim.200010.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200010.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+--
+--
+</td>
+<td class="reg" headers="e13">
+--
+--
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2001
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nah.hs.anim.200106.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200106.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+--
+--
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200108.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200108.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200109.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200109.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nah.hs.anim.200110.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200110.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nah.hs.anim.200111.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200111.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nah.hs.anim.200112.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200112.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2002
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+--
+--
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nah.hs.anim.200207.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200207.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200208.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200208.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200209.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200209.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nah.hs.anim.200210.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200210.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+--
+--
+</td>
+<td class="reg" headers="e13">
+--
+--
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2003
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nah.hs.anim.200306.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200306.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nah.hs.anim.200307.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200307.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200308.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200308.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200309.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200309.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nah.hs.anim.200310.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200310.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nah.hs.anim.200311.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200311.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nah.hs.anim.200312.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200312.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2004
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nah.hs.anim.200406.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200406.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nah.hs.anim.200407.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200407.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200408.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200408.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200409.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200409.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nah.hs.anim.200410.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200410.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nah.hs.anim.200411.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200411.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nah.hs.anim.200412.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200412.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2005
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nah.hs.anim.200506.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200506.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nah.hs.anim.200507.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200507.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200508.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200508.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200509.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200509.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nah.hs.anim.200510.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200510.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nah.hs.anim.200511.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200511.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nah.hs.anim.200512.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200512.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2006
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nah.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nah.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nah.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nah.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/nah.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+--
+--
+</td>
+<td class="reg" headers="e12">
+--
+--
+</td>
+<td class="reg" headers="e13">
+--
+--
+</td>
+</tr>
+</table>
+
+<p class="reg">
+Remarks: For 2000 and 2001, these hurricane archive data were obtained with
+reduced time resolution wind fields from a partial archive of GFDL winds and
+should therefore be considered mostly as illustration. Data for several months
+are not presented here as no hurricanes occured in these months. For 2002,
+hourly wind fields have been used, and the archive has been generated using
+the full NCEP archive. Starting with the 2003 hurricane season, this archive
+is generated automatically like for all other models.</p>
+
+<H2>North Pacific Hurricane Wave Model</H2>
+
+<table border="1" width="100%" cellpadding="2" cellspacing="0">
+<tr align="center" valign="top">
+<th id="f1">Year</th>
+<th id="f2">Jan</th>
+<th id="f3">Feb</th>
+<th id="f4">Mar</th>
+<th id="f5">Apr</th>
+<th id="f6">May</th>
+<th id="f7">Jun</th>
+<th id="f8">Jul</th>
+<th id="f9">Aug</th>
+<th id="f10">Sep</th>
+<th id="f11">Oct</th>
+<th id="f12">Nov</th>
+<th id="f13">Dec</th>
+</tr>
+
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2003
+</td>
+<td class="reg" headers="e2">
+--
+--
+</td>
+<td class="reg" headers="e3">
+--
+--
+</td>
+<td class="reg" headers="e4">
+--
+--
+</td>
+<td class="reg" headers="e5">
+--
+--
+</td>
+<td class="reg" headers="e6">
+--
+--
+</td>
+<td class="reg" headers="e7">
+--
+--
+</td>
+<td class="reg" headers="e8">
+--
+--
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nph.hs.anim.200308.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200308.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nph.hs.anim.200309.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200309.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nph.hs.anim.200310.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200310.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nph.hs.anim.200311.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200311.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nph.hs.anim.200312.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200312.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2004
+</td>
+<td class="reg" headers="e2">
+<a href="/history/waves/nph.hs.anim.200401.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200401.gif">tp</a>
+</td>
+<td class="reg" headers="e3">
+<a href="/history/waves/nph.hs.anim.200402.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200402.gif">tp</a>
+</td>
+<td class="reg" headers="e4">
+<a href="/history/waves/nph.hs.anim.200403.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200403.gif">tp</a>
+</td>
+<td class="reg" headers="e5">
+<a href="/history/waves/nph.hs.anim.200404.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200404.gif">tp</a>
+</td>
+<td class="reg" headers="e6">
+<a href="/history/waves/nph.hs.anim.200405.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200405.gif">tp</a>
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nph.hs.anim.200406.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200406.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nph.hs.anim.200407.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200407.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nph.hs.anim.200408.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200408.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nph.hs.anim.200409.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200409.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nph.hs.anim.200410.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200410.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nph.hs.anim.200411.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200411.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nph.hs.anim.200412.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200412.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2005
+</td>
+<td class="reg" headers="e2">
+<a href="/history/waves/nph.hs.anim.200501.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200501.gif">tp</a>
+</td>
+<td class="reg" headers="e3">
+<a href="/history/waves/nph.hs.anim.200502.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200502.gif">tp</a>
+</td>
+<td class="reg" headers="e4">
+<a href="/history/waves/nph.hs.anim.200503.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200503.gif">tp</a>
+</td>
+<td class="reg" headers="e5">
+<a href="/history/waves/nph.hs.anim.200504.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200504.gif">tp</a>
+</td>
+<td class="reg" headers="e6">
+<a href="/history/waves/nph.hs.anim.200505.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200505.gif">tp</a>
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nph.hs.anim.200506.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200506.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nph.hs.anim.200507.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200507.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nph.hs.anim.200508.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200508.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nph.hs.anim.200509.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200509.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+<a href="/history/waves/nph.hs.anim.200510.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200510.gif">tp</a>
+</td>
+<td class="reg" headers="e12">
+<a href="/history/waves/nph.hs.anim.200511.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200511.gif">tp</a>
+</td>
+<td class="reg" headers="e13">
+<a href="/history/waves/nph.hs.anim.200512.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200512.gif">tp</a>
+</td>
+</tr>
+<tr align="center" valign="top">
+<td class="reg" headers="e1">
+2006
+</td>
+<td class="reg" headers="e2">
+<a href="/history/waves/nph.hs.anim.200601.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200601.gif">tp</a>
+</td>
+<td class="reg" headers="e3">
+<a href="/history/waves/nph.hs.anim.200602.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200602.gif">tp</a>
+</td>
+<td class="reg" headers="e4">
+<a href="/history/waves/nph.hs.anim.200603.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200603.gif">tp</a>
+</td>
+<td class="reg" headers="e5">
+<a href="/history/waves/nph.hs.anim.200604.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200604.gif">tp</a>
+</td>
+<td class="reg" headers="e6">
+<a href="/history/waves/nph.hs.anim.200605.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200605.gif">tp</a>
+</td>
+<td class="reg" headers="e7">
+<a href="/history/waves/nph.hs.anim.200606.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200606.gif">tp</a>
+</td>
+<td class="reg" headers="e8">
+<a href="/history/waves/nph.hs.anim.200607.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200607.gif">tp</a>
+</td>
+<td class="reg" headers="e9">
+<a href="/history/waves/nph.hs.anim.200608.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200608.gif">tp</a>
+</td>
+<td class="reg" headers="e10">
+<a href="/history/waves/nph.hs.anim.200609.gif">hs</a>
+<a href="/history/waves/nph.tp.anim.200609.gif">tp</a>
+</td>
+<td class="reg" headers="e11">
+--
+--
+</td>
+<td class="reg" headers="e12">
+--
+--
+</td>
+<td class="reg" headers="e13">
+--
+--
+</td>
+</tr>
+</table>
+
+<p class="reg">
+Unlike for the NAH model, this archive is generated automatically from its
+inception.
+</p>
+
+<!--#endif -->

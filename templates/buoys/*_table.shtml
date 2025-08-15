@@ -1,0 +1,5 @@
+<table border="0" cellspacing="0" cellpadding="4" width="100%" style="border-width: 1px; border-style: solid; border-bottom-width: 0px;">
+    <th id="a1" class="reg" style="border-bottom-width: 1px; border-bottom-style: solid; border-right-width: 1px; border-right-style: solid;">Buoy ID</th>
+    <th id="a2" class="reg" style="border-bottom-width: 1px; border-bottom-style: solid; border-right-width: 1px; border-right-style: solid;">Lat/Lon</th>
+    <th id="a4" class="reg" style="border-bottom-width: 1px; border-bottom-style: solid;" colspan="3">Buoy Data</th>
+</table>

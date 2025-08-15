@@ -1,0 +1,27 @@
+<map name="buoys">
+<area shape="rect" COORDS="478,147,486,155" href="" alt="" onClick="gotoBuoy('51000','hawaii') ; return false" onMouseOver="showbuoy('51000')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="62,151,70,159" href="" alt="" onClick="gotoBuoy('51001','hawaii') ; return false" onMouseOver="showbuoy('51001')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="288,402,296,410" href="" alt="" onClick="gotoBuoy('51002','hawaii') ; return false" onMouseOver="showbuoy('51002')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="133,320,141,328" href="" alt="" onClick="gotoBuoy('51003','hawaii') ; return false" onMouseOver="showbuoy('51003')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="558,389,566,397" href="" alt="" onClick="gotoBuoy('51004','hawaii') ; return false" onMouseOver="showbuoy('51004')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="486,146,494,154" href="" alt="" onClick="gotoBuoy('51100','hawaii') ; return false" onMouseOver="showbuoy('51100')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="70,116,78,124" href="" alt="" onClick="gotoBuoy('51101','hawaii') ; return false" onMouseOver="showbuoy('51101')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="261,245,269,253" href="" alt="" onClick="gotoBuoy('51200','hawaii') ; return false" onMouseOver="showbuoy('51200')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="271,222,279,230" href="" alt="" onClick="gotoBuoy('51201','hawaii') ; return false" onMouseOver="showbuoy('51201')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="293,232,301,240" href="" alt="" onClick="gotoBuoy('51202','hawaii') ; return false" onMouseOver="showbuoy('51202')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="328,257,336,265" href="" alt="" onClick="gotoBuoy('51203','hawaii') ; return false" onMouseOver="showbuoy('51203')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="271,238,279,246" href="" alt="" onClick="gotoBuoy('51204','hawaii') ; return false" onMouseOver="showbuoy('51204')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="357,248,365,256" href="" alt="" onClick="gotoBuoy('51205','hawaii') ; return false" onMouseOver="showbuoy('51205')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="431,298,439,306" href="" alt="" onClick="gotoBuoy('51206','hawaii') ; return false" onMouseOver="showbuoy('51206')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="290,230,298,238" href="" alt="" onClick="gotoBuoy('51207','hawaii') ; return false" onMouseOver="showbuoy('51207')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="197,197,205,205" href="" alt="" onClick="gotoBuoy('51208','hawaii') ; return false" onMouseOver="showbuoy('51208')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="289,230,297,238" href="" alt="" onClick="gotoBuoy('51210','hawaii') ; return false" onMouseOver="showbuoy('51210')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="279,237,287,245" href="" alt="" onClick="gotoBuoy('51211','hawaii') ; return false" onMouseOver="showbuoy('51211')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="269,236,277,244" href="" alt="" onClick="gotoBuoy('51212','hawaii') ; return false" onMouseOver="showbuoy('51212')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="328,259,336,267" href="" alt="" onClick="gotoBuoy('51213','hawaii') ; return false" onMouseOver="showbuoy('51213')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="277,128,285,136" href="" alt="" onClick="gotoBuoy('HNL01','hawaii') ; return false" onMouseOver="showbuoy('HNL01')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="532,189,540,197" href="" alt="" onClick="gotoBuoy('HNL02','hawaii') ; return false" onMouseOver="showbuoy('HNL02')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="290,209,298,217" href="" alt="" onClick="gotoBuoy('HNL10','hawaii') ; return false" onMouseOver="showbuoy('HNL10')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="264,249,272,257" href="" alt="" onClick="gotoBuoy('HNL11','hawaii') ; return false" onMouseOver="showbuoy('HNL11')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="353,299,361,307" href="" alt="" onClick="gotoBuoy('HNL12','hawaii') ; return false" onMouseOver="showbuoy('HNL12')" onMouseOut="showbuoy('')">
+</map>

@@ -1,0 +1,7 @@
+<!--#if expr="$QUERY_STRING = /text/" -->
+  <!--#set var="ISTEXT" value="text" -->
+  <!--#include virtual="mmab_format_text.shtml" -->
+<!--#else -->
+  <!--#set var="ISTEXT" value="" -->
+  <!--#include virtual="mmab_format_nomenu.shtml" -->
+<!--#endif -->

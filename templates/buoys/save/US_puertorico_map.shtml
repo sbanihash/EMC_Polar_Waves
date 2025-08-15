@@ -1,0 +1,16 @@
+<map name="buoys">
+<area shape="rect" COORDS="183,476,191,484" href="" alt="" onClick="gotoBuoy('42059','US_puertorico') ; return false" onMouseOver="showbuoy('42059')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="435,381,443,389" href="" alt="" onClick="gotoBuoy('42060','US_puertorico') ; return false" onMouseOver="showbuoy('42060')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="271,254,279,262" href="" alt="" onClick="gotoBuoy('41053','US_puertorico') ; return false" onMouseOver="showbuoy('41053')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="331,254,339,262" href="" alt="" onClick="gotoBuoy('41058','US_puertorico') ; return false" onMouseOver="showbuoy('41058')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="246,220,254,228" href="" alt="" onClick="gotoBuoy('PUERTO_R_N','US_puertorico') ; return false" onMouseOver="showbuoy('PUERTO_R_N')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="246,316,254,324" href="" alt="" onClick="gotoBuoy('PUERTO_R_S','US_puertorico') ; return false" onMouseOver="showbuoy('PUERTO_R_S')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="183,220,191,228" href="" alt="" onClick="gotoBuoy('CARCOOS01','US_puertorico') ; return false" onMouseOver="showbuoy('CARCOOS01')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="309,220,317,228" href="" alt="" onClick="gotoBuoy('CARCOOS02','US_puertorico') ; return false" onMouseOver="showbuoy('CARCOOS02')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="404,220,412,228" href="" alt="" onClick="gotoBuoy('CARCOOS03','US_puertorico') ; return false" onMouseOver="showbuoy('CARCOOS03')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="378,329,386,337" href="" alt="" onClick="gotoBuoy('CARCOOS04','US_puertorico') ; return false" onMouseOver="showbuoy('CARCOOS04')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="183,316,191,324" href="" alt="" onClick="gotoBuoy('CARCOOS05','US_puertorico') ; return false" onMouseOver="showbuoy('CARCOOS05')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="340,92,348,100" href="" alt="" onClick="gotoBuoy('41043','US_puertorico') ; return false" onMouseOver="showbuoy('41043')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="197,260,205,268" href="" alt="" onClick="gotoBuoy('41111','US_puertorico') ; return false" onMouseOver="showbuoy('41111')" onMouseOut="showbuoy('')">
+<area shape="rect" COORDS="467,477,475,485" href="" alt="" onClick="gotoBuoy('TPC21','US_puertorico') ; return false" onMouseOver="showbuoy('TPC21')" onMouseOut="showbuoy('')">
+</map>

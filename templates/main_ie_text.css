@@ -1,0 +1,136 @@
+#menuitem A:link {
+color: white;
+text-decoration: none;
+}
+A:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+#menuitem A:Visited {
+color: #FFFFFF;
+}
+A:Visited  {
+color: #003399;
+text-decoration: none;
+}
+
+#menuitem A:hover { 
+color : #F0E68C; 
+text-decoration : underline; }
+A:hover {
+color : #FF0000;
+text-decoration : underline;
+}
+
+.white  {
+	font-size : 9pt;
+	color : #FFFFFF;
+	font-weight : bold;
+	font-family : Arial, Helvetica, San Serif;
+}
+
+.yellow  {
+	font-family : Arial, Helvetica, San Serif;
+	font-size : 9pt;
+	font-weight : bold;
+	color : #F0E68C;
+}
+
+.searchinput, .searchinput SELECT, .searchinput INPUT  {
+	font-size : 8pt;
+}
+
+td  {
+	font-size : 9pt;
+	font-family : Arial, Helvetica, San Serif;
+}
+
+h1 {
+	font-size : 18pt;
+	font-family : Arial, Helvetica, San Serif;
+}
+h2 {
+	font-size : 15pt;
+	font-family : Arial, Helvetica, San Serif;
+}
+h3 {
+	font-size : 13pt;
+	font-family : Arial, Helvetica, San Serif;
+}
+h4 {
+	font-size : 11pt;
+	font-family : Arial, Helvetica, San Serif;
+}
+h5 {
+	font-size : 9pt;
+	font-family : Arial, Helvetica, San Serif;
+}
+
+.prefont {
+	font-size : 9pt;
+}
+.pre {
+      font-size: 12px;
+      font-family: monospace;
+      white-space: pre;
+}
+
+.gray  {
+	font-size : 8pt;
+	font-family : Arial, Helvetica, San Serif;
+	color : #808080;
+}
+
+.nav  {
+	font-size : 9pt;
+	color : #FFFFFF;
+	font-weight : bold;
+	font-family : Arial, Helvetica, San Serif;
+}
+
+.nwslink  {
+	font-size : 9pt;
+	color: Black;
+	text-decoration: none;
+	font-family : Arial, Helvetica, San Serif;
+}
+
+.srhwhite  {
+	font-size : 9pt;
+	text-decoration: none;
+	color : #FFFFFF;
+	font-weight : bold;
+	font-family : Arial, Helvetica, San Serif;
+}
+
+.std  {
+	font-size : 9pt;
+	font-weight: bold;
+	color : #000000;
+	font-family : Helvetica, Arial, sans-serif;
+}
+.reg  {
+	font-size : 9pt;
+	color : #000000;
+	font-family : Helvetica, Arial, sans-serif;
+}
+.hdr  {
+	font-size : 10pt;
+	font-weight: bold;
+	color : #000000;
+	font-family : Helvetica, Arial, sans-serif;
+}
+.tiny  {
+	font-size : 8pt;
+	color : #000000;
+	font-family : Helvetica, Arial, sans-serif;
+}
+.spacer  {
+	font-size : 12pt;
+	font-family : monotype;
+}
+b {font-weight: bold}
+td   { font: 9pt Helvetica,Arial,sans-serif; }
+th   { font: bold 11pt Helvetica,Arial,sans-serif; }
+sup   { font: 8pt Helvetica,Arial,sans-serif; }

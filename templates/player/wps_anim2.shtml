@@ -1,0 +1,483 @@
+<!--#set var="FORMATLOAD" value="TRUE" -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title><!--#echo var="TITLE" --></title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <!--#if expr="$EXPIRE != $NULL" -->
+  <meta http-equiv="Expires" content="<!--#echo var="EXPIRE" -->">
+  <!--#endif -->
+  <!--#if expr="($HTTP_USER_AGENT = /MSIE/) || ($HTTP_USER_AGENT = /Mozilla\/4/) || ($HTTP_USER_AGENT = /Netscape\/7/)" -->
+      <link href="/main_ie.css" type="text/css" rel="stylesheet">
+  <!--#else -->
+      <link href="/main_moz.css" type="text/css" rel="stylesheet">
+  <!--#endif -->
+<!--#if expr="$QUERY_STRING = /hwind/" -->
+  <!--#set var="WIND" value="64" -->
+<!--#elif expr="$QUERY_STRING = /tswind/" -->
+  <!--#set var="WIND" value="34" -->
+<!--#endif -->
+<script language="JavaScript">
+// <!--
+//============================================================
+//                >> jsImagePlayer 1.0 <<
+//            for Netscape3.0+, September 1996
+//============================================================
+//                  by (c)BASTaRT 1996
+//             Praha, Czech Republic, Europe
+//
+// feel free to copy and use as long as the credits are given
+//          by having this header in the code
+//
+//          contact: xholecko@sgi.felk.cvut.cz
+//          https://sgi.felk.cvut.cz/~xholecko
+//
+//============================================================
+// Thanx to Karel & Martin for beta testing and suggestions!
+//============================================================
+//  New GUI Design by Brian Hughes, NOAA/NESDIS/SAB 12/17/99
+//  Assorted hacks added by T. Spindler NHC/TPC 7/25/00
+//============================================================
+
+ //********* SET UP VARIABLES *********************
+image_name = "<!--#echo var="IMAGE_NAME" -->";
+first_image = 12;
+last_image = 120;
+wind_value = "<!--#echo var="WIND" -->";
+image_type = "_sm2.gif";
+animation_height = 400;
+animation_width = 500;
+ 
+//**************************************************************************
+ 
+//=== THE CODE STARTS HERE - no need to change anything below ===
+ 
+//=== global variables ====
+theImages = new Array();      //holds the images
+imageNum = new Array();       //keeps track of which images to omit from loop
+normal_delay = 250;
+delay = normal_delay;         //delay between frames in 1/100 seconds
+delay_step = 25;
+delay_max = 4000;
+delay_min = 50;
+dwell_multipler = 5;
+dwell_step = 1;
+end_dwell_multipler   = dwell_multipler;
+start_dwell_multipler   = 1;
+current_image = first_image;     //number of the current image
+timeID = null;
+status = 0;                      // 0-stopped, 1-playing
+play_mode = 0;                   // 0-normal, 1-loop, 2-sweep
+size_valid = 0;
+num_loops = 0;			   // initializes loop number counter
+ 
+//===> Make sure the first image number is not bigger than the last image number
+if (first_image > last_image)
+{
+   var help = last_image;
+   last_image = first_image;
+   first_image = help;
+}
+ 
+//===> Preload the first image (while page is downloading)
+   theImages[0] = new Image();
+   theImages[0].src = "/graphics/loading.jpg";
+   imageNum[0] = true;
+ 
+//==============================================================
+//== All previous statements are performed as the page loads. ==
+//== The following functions are also defined at this time.   ==
+//==============================================================
+ 
+//===> Stop the animation
+function stop()
+{
+   //== cancel animation (timeID holds the expression which calls the fwd or bkwd function) ==
+   if (status == 1)
+      clearTimeout (timeID);
+   status = 0;
+//   setTimeout("history.back()", 60000);	     //when stop function called, "kicksback" to previous document 
+}						     //after 60 seconds
+ 
+ 
+//===> Display animation in fwd direction in either loop or sweep mode
+function animate_fwd()
+{
+   current_image = current_image + 12;                //increment image number
+ 
+   //== check if current image has exceeded loop bound ==
+   if (current_image > last_image) {
+      if (play_mode == 1) {              //fwd loop mode - skip to first image
+         current_image = first_image;
+      }
+      if (play_mode == 2) {              //sweep mode - change directions (go bkwd)
+         current_image = last_image;
+         animate_rev();
+         return;
+      }
+   }
+ 
+   //== check to ensure that current image has not been deselected from the loop ==
+   //== if it has, then find the next image that hasn't been ==
+   if (current_image == 108) {
+         current_image = current_image + 12;
+   }
+ 
+   document.animation.src = theImages[current_image].src;   //display image onto screen
+   document.control_form.frame_nr.value = current_image;                //display image number
+
+   delay_time = delay;
+   if ( current_image == first_image) delay_time = start_dwell_multipler*delay;
+   if (current_image == last_image)   delay_time = end_dwell_multipler*delay;
+ 
+   //== call "animate_fwd()" again after a set time (delay_time) has elapsed ==
+   timeID = setTimeout(animate_fwd, delay_time);
+}
+ 
+ 
+//===> Display animation in reverse direction
+function animate_rev()
+{
+   current_image = current_image - 12;                      //decrement image number
+ 
+   //== check if image number is before lower loop bound ==
+   if (current_image < first_image) {
+     if (play_mode == 1) {               //rev loop mode - skip to last image
+        current_image = last_image;
+     }
+     if (play_mode == 2) {
+        current_image = first_image;     //sweep mode - change directions (go fwd)
+        animate_fwd();
+        return;
+     }
+   }
+ 
+   //== check to ensure that current image has not been deselected from the loop ==
+   //== if it has, then find the next image that hasn't been ==
+   if (current_image == 108) {
+         current_image = current_image - 12;
+   }
+ 
+   document.animation.src = theImages[current_image].src;   //display image onto screen
+   document.control_form.frame_nr.value = current_image;                //display image number
+
+   delay_time = delay;
+   if (current_image == first_image) delay_time = start_dwell_multipler*delay;
+   if (current_image == last_image)   delay_time = end_dwell_multipler*delay;
+ 
+   //== call "animate_rev()" again after a set amount of time (delay_time) has elapsed ==
+   timeID = setTimeout(animate_rev, delay_time);
+}
+ 
+ 
+//===> Changes playing speed by adding to or substracting from the delay between frames
+function change_speed(dv)
+{
+   delay+=dv;
+   //== check to ensure max and min delay constraints have not been crossed ==
+   if(delay > delay_max) delay = delay_max;
+   if(delay < delay_min) delay = delay_min;
+}
+ 
+//===> functions that changed the dwell rates.
+function change_end_dwell(dv) {
+   end_dwell_multipler+=dv;
+   if ( end_dwell_multipler < 1 ) end_dwell_multipler = 0;
+   }
+ 
+function change_start_dwell(dv) {
+   start_dwell_multipler+=dv;
+   if ( start_dwell_multipler < 1 ) start_dwell_multipler = 0;
+   }
+ 
+//===> Increment to next image
+function incrementImage(number)
+{
+   stop();
+ 
+   //== if image is last in loop, increment to first image ==
+   if (number > last_image) number = first_image;
+ 
+   //== check to ensure that image has not been deselected from loop ==
+   if (number == 108) {
+         number = number + 12;
+         if (number > last_image) number = first_image;
+   }
+ 
+   current_image = number;
+   document.animation.src = theImages[current_image].src;   //display image
+   document.control_form.frame_nr.value = current_image;                //display image number
+}
+ 
+//===> Decrement to next image
+function decrementImage(number)
+{
+   stop();
+ 
+   //== if image is first in loop, decrement to last image ==
+   if (number < first_image) number = last_image;
+ 
+   //== check to ensure that image has not been deselected from loop ==
+   if (number == 108) {
+         number = number - 12;
+   }
+ 
+   current_image = number;
+   document.animation.src = theImages[current_image].src;   //display image
+   document.control_form.frame_nr.value = current_image;    //display image number
+}
+ 
+//===> "Play forward"
+function fwd()
+{
+   stop();
+   status = 1;
+   play_mode = 1;
+   animate_fwd();
+}
+ 
+//===> "Play reverse"
+function rev()
+{
+   stop();
+   status = 1;
+   play_mode = 1;
+   animate_rev();
+}
+
+//===> "play sweep"
+function sweep() {
+   stop();
+   status = 1;
+   play_mode = 2;
+   animate_fwd();
+   }
+ 
+//===> Change play mode (normal, loop, swing)
+function change_mode(mode)
+{
+   play_mode = mode;
+}
+ 
+//===> Load and initialize everything once page is downloaded (called from 'onLoad' in <BODY>)
+function launch(image_type,wind_value)
+{
+   var numargs = launch.arguments.length;
+
+   if (numargs == 0) image_type = "_sm2.gif";
+
+   for (var i = first_image; i <= last_image; i = i + 12)
+   {
+      theImages[i] = new Image();
+      theImages[i].src = "/storm_graphics/" + image_name + "_PROB" + wind_value + "_F" + i + image_type;
+      imageNum[i] = true;
+      document.animation.src = theImages[i].src;
+      document.control_form.frame_nr.value = i;
+   }
+   
+   if (image_type == "_sm2.gif") shrinkImage();
+   if (image_type == ".gif") enlargeImage();
+   
+   // this needs to be done to set the right mode when the page is manually reloaded
+   change_mode (1);	
+}
+ 
+//===> Check selection status of image in animation loop
+function checkImage(status,i)
+{
+   if (status == true)
+      imageNum[i] = false;
+   else imageNum[i] = true;
+}
+
+//==> Empty function - used to deal with image buttons rather than HTML buttons
+function func()
+{
+}
+ 
+//===> Sets up interface - this is the one function called from the HTML body
+function animation()
+{
+  count = first_image;
+}
+ 
+//===> Reload graphics with new image_type
+function switch_image(type)
+{
+  stop();
+  launch(type,wind_value);
+  fwd();
+}
+
+//===> Reload graphics with new image_type
+function go2image(number)
+{
+   stop();
+   current_image = number;
+   document.animation.src = theImages[number].src;   //display image
+   document.control_form.frame_nr.value = current_image;                //display image number
+}
+//===> resize graphic
+function enlargeImage()
+{
+   document.animation.height="716";
+   document.animation.width="895";
+} 
+function shrinkImage()
+{
+   document.animation.height="400";
+   document.animation.width="500";
+} 
+// -->
+</script>
+</head>
+<body leftMargin="0" background="/gifs/background.gif" 
+      topMargin="0" rightMargin="0" marginheight="0" marginwidth="0"
+      onLoad="if (self != top) top.location = self.location; switch_image('_sm2.gif')">
+
+<!--#include virtual="/templates/nhc_header.html" -->
+
+<table cellSpacing="0" cellPadding="1" width="670" border="0">
+  <tbody>
+  <tr valign="top">
+    <td width="130"><br>
+    
+    <!--#include virtual="/templates/nhc_std_menu_top.html" -->
+
+    <tr>
+    <td class="white" id="menuitem" colspan="2">
+      &nbsp;&nbsp;&nbsp;<a href="<!--#echo var="REQUEST_URI" -->?text">Text-only version</a><br>
+    </td>
+    </tr>
+    
+    <!--#if expr="$USE_MENU = $NULL" -->
+      <!--#include virtual="/templates/nhc_std_menu_bottom.html" -->
+    <!--#else -->
+      <!--#include virtual="/templates/menus/${USE_MENU}.html" -->
+      <!--#include virtual="/templates/nhc_std_menu_bottom.html" -->
+    <!--#endif -->
+    
+    </td>
+    <td valign="top" align="center" width="540"><a name="contents"></a><br>
+
+<!-- main body -->
+
+<!-- breadcrumb section -->
+
+<table cellspacing="0" cellpadding="0" width="525" border="0">
+  <tbody>
+  <tr>
+  <td align="center">
+
+    <table border="0" cellspacing="0" cellpadding="0" width="500">
+      <tbody>
+      <tr>
+      <td>
+
+      <!-- start of content -->
+
+<!--#if expr="($TITLE != mainpage) && ($TITLE != TCR)" -->
+      <h2 align="center" style="width: 500;"><!--#echo var="TITLE" --></h2>
+      <hr noshade width="500" align="left">
+<!--#endif -->
+
+  <!--#include virtual="$DOCUMENT_URI" -->
+<noscript>
+<h3>
+This viewer requires Javascript for an animation of the storm graphics.
+You will need Netscape version 3.0 or higher or Internet Explorer 3.0
+or higher and Javascript enabled to view this.
+</h3>
+</noscript>
+
+<!--#set var="SAVEQUERYSTRING" value="${QUERY_STRING}" -->
+<!--#set var="QUERY_STRING" value="hwind120" -->
+<!--#include virtual="/templates/crosslinks.shtml" -->
+<!--#set var="QUERY_STRING" value="${SAVEQUERYSTRING}" -->
+
+<form>
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<tr valign="top" align="center"><td>
+<b>Map Size</b><br>
+<input style="font-size: 11px" type="button" value="Small" onClick="switch_image('_sm2.gif')"></b>
+<input style="font-size: 11px" type="button" value="Large" onClick="switch_image('.gif')"></b>
+</td>
+<td>
+<b>Loop Images</b><br>
+<input type="button" value="<<" onClick="change_mode(1);rev()">
+<input type="button" value="Stop" onClick="stop()">
+<input type="button" value=">>" onClick="change_mode(1);fwd()"><br>
+</td>
+<td>
+<b>Adjust Speed</b><br>
+<input type="button" value="Slow" onClick="change_speed(delay_step)">
+<input type="button" value="Fast" onClick="change_speed(-delay_step)">
+</td>
+<td>
+<b>Advance One</b><br>
+<input type="button" value=" < " onClick="decrementImage(current_image=current_image-12)">
+<input type="button" value=" > " onClick="incrementImage(current_image=current_image+12)">
+</td></tr></table>
+</form>
+
+<form method="post" name="control_form">
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<tr valign="top" align="center"><td class="std" style="font-size: 14px;">
+<!--#if expr="$QUERY_STRING = /hwind/" -->
+<h3 style="width: 500">Hurricane Wind Probabilities:
+<!--#elif expr="$QUERY_STRING = /tswind/" -->
+<h3 style="width: 500">Tropical Storm Wind Probabilities:
+<!--#endif -->
+<input class="std" style="font-size: 14px; text-align: center;" type="text" name="frame_nr" value="9" size="2" onFocus="this.select()" onChange="go2image(this.value)"></input>
+Hours</h3></a>
+</td></tr></table>
+<img name="animation" border="0" width="540" height="431" src="/graphics/loading.jpg"
+alt="Loading Storm Graphics Loops">
+</form>
+
+      <!-- end of content -->
+      <br><hr noshade width="500" align="center">
+      </td>
+      </tr>
+      </tbody>
+    </table>
+    
+    <table cellspacing="0" cellpadding="0" border="0" width="500" align="center">
+      <tbody>
+        <tr align="center">
+          <td>Tropical Cyclone, Tropical Weather, &amp; TPC Information Topics:<br>
+            <a href="#storminfo">Storm Information</a>,
+	    <a href="#awareness">Hurricane Awareness</a>,
+	    <a href="#history">Historical Information</a>,<br>
+	    <a href="#tafb">Tropical Analysis and Forecasting Branch</a>,
+	    <a href="#tpcinfo">About Us</a>,
+	    <a href="/contact.shtml">Contact Us</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </tr>
+    </td>
+    <td>
+</td>
+</tr>
+</tbody>
+</table>
+    
+<!-- End of main body -->
+      <table cellSpacing="0" cellPadding="0" width="504" border="0" align="center">
+        <tbody>
+        <!--#include virtual="/templates/nhc_footer.html" -->
+        <tr valign="top">
+          <td class="gray" colspan="3">
+            Page last modified: <!--#flastmod virtual="$DOCUMENT_URI" -->
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

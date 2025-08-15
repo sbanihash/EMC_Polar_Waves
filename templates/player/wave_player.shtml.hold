@@ -1,0 +1,218 @@
+<!-- ATG NAG WNA WNAZ NAH NAHZ IOG -->
+
+<!--#if expr="$QUERY_STRING = /ATG-/" -->
+  <!--#set var="REGION" value="ATG" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nww3_at." -->
+  <!--#set var="BASIN" value="Atlantic Ocean from Global" -->
+  <!--#set var="WIDTH" value="490" -->
+  <!--#set var="HEIGHT" value="670" -->
+<!--#elif expr="$QUERY_STRING = /NAG-/" -->
+  <!--#set var="REGION" value="NAG" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nww3_na." -->
+  <!--#set var="BASIN" value="North Atlantic from Global" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="486" -->
+<!--#elif expr="$QUERY_STRING = /WNA-/" -->
+  <!--#set var="REGION" value="WNA" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/wna." -->
+  <!--#set var="BASIN" value="Western North Atlantic" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /WNAZ-/" -->
+  <!--#set var="REGION" value="WNAZ" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/wna_ecg." -->
+  <!--#set var="BASIN" value="Western North Atlantic Coastal Zoom" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /NAH-/" -->
+  <!--#set var="REGION" value="NAH" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nah." -->
+  <!--#set var="BASIN" value="North Atlantic Hurricane" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /NAHZ-/" -->
+  <!--#set var="REGION" value="NAHZ" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nah_ecg." -->
+  <!--#set var="BASIN" value="North Atlantic Hurricane Coastal Zoom" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+  
+<!--#elif expr="$QUERY_STRING = /IOG-/" -->
+  <!--#set var="REGION" value="IOG" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nww3_in." -->
+  <!--#set var="BASIN" value="Indian Ocean from Global" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+
+<!--#elif expr="$QUERY_STRING = /POG-/" -->
+  <!--#set var="REGION" value="POG" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nww3_pa." -->
+  <!--#set var="BASIN" value="Pacific Ocean from Global" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /NPG-/" -->
+  <!--#set var="REGION" value="NPG" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nww3_np." -->
+  <!--#set var="BASIN" value="North Pacific from Global" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="486" -->
+<!--#elif expr="$QUERY_STRING = /ENP-/" -->
+  <!--#set var="REGION" value="ENP" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/enp." -->
+  <!--#set var="BASIN" value="Eastern North Pacific" -->
+  <!--#set var="WIDTH" value="546" -->
+  <!--#set var="HEIGHT" value="486" -->
+<!--#elif expr="$QUERY_STRING = /ENPHZ-/" -->
+  <!--#set var="REGION" value="ENPHZ" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/enp_haw." -->
+  <!--#set var="BASIN" value="Eastern North Pacific Hawaii Zoom" -->
+  <!--#set var="WIDTH" value="546" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /ENPWCZ-/" -->
+  <!--#set var="REGION" value="ENPWCZ" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/enp_wc." -->
+  <!--#set var="BASIN" value="Eastern North Pacific West Coast Zoom" -->
+  <!--#set var="WIDTH" value="546" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /NPH-/" -->
+  <!--#set var="REGION" value="NPH" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nph." -->
+  <!--#set var="BASIN" value="North Pacific Hurricane" -->
+  <!--#set var="WIDTH" value="546" -->
+  <!--#set var="HEIGHT" value="486" -->
+<!--#elif expr="$QUERY_STRING = /NPHHZ-/" -->
+  <!--#set var="REGION" value="NPHHZ" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nph_haw." -->
+  <!--#set var="BASIN" value="North Pacific Hurricane Hawaii Zoom" -->
+  <!--#set var="WIDTH" value="546" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /NPHWCZ-/" -->
+  <!--#set var="REGION" value="NPHWCZ" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nph_wc." -->
+  <!--#set var="BASIN" value="North Pacific West Coast Zoom" -->
+  <!--#set var="WIDTH" value="546" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#elif expr="$QUERY_STRING = /AKW-/" -->
+  <!--#set var="REGION" value="AKW" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/akw." -->
+  <!--#set var="BASIN" value="Alaskan Waters" -->
+  <!--#set var="WIDTH" value="536" -->
+  <!--#set var="HEIGHT" value="558" -->
+<!--#else -->
+  <!--#set var="REGION" value="ATG" -->
+  <!--#set var="FILEROOT" value="/develop/waves/latest_run/nww3_at." -->
+  <!--#set var="BASIN" value="Atlantic Ocean from Global" -->
+  <!--#set var="WIDTH" value="490" -->
+  <!--#set var="HEIGHT" value="670" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING = /hs/" -->
+  <!--#set var="IMAGE" value="hs" -->
+  <!--#set var="IMAGE_TYPE" value="" -->
+  <!--#set var="IMAGE_TITLE" value="Significant Wave Height" -->
+<!--#elif expr="$QUERY_STRING = /tp/" -->
+  <!--#set var="IMAGE" value="tp" -->
+  <!--#set var="IMAGE_TYPE" value=".2" -->
+  <!--#set var="IMAGE_TITLE" value="Peak Wave Period and Direction" -->
+<!--#elif expr="$QUERY_STRING = /u10/" -->
+  <!--#set var="IMAGE" value="u10" -->
+  <!--#set var="IMAGE_TYPE" value=".3" -->
+  <!--#set var="IMAGE_TITLE" value="Wind Speed and Direction" -->
+<!--#else -->
+  <!--#set var="IMAGE" value="hs" -->
+  <!--#set var="IMAGE_TYPE" value="" -->
+  <!--#set var="IMAGE_TITLE" value="Significant Wave Height" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING = /text/" -->
+  <!--#set var="ISTEXT" value="1" -->
+<!--#else
+  <!--#set var="ISTEXT" value="0" -->
+<!--#endif -->
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+<tr align="center">
+<form>
+<td class="searchinput" nowrap>
+<select name="gourl" onChange="MM_jumpMenu('parent',this,0)">
+<option class="searchinput" value="">Choose Region</option>
+<option class="searchinput" value="">-----------</option>
+<option class="searchinput" value="wave_graphics.shtml?ATG-<!--#echo var="IMAGE_TYPE" -->">Atlantic Ocean from Global</option>
+<option class="searchinput" value="wave_graphics.shtml?NAG-<!--#echo var="IMAGE_TYPE" -->">North Atlantic from Global</option>
+<option class="searchinput" value="wave_graphics.shtml?WNA-<!--#echo var="IMAGE_TYPE" -->">Western North Atlantic</option>
+<option class="searchinput" value="wave_graphics.shtml?WNAZ-<!--#echo var="IMAGE_TYPE" -->">WNA Coastal Zoom</option>
+<option class="searchinput" value="wave_graphics.shtml?NAH-<!--#echo var="IMAGE_TYPE" -->">North Atlantic Hurricane</option>
+<option class="searchinput" value="wave_graphics.shtml?NAHZ-<!--#echo var="IMAGE_TYPE" -->">NAH Coastal Zoom</option>
+<option class="searchinput" value="">-----------</option>
+<option class="searchinput" value="wave_graphics.shtml?POG-<!--#echo var="IMAGE_TYPE" -->">Pacific Ocean from Global</option>
+<option class="searchinput" value="wave_graphics.shtml?NPG-<!--#echo var="IMAGE_TYPE" -->">North Pacific from Global</option>
+<option class="searchinput" value="wave_graphics.shtml?ENP-<!--#echo var="IMAGE_TYPE" -->">Eastern North Pacific</option>
+<option class="searchinput" value="wave_graphics.shtml?ENPHZ-<!--#echo var="IMAGE_TYPE" -->">ENP Hawaii Zoom</option>
+<option class="searchinput" value="wave_graphics.shtml?ENPWCZ-<!--#echo var="IMAGE_TYPE" -->">ENP West Coast Zoom</option>
+<option class="searchinput" value="wave_graphics.shtml?NPH-<!--#echo var="IMAGE_TYPE" -->">North Pacific Hurricane</option>
+<option class="searchinput" value="wave_graphics.shtml?NPHHZ-<!--#echo var="IMAGE_TYPE" -->">NPH Hawaii Zoom</option>
+<option class="searchinput" value="wave_graphics.shtml?NPHWCZ-<!--#echo var="IMAGE_TYPE" -->">NPH West Coast Zoom</option>
+<option class="searchinput" value="wave_graphics.shtml?AKW-<!--#echo var="IMAGE_TYPE" -->">Alaskan Waters</option>
+<option class="searchinput" value="">-----------</option>
+<option class="searchinput" value="wave_graphics.shtml?IOG-<!--#echo var="IMAGE_TYPE" -->">Indian Ocean from Global</option>
+</select>
+</td>
+</form>
+<td class="tiny">
+<!--#if expr="$IMAGE != hs" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-hs">Significant<br>Wave Height</a>
+<!--#else -->
+<u>Significant<br>Wave Height</u>
+<!--#endif -->
+</td>
+<td class="tiny">
+<!--#if expr="$IMAGE != tp" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-tp">Peak Period<br>&amp; Direction</a>
+<!--#else -->
+<u>Peak Period<br>&amp; Direction</u>
+<!--#endif -->
+</td>
+<td class="tiny">
+<!--#if expr="$IMAGE != u10" -->
+<a href="/develop/waves/wave_graphics.shtml?<!--#echo var="REGION"-->-u10">Wind Speed<br>&amp; Direction</a>
+<!--#else -->
+<u>Wind Speed<br>&amp; Direction</u>
+<!--#endif -->
+</td></tr>
+<tr>
+<form method="post" name="control_form">
+<td align="center" valign="middle" colspan="4">
+<span class="hdr" style="font-size: larger;"><!--#echo var="BASIN" --></span><br>
+<span class="std"><!--#echo var="IMAGE_TITLE" -->
+forecast for
+<input class="std" style="font-size: 14px; text-align: center;" type="text" name="frame_nr" value="" size="2" onFocus="this.select()" onChange="go2image(this.value)"></input>
+Hours</span>
+<table border="0" cellpadding="2" cellspacing="0"
+style="border-style: solid; border-color: black; border-width: 1px;
+border-right-width: 0px; border-left-width: 0px;">
+<tr><td>
+&nbsp;&nbsp;<b>Buoy</b>
+<input class="tiny" style="text-align: center;" type="text" name="buoy_id" value="Buoy ID" size="14"></input>
+&nbsp;&nbsp;
+<input class="tiny" type="checkbox" name="bull" notchecked>Bulletin&nbsp;</input>
+<input class="tiny" type="checkbox" name="spec" notchecked>Spectra&nbsp;</input>
+<input class="tiny" type="checkbox" name="srce" notchecked>Sources&nbsp;</input>
+</td></tr></table>
+</td>
+</form>
+</tr>
+</table>
+
+<!--#include virtual="/develop/waves/templates/player/animator.shtml" -->
+
+<!--#include virtual="/develop/waves/templates/buoys/${REGION}_map.shtml" -->
+
+<img name="animation" border="0" width="<!--#echo var="WIDTH" -->" height="<!--#echo var="HEIGHT" -->" 
+src="/develop/waves/images/loading.jpg" alt="Loading Storm Graphics Loops" usemap="#buoys" ismap>
+
+<h3>About this product:</h3>
+<p class="reg" style="width: 500">
+Some stuff goes here
+</p>
+
+<!--#endif -->
+
