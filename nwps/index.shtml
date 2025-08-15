@@ -1,0 +1,313 @@
+<!--#set var="TITLE" value="Nearshore Wave Prediction System" -->
+<!--#if expr="$FORMATLOAD = $NULL" -->
+<!--#include virtual="/waves/templates/mmab_xssi.shtml" -->
+<!--#else -->
+
+<base href="/waves/nwps">
+
+<script type="text/javascript" src="/jQuery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/jQuery/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/nwps/js/dialog_ui.js"></script>
+
+<p class="reg">
+The Nearshore Wave Prediction System (NWPS) provides on-demand, high-resolution 
+nearshore wave model guidance to U.S. coastal WFOs, triggered in real time by 
+forecast wind grids prepared and submitted by the individual offices. NWPS is 
+maintained and developed by NCEP's Environmental Modeling Center (EMC) in 
+collaboration with a number of Weather Forecast Offices (WFOs), as well as partners 
+at NOAA/NOS, USGS and USACE.
+</p>
+
+<!--
+<p class="reg">
+<a href="javascript:load_img('/nwps/images/large/nwps_phylos_resized.png')">
+<img alt="NWPS system structure" src="/nwps/images/small/nwps_phylos.png"
+border="0" width="500" height="272"></a>
+<center><i>Click to enlarge</i></center>
+</p>
+-->
+
+<p class="std" style="font-size: larger" align="center">
+<a href="/nwps/viewer.shtml">
+Access the NWPS Model Viewer<br>
+<img alt="NWPS interactive interface" src="/nwps/images/nwps_webgraph_esri.png" 
+border="0" width="500" height="249"><br clear="left"></a>
+<a href="/nwps/para/viewer.shtml">
+Access the development parallel here<br>
+<br clear="left"></a>
+</p>
+
+<p class="reg">
+NWPS is driven by forecaster-developed wind grids produced in AWIPS, 
+and wave boundary conditions from the operational 
+<a href='/waves/index2.shtml'>WAVEWATCH III</a> model. The nearshore wave model used is 
+<a href='http://www.swan.tudelft.nl'>SWAN</a>. 
+Wave-current interaction is included using surface currents from the 
+Real-Time Ocean Forecast System (<a href='/global/index.shtml'>RTOFS-Global</a>). 
+Tides and storm surge are accounted for using the Extratropical Surge and Tide Operational Forecast System 
+(<a href='http://www.opc.ncep.noaa.gov/coastal_guidance.shtml'>ESTOFS</a>, extratropical conditions), 
+or the probabilistic model <a href='http://slosh.nws.noaa.gov/psurge2.0/'>P-SURGE</a> 
+(tropical conditions). The computational grids have a nearshore resolution of 1.8 km-500 m. 
+NWPS produces fields of integral wave parameters, wave spectra, and individually tracked wave 
+systems (Gerling-Hanson plots). Experimental rip current and total water level 
+guidance is produced at 5 pilot WFOs.
+</p>
+
+<p class="std" style="font-size: larger" align="center">
+<a href="https://www.nco.ncep.noaa.gov/status/nwps/">
+Access the NWPS Model Status Page<br>
+<img alt="NWPS interactive interface" src="/nwps/images/nwps_model_status_text3.png" 
+border="0" width="500" height="249"><br clear="left"></a>
+</p>
+
+<hr width="75%" size="1" align="center" noshade>
+
+<h3>Coastal Hazards: Total Water Level Viewer</h3>
+
+<p class="reg">
+This tool displays experimental total water level and coastal
+change model guidance for select regions of the U.S. coastline using
+NWPS output and local beach characteristics (<i>Courtesy of 
+<a style="color: blue;"
+href="http://www.usgs.gov">
+U.S. Geological Survey)</i></a>
+</p>
+
+<a href="http://coastal.er.usgs.gov/hurricanes/research/twlviewer/">
+<img src="/nwps/images/USGS_CoastalHazards_icon.png" border="0"
+width="500" height="220" alt="USGS Total Water Level and Coastal Change Forecast Viewer">
+</a>
+
+<hr width="75%" size="1" align="center" noshade>
+
+<h3>Monthly Validation - Southern and Eastern Regions</h3>
+
+<p class="reg">
+Below are the combined monthly validation statistics at all coastal data buoys in 
+the NWS Southern and Eastern Regions respectively, computed as a 30-day, moving-window 
+retrospective. For real-time validation, as well as buoy-specific
+validation statistics, please see the model validation viewer above.
+</p>
+
+<table cellpadding="0" cellspacing="5" border="0" width="400">
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_sr_scatter.png')">
+<img alt="SR NDBC buoy validation" src="/nwps/images/rtimages/val_monthly/nwps_sr_scatter.png" border="0" width="250"></a>
+<center>Southern Region Validation Statistics<br>
+<i>Click to enlarge</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_er_scatter.png')">
+<img alt="key west example forecast" src="/nwps/images/rtimages/val_monthly/nwps_er_scatter.png" 
+border="0" width="250"></a>
+<center>Eastern Region Validation Statistics<br>
+<i>Click to enlarge</i>
+</center>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="5" border="0" width="400">
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_stats_sr_ts.png')">
+<img alt="SR NDBC buoy validation" src="/nwps/images/rtimages/val_monthly/nwps_stats_sr_ts.png" border="0" width="250"></a>
+<center>Southern Region Statistics History<br>
+<i>Click to enlarge</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_stats_er_ts.png')">
+<img alt="key west example forecast" src="/nwps/images/rtimages/val_monthly/nwps_stats_er_ts.png" 
+border="0" width="250"></a>
+<center>Eastern Region Statistics History<br>
+<i>Click to enlarge</i>
+</center>
+</td>
+</tr>
+</table>
+
+<h3>Monthly Validation - Western, Pacific and Alaska Regions</h3>
+
+<p class="reg">
+Below are the combined monthly validation statistics at all coastal data buoys in 
+the NWS Western, Pacific and Alaska Regions, computed as a 30-day, moving-window 
+retrospective. For real-time validation, please see the model validation viewer above.
+</p>
+
+<table cellpadding="0" cellspacing="5" border="0" width="400">
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_wr_scatter.png')">
+<img alt="WR NDBC buoy validation" src="/nwps/images/rtimages/val_monthly/nwps_wr_scatter.png" border="0" width="250"></a>
+<center>Western Region Validation Statistics<br>
+<i>Click to enlarge</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_prar_scatter.png')">
+<img alt="PR/AR NDBC buoy validation" src="/nwps/images/rtimages/val_monthly/nwps_prar_scatter.png" 
+border="0" width="250"></a>
+<center>Pacific/Alaska Region Validation Statistics<br>
+<i>Click to enlarge</i>
+</center>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="5" border="0" width="400">
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_stats_wr_ts.png')">
+<img alt="WR NDBC buoy validation" src="/nwps/images/rtimages/val_monthly/nwps_stats_wr_ts.png" border="0" width="250"></a>
+<center>Western Region Statistics History<br>
+<i>Click to enlarge</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/rtimages/val_monthly/nwps_stats_prar_ts.png')">
+<img alt="PR/AR NDBC buoy validation" src="/nwps/images/rtimages/val_monthly/nwps_stats_prar_ts.png" 
+border="0" width="250"></a>
+<center>Pacific/Alaska Region Statistics History<br>
+<i>Click to enlarge</i>
+</center>
+</td>
+</tr>
+</table>
+
+<h3>Follow Us</h3>
+
+<p class="reg">
+Sign up for the 
+<b><a href="https://www.lstsrv.ncep.noaa.gov/mailman/listinfo/ncep.list.emc.nwps">NWPS mailing list</a></b> 
+for updates and information on this system.</p>
+
+<p class="reg" style="text-align: justify;">
+Follow the system development on our <b><a href="https://collaborate.nws.noaa.gov/trac/awipsSpecialProjects/">Wiki Page</a></b> 
+(authorization required).</p>
+
+<h3>References</h3>
+
+<p class="reg">
+Gibbs A., G. Dusek, A. J. van der Westhuysen, P. Santos, S. Stripling, S. Huddleston, E. Rivera-Acevedo, J. Estupinan, and H. Seim. Numerical Validation of a Coupled Probabilistic Rip Current Model and Nearshore Wave Prediction System for South Florida. <i>Proc. 95th AMS Annual Meeting</i>, 
+Am. Meteor. Soc., Phoenix, 2015. <a href='https://ams.confex.com/ams/95Annual/webprogram/Manuscript/Paper265327/AMS_ripcurrent_2015_ext-abs_Final.pdf'>Available here</a>
+</p>
+
+<p class="reg">
+Dusek G., A. J. Van der Westhuysen, A. Gibbs, D. King, S. Kennedy, R. Padilla, H. Seim, and D. Elder. Coupling a Rip Current Forecast Model to the Nearshore Wave Prediction System. <i>Proc. 94th AMS Annual Meeting</i>, 
+Am. Meteor. Soc., Atlanta, 2014. <a href='https://ams.confex.com/ams/94Annual/webprogram/Manuscript/Paper238859/Dusek%20et%20al.%20-%20Coupling%20rip%20current%20forecast%20model%20to%20NWPS.pdf'>Available here</a>
+</p>
+
+<p class="reg">
+Van der Westhuysen, A. J., A. A. Taylor, R. Padilla-Hernandez, A. Gibbs, P. Santos, D. Gaer, H. D. Cobb III, J. R. Lewitsky, and J. R. Rhome. Enhancements to the Nearshore Wave Prediction System to provide Coastal and Overland Hurricane Wave Guidance. <i>Proc. 94th AMS Annual Meeting</i>, 
+Am. Meteor. Soc., Atlanta, 2014. <a href='https://ams.confex.com/ams/94Annual/webprogram/Manuscript/Paper241277/2646518_AMS2014_Westhuysen-etal_ext_abstr_paper3-1.pdf'>Available here</a>
+</p>
+
+<p class="reg">
+Van der Westhuysen, A. J., R. Padilla-Hernandez, P. Santos, A. Gibbs, D. Gaer, 
+T. Nicolini, S. Tjaden, E. M. Devaliere and H. L. Tolman. Development and validation 
+of the Nearshore Wave Prediction System. <i>Proc. 93rd AMS Annual Meeting</i>, 
+Am. Meteor. Soc., Austin, 2013. <a href='https://ams.confex.com/ams/93Annual/webprogram/Manuscript/Paper222877/AMS2013_Westhuysen-etal_ext_abstr_paper4-5.pdf'>Available here</a>
+</p>
+
+<p class="reg">
+Gibbs, A., P. Santos, A. J. van der Westhuysen and R. Padilla-Hernandez. 
+NWS Southern Region Numerical Optimization and Sensitivity Evaluation in Non-Stationary 
+SWAN Simulations. <i>Proc. 92nd AMS Annual Meeting</i>, Am. Meteor. Soc.,
+New Orleans, 2012. <a href='https://ams.confex.com/ams/92Annual/webprogram/Manuscript/Paper200322/2012_AMS_Extended%20Abstract_SWAN_final.pdf'>Available here</a>
+</p>
+
+<p class="reg">
+Settelmaier, J. B., A. Gibbs, P. Santos, T. Freeman, D. Gaer. Simulating
+Waves Nearshore (SWAN) Modeling Efforts at the National Weather Service
+(NWS) Southern Region (SR) Coastal Weather Forecast Offices (WFOs). 
+<i>Proc. 91st AMS Annual Meeting</i>, Am. Meteor. Soc., Seattle, 2011. 
+<a href='https://ams.confex.com/ams/91Annual/webprogram/Manuscript/Paper183540/Settelmaier_13A.4.pdf'>Available here</a>
+</p>
+
+<h3>Upcoming features: Unstructured meshes</h3>
+
+<p class="reg">
+SWAN and WW3's unstructured grid functionality is currently being
+incorporated into NWPS.  With flexible unstructured grids, computational
+time can be optimized by concentrating computational grid points only in
+those nearshore regions where it is required to adequately resolve physical
+processes at small spatial scales, as shown in the examples below. This 
+new functionality is scheduled for September 2017.
+</p>
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/large/mesh.png')">
+<img alt="key west mesh" src="/nwps/images/small/mesh.png" 
+border="0" width="250"></a>
+<center>Unstructured mesh over WFO Key West domain.<br>
+<i>Click to enlarge</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/large/KEY_Hsig_20130909_anim_resized.gif')">
+<img alt="key west example forecast" src="/nwps/images/small/KEY_Hsig_20130913_anim.png" 
+border="0" width="250"></a>
+<center>
+Forecast guidance produced using NWPS (with SWAN wave model).<br>
+<i>Click to animate</i>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/large/mesh_zoom.png')">
+<img alt="key west mesh zoom" src="/nwps/images/small/mesh_zoom.png" 
+border="0" width="250"></a>
+<center>Zoom of unstructured mesh over Key West.<br>
+<i>Click to enlarge</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/large/KEY_Hsig_20130909_zoom_anim_resized.gif')">
+<img alt="key west example forecast zoom" src="/nwps/images/small/KEY_Hsig_20130913_zoom_anim.png" 
+border="0" width="250">
+</a>
+<center>Forecast guidance over zoomed-in domain.<br>
+<i>Click to animate.</i></center>
+</td>
+</tr>
+</table>
+
+<!--
+<h4>Inclusion of time-dependent P-Surge water levels 
+during hurricane events</h4>
+
+<p class="reg">
+Tropical cyclone events are characterized by a high uncertainty in the
+atmospheric forcing. As a result, a probabilistic approach is followed by
+NWS's National Hurricane Center (NHC) to produce cyclone-related coastal
+surge forecasts during tropical cyclone events using the P-Surge system,
+based on the highly-efficient Sea, Lake, and Overland Surges from Hurricanes
+(SLOSH) model. One type of output from P-Surge is the composite surge level
+fields associated with a given exceedance level (e.g. 10-50%). Since these
+exceedance fields represent a single water level surface, they can be
+applied in a single deterministic NWPS run at a given exceedance level.
+Since the P-Surge fields include inundation of overland regions, it enables
+the computation of overland waves in flooded areas in NWPS, as shown below
+for WFO New Orleans during Hurricane Isaac (2012).
+</p>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td>
+<a href="javascript:load_img('/nwps/images/large/isaac_depth_anim_resized.gif')">
+<img alt="water depth" src="/nwps/images/small/isaac_depth_anim.png" 
+border="0" width="250"></a>
+<center>Total water depth from P-Surge surge levels (20% exceeedance) and 
+ESTOFS tides.<br>
+<i>Click to animate</i></center>
+</td>
+<td>
+<a href="javascript:load_img('/nwps/images/large/isaac_hsig_anim_resized.gif')">
+<img alt="surge forecast" src="/nwps/images/small/isaac_hsig_anim.png" 
+border="0" width="250"></a>
+<center>Forecast guidance produced using NWPS (SWAN).<br>
+<i>Click to animate</i></center>
+</td>
+</tr>
+</table>
+<!--endif -->-->

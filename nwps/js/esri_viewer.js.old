@@ -1,0 +1,2096 @@
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/Graphic",
+      "esri/geometry/Point",
+      "esri/geometry/Multipoint",
+      "esri/geometry/Polyline",
+      "esri/geometry/Polygon",
+      "esri/symbols/SimpleMarkerSymbol",
+      "esri/symbols/SimpleLineSymbol",
+      "esri/symbols/SimpleFillSymbol",
+      "dojo/domReady!"
+    ], function(
+      Map, MapView,
+      Graphic, Point, MultiPoint, Polyline, Polygon,
+      SimpleMarkerSymbol, SimpleLineSymbol, SimpleFillSymbol
+    ) {
+
+      var map = new Map({
+        basemap: "hybrid"
+      });
+
+      var view = new MapView({
+        center: [-130, 45],
+        container: "viewDiv",
+        map: map,
+        zoom: 3
+      });
+
+      /**********************
+       * Create a point graphic
+       **********************/
+
+      // First create a point geometry (this is the location of the Titanic)
+      var point = new Point({
+        longitude: -83.074,
+        latitude: 26.064
+      });
+      
+      var point2 = new Point({
+        longitude: -117.767,
+        latitude: 33.458
+      });
+      
+      var point3 = new Point({
+        longitude: -150.279,
+        latitude: 70.874
+      });
+      
+      var point4 = new Point({
+        longitude: -166.071,
+        latitude: 70.025
+      });
+      
+      var point5 = new Point({
+        longitude: -169.454,
+        latitude: 65.011
+      });
+      
+      var point6 = new Point({
+        longitude: -133.630,
+        latitude: 57.272
+      });
+      
+      var point7 = new Point({
+        longitude: -137.997,
+        latitude: 58.300
+      });
+      
+      var point8 = new Point({
+        longitude: -142.494,
+        latitude: 55.868
+      });
+      
+      var point9 = new Point({
+        longitude: -170.285,
+        latitude: 57.125
+      });
+      
+      var point10 = new Point({
+        longitude: -172.001,
+        latitude: 55.031
+      });
+      
+      var point11 = new Point({
+        longitude: -160.806,
+        latitude: 53.911
+      });
+      
+      var point12 = new Point({
+        longitude: -154.291,
+        latitude: 57.892
+      });
+      
+      var point13 = new Point({
+        longitude: -148.263,
+        latitude: 60.799
+      });
+      
+      var point14 = new Point({
+        longitude: -151.817,
+        latitude: 59.590
+      });
+      
+      var point15 = new Point({
+        longitude: -146.784,
+        latitude: 60.584
+      });
+      
+      var point16 = new Point({
+        longitude: -146.834,
+        latitude: 60.227
+      });
+      
+      var point17 = new Point({
+        longitude: -143.392,
+        latitude: 59.668
+      });
+      
+      var point18 = new Point({
+        longitude: -147.990,
+        latitude: 59.502
+      });
+      
+      var point19 = new Point({
+        longitude: -149.960,
+        latitude: 57.939
+      });
+      
+      var point20 = new Point({
+        longitude: -147.920,
+        latitude: 56.304
+      });
+      
+      var point21 = new Point({
+        longitude: 144.657,
+        latitude: 13.444
+      });
+      
+      var point22 = new Point({
+        longitude: 145.662,
+        latitude: 15.267
+      });
+      
+      var point23 = new Point({
+        longitude: 144.788,
+        latitude: 13.354
+      });
+      
+      var point24 = new Point({
+        longitude: -154.730,
+        latitude: 19.410
+      });
+      
+      var point25 = new Point({
+        longitude: -156.180,
+        latitude: 19.650
+      });
+      
+      var point26 = new Point({
+        longitude: -160.569,
+        latitude: 19.289
+      });
+      
+      var point27 = new Point({
+        longitude: -158.120,
+        latitude: 21.669
+      });
+      
+      var point28 = new Point({
+        longitude: -157.679,
+        latitude: 21.414
+      });
+      
+      var point29 = new Point({
+        longitude: -157.010,
+        latitude: 20.788
+      });
+      
+      var point30 = new Point({
+        longitude: -158.124,
+        latitude: 21.281
+      });
+      
+      var point31 = new Point({
+        longitude: -156.425,
+        latitude: 21.018
+      });
+      
+      var point32 = new Point({
+        longitude: -154.968,
+        latitude: 19.781
+      });
+      
+      var point33 = new Point({
+        longitude: -157.752,
+        latitude: 21.477
+      });
+      
+      var point34 = new Point({
+        longitude: -159.570,
+        latitude: 22.300
+      });
+      
+      var point35 = new Point({
+        longitude: -117.257,
+        latitude: 32.867
+      });
+      
+      var point35a = new Point({
+        longitude: -117.267,
+        latitude: 32.868
+      });
+      
+      var point36 = new Point({
+        longitude: -117.439,
+        latitude: 33.220
+      });
+      
+      var point37 = new Point({
+        longitude: -117.392,
+        latitude: 32.930
+      });
+      
+      var point38 = new Point({
+        longitude: -117.500,
+        latitude: 32.750
+      });
+      
+      var point39 = new Point({
+        longitude: -117.370,
+        latitude: 32.747
+      });
+      
+      var point40 = new Point({
+        longitude: -117.431,
+        latitude: 32.530
+      });
+      
+      var point41 = new Point({
+        longitude: -117.471,
+        latitude: 33.179
+      });
+      
+      var point42 = new Point({
+        longitude: -118.035,
+        latitude: 32.491
+      });
+      
+      var point43 = new Point({
+        longitude: -120.782,
+        latitude: 34.454
+      });
+      
+      var point44 = new Point({
+        longitude: -119.053,
+        latitude: 33.749
+      });
+      
+      var point45 = new Point({
+        longitude: -120.477,
+        latitude: 34.265
+      });
+      
+      var point46 = new Point({
+        longitude: -119.853,
+        latitude: 34.252
+      });
+      
+      var point47 = new Point({
+        longitude: -121.019,
+        latitude: 34.956
+      });
+      
+      var point48 = new Point({
+        longitude: -118.201,
+        latitude: 33.700
+      });
+      
+      var point49 = new Point({
+        longitude: -118.184,
+        latitude: 33.578
+      });
+    
+      var point50 = new Point({
+        longitude: -118.317,
+        latitude: 33.618
+      });
+      
+      var point51 = new Point({
+        longitude: -118.630,
+        latitude: 33.860
+      });
+      
+      var point52 = new Point({
+        longitude: -120.210,
+        latitude: 33.670
+      });
+      
+      var point53 = new Point({
+        longitude: -119.880,
+        latitude: 33.220
+      });
+      
+      var point54 = new Point({
+        longitude: -121.880,
+        latitude: 35.740
+      });
+      
+      var point55 = new Point({
+        longitude: -121.907,
+        latitude: 36.626
+      });
+      
+      var point56 = new Point({
+        longitude: -121.947,
+        latitude: 36.761
+      });
+      
+      var point57 = new Point({
+        longitude: -122.102,
+        latitude: 36.342
+      });
+      
+      var point58 = new Point({
+        longitude: -121.884,
+        latitude: 35.741
+      });
+      
+      var point59 = new Point({
+        longitude: -122.469,
+        latitude: 36.785
+      });
+      
+      var point60 = new Point({
+        longitude: -122.634,
+        latitude: 37.786
+      });
+      
+      var point61 = new Point({
+        longitude: -122.839,
+        latitude: 37.755
+      });
+      
+      var point62 = new Point({
+        longitude: -122.881,
+        latitude: 37.363
+      });
+      
+      var point63 = new Point({
+        longitude: -123.301,
+        latitude: 38.242
+      });
+      
+      var point64 = new Point({
+        longitude: -123.970,
+        latitude: 39.220
+      });
+      
+      var point65 = new Point({
+        longitude: -124.310,
+        latitude: 40.750
+      });
+      
+      var point66 = new Point({
+        longitude: -124.740,
+        latitude: 40.300
+      });
+      
+      var point67 = new Point({
+        longitude: -124.549,
+        latitude: 43.767
+      });
+      
+      var point68 = new Point({
+        longitude: -124.382,
+        latitude: 41.852
+      });
+      
+      var point69 = new Point({
+        longitude: -124.832,
+        latitude: 42.764
+      });
+      
+      var point70 = new Point({
+        longitude: -124.526,
+        latitude: 44.656
+      });
+      
+      var point71 = new Point({
+        longitude: -124.514,
+        latitude: 46.159
+      });
+      
+      var point72 = new Point({
+        longitude: -124.645,
+        latitude: 46.133
+      });
+      
+      var point73 = new Point({
+        longitude: -124.129,
+        latitude: 46.215
+      });
+      
+      var point74 = new Point({
+        longitude: -124.244,
+        latitude: 46.858
+      });
+      
+      var point75 = new Point({
+        longitude: -123.165,
+        latitude: 48.334
+      });
+      
+      var point76 = new Point({
+        longitude: -124.728,
+        latitude: 48.494
+      });
+      
+      var point77 = new Point({
+        longitude: -124.731,
+        latitude: 47.353
+      });
+      
+      var point78 = new Point({
+        longitude: -125.998,
+        latitude: 48.835
+      });
+      
+
+      // Create a symbol for drawing the point
+      var markerSymbol = new SimpleMarkerSymbol({
+        color: "yellow",
+        style: "diamond",
+        size: 10,
+        outline: { // autocasts as new SimpleLineSymbol()
+          color: [0, 0, 0],
+          width: 1
+        }
+      });
+
+      // Create a graphic and add the geometry and symbol to it
+      var pointGraphic = new Graphic({
+        geometry: point,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 42023 - West Florida South Buoy</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_mfl_42023_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_mfl_42023_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/mfl/nwps/CG0/Hansonplot_42023.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic2 = new Graphic({
+        geometry: point2,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46223</strong></p><p>33.458 -117.767</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46223_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46223_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46223.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic3 = new Graphic({
+        geometry: point3,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>70.874 -150.279</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic4 = new Graphic({
+        geometry: point4,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48012</strong></p><p>70.025 -166.071</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48012_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48012_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48012.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic5 = new Graphic({
+        geometry: point5,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48114</strong></p><p>65.011 -169.454</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48114_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48114_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48114.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+        var pointGraphic6 = new Graphic({
+        geometry: point6,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy FFIA2</strong></p><p>57.272 -133.630</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_ajk_FFIA2_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_ajk_FFIA2_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/ajk/nwps/CG0/Hansonplot_FFIA2.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic7 = new Graphic({
+        geometry: point7,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46083</strong></p><p>58.300 -137.997</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_ajk_46083_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_ajk_46083_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/ajk/nwps/CG0/Hansonplot_46083.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic8 = new Graphic({
+        geometry: point8,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46085</strong></p><p>55.868 -142.494</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_ajk_46085_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_ajk_46085_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/ajk/nwps/CG0/Hansonplot_46085.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic9 = new Graphic({
+        geometry: point9,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy VCVA2</strong></p><p>57.125 -170.285</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_VCVA2_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_VCVA2_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/alu/nwps/CG0/Hansonplot_VCVA2.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic10 = new Graphic({
+        geometry: point10,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46073</strong></p><p>55.031 -172.001</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_46073_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_46073_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/alu/nwps/CG0/Hansonplot_46073.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic11 = new Graphic({
+        geometry: point11,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46075</strong></p><p>53.911 -160.806</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_46075_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_46075_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/alu/nwps/CG0/Hansonplot_46075.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic12 = new Graphic({
+        geometry: point12,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46077</strong></p><p>57.892 -154.291</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_alu_46075_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46077_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46077.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic13 = new Graphic({
+        geometry: point13,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46081</strong></p><p>60.799 -148.263</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46081_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46081_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46081.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic14 = new Graphic({
+        geometry: point14,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46108</strong></p><p>59.590 -151.817</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46108_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46108_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46108.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic15 = new Graphic({
+        geometry: point15,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46060</strong></p><p>60.584 -146.784</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46060_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46060_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46060.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic16 = new Graphic({
+        geometry: point16,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46061</strong></p><p>60.227 -146.834</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46061_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46061_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46061.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic17 = new Graphic({
+        geometry: point17,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46082</strong></p><p>59.668 -143.392</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46082_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46082_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46082.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic18 = new Graphic({
+        geometry: point18,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46076</strong></p><p>59.502 -147.990</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46076_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46076_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46076.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic19 = new Graphic({
+        geometry: point19,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46080</strong></p><p>57.939 -149.960</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46080_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46080_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46080.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic20 = new Graphic({
+        geometry: point20,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46001</strong></p><p>56.304 -147.920</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46001_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_aer_46001_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/aer/nwps/CG0/Hansonplot_46001.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic21 = new Graphic({
+        geometry: point21,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy APRP7</strong></p><p>13.444 144.657</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_gum_APRP7_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_gum_APRP7_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/gum/nwps/CG0/Hansonplot_APRP7.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic22 = new Graphic({
+        geometry: point22,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 52211</strong></p><p>15.267 145.662</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_gum_52211_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_gum_52211_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/gum/nwps/CG0/Hansonplot_52211.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic23 = new Graphic({
+        geometry: point23,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 52200</strong></p><p>13.354 144.788</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_gum_52200_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_gum_52200_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/gum/nwps/CG0/Hansonplot_52200.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic24 = new Graphic({
+        geometry: point24,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy Isaac</strong></p><p>19.410 -154.730</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_Isaac_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_Isaac_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_Isaac.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic25 = new Graphic({
+        geometry: point25,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy Kona</strong></p><p>19.650 -156.180</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_Kona_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_Kona_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_Kona.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic26 = new Graphic({
+        geometry: point26,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51003</strong></p><p>19.289 -160.569</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51003_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51003_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51003.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic27 = new Graphic({
+        geometry: point27,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51201</strong></p><p>21.669 -158.120</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51201_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51201_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51201.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic28 = new Graphic({
+        geometry: point28,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51202</strong></p><p>21.414 -157.679</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51202_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51202_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51202.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic29 = new Graphic({
+        geometry: point29,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51203</strong></p><p>20.788 -157.010</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51203_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51203_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51203.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic30 = new Graphic({
+        geometry: point30,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51204</strong></p><p>21.281 -158.124</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51204_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51204_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51204.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic31 = new Graphic({
+        geometry: point31,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51205</strong></p><p>21.018 -156.425</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51205_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51205_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51205.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic32 = new Graphic({
+        geometry: point32,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51206</strong></p><p>19.781 -154.968</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51206_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51206_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51206.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic33 = new Graphic({
+        geometry: point33,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51207</strong></p><p>21.477 -157.752</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51207_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51207_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51207.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic34 = new Graphic({
+        geometry: point34,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 51208</strong></p><p>22.300 -159.570</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51208_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_hfo_51208_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/hfo/nwps/CG0/Hansonplot_51208.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic35 = new Graphic({
+        geometry: point35,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy LJPC1</strong></p><p>32.867 -117.257</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_LJPC1_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_LJPC1_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_LJPC1.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic35a = new Graphic({
+        geometry: point35a,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46254</strong></p><p>32.868 -117.267</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46254_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46254_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46254.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic36 = new Graphic({
+        geometry: point36,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46242</strong></p><p>33.220 -117.439</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46242_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46242_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46242.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic37 = new Graphic({
+        geometry: point37,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46225</strong></p><p>32.930 -117.392</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46225_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46225_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46225.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic38 = new Graphic({
+        geometry: point38,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46258</strong></p><p>32.750 -117.500</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46258_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46258_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46258.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic39 = new Graphic({
+        geometry: point39,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46231</strong></p><p>32.747 -117.370</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46231_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46231_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46231.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic40 = new Graphic({
+        geometry: point40,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46232</strong></p><p>32.530 -117.431</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46232_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46232_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46232.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic41 = new Graphic({
+        geometry: point41,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46224</strong></p><p>33.179 -117.471</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46224_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46224_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46224.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic42 = new Graphic({
+        geometry: point42,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46086</strong></p><p>32.491 -118.035</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwpsa_sgx_46086_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_sgx_46086_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/sgx/nwps/CG0/Hansonplot_46086.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic43 = new Graphic({
+        geometry: point43,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46218</strong></p><p>34.454 -120.782</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46218_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46218_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46218.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic44 = new Graphic({
+        geometry: point44,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46025</strong></p><p>33.749 -119.053</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46025_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46025_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46025.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic45 = new Graphic({
+        geometry: point45,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46054</strong></p><p>34.265 -120.477</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46054_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46054_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46054.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic46 = new Graphic({
+        geometry: point46,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46053</strong></p><p>34.252 -119.853</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46053_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46053_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46053.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic47 = new Graphic({
+        geometry: point47,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46011</strong></p><p>34.956 -121.019</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46011_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46011_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46011.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic48 = new Graphic({
+        geometry: point48,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46256</strong></p><p>33.700 -118.201</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46256_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46256_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46256.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic49 = new Graphic({
+        geometry: point49,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46253</strong></p><p>33.578 -118.184</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46253_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46253_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46253.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic50 = new Graphic({
+        geometry: point50,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46222</strong></p><p>33.618 -118.317</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46222_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46222_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46222.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic51 = new Graphic({
+        geometry: point51,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 46221</strong></p><p>33.860 -118.630</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46221_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_lox_46221_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/lox/nwps/CG0/Hansonplot_46221.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic52 = new Graphic({
+        geometry: point52,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic53 = new Graphic({
+        geometry: point53,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic54 = new Graphic({
+        geometry: point54,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic55 = new Graphic({
+        geometry: point55,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic56 = new Graphic({
+        geometry: point56,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic57 = new Graphic({
+        geometry: point57,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic58 = new Graphic({
+        geometry: point58,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic59 = new Graphic({
+        geometry: point59,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic60 = new Graphic({
+        geometry: point60,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic61 = new Graphic({
+        geometry: point61,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic62 = new Graphic({
+        geometry: point62,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic63 = new Graphic({
+        geometry: point63,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic64 = new Graphic({
+        geometry: point64,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic65 = new Graphic({
+        geometry: point65,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic66 = new Graphic({
+        geometry: point66,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic67 = new Graphic({
+        geometry: point67,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic68 = new Graphic({
+        geometry: point68,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic69 = new Graphic({
+        geometry: point69,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic70 = new Graphic({
+        geometry: point70,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic71 = new Graphic({
+        geometry: point71,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic72 = new Graphic({
+        geometry: point72,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic73 = new Graphic({
+        geometry: point73,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic74 = new Graphic({
+        geometry: point74,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic75 = new Graphic({
+        geometry: point75,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic76 = new Graphic({
+        geometry: point76,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic77 = new Graphic({
+        geometry: point77,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      var pointGraphic78 = new Graphic({
+        geometry: point78,
+        symbol: markerSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Buoy 48212</strong></p><p>26.064 -83.074</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_ts.png target=_blank>Forecast</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/validation/nwps_afg_48212_scatter.png target=_blank>30-day Validation</p><p><a href=http://polar.ncep.noaa.gov/nwps/images/rtimages/afg/nwps/CG0/Hansonplot_48212.png target=_blank>Gerling-Hanson Plot</p>",
+          }]
+        }
+      });
+      
+      
+
+      /************************
+       * Create a polygon graphic
+       ************************/
+
+      // Create a polygon geometry
+      var polyBRO = new Polygon({
+        rings: [
+          [-98.00, 25.26],
+          [-98.00, 28.26],
+          [-95.41, 28.26],
+          [-95.41, 25.26]
+        ]
+      });
+
+      var polyCRP = new Polygon({
+        rings: [
+          [-98.50, 26.00],
+          [-98.50, 29.50],
+          [-95.00, 29.50],
+          [-95.00, 26.00]
+        ]
+      });
+
+      var polyHGX = new Polygon({
+        rings: [
+          [-97.40, 27.00],
+          [-97.40, 30.50],
+          [-93.37, 30.50],
+          [-93.37, 27.00]
+        ]
+      });
+
+      var polyLCH = new Polygon({
+        rings: [
+          [-95.03, 27.41],
+          [-95.03, 30.30],
+          [-90.43, 30.30],
+          [-90.43, 27.41]
+        ]
+      });
+
+      var polyLIX = new Polygon({
+        rings: [
+          [-91.80, 27.50],
+          [-91.80, 30.60],
+          [-87.40, 30.60],
+          [-87.40, 27.50]
+        ]
+      });
+
+      var polyMOB = new Polygon({
+        rings: [
+          [-89.10, 28.50],
+          [-89.10, 31.00],
+          [-85.90, 31.00],
+          [-85.90, 28.50]
+        ]
+      });
+
+      var polyTAE = new Polygon({
+        rings: [
+          [-87.35, 28.35],
+          [-87.35, 30.60],
+          [-82.60, 30.60],
+          [-82.60, 28.35]
+        ]
+      });
+
+      var polyTBW = new Polygon({
+        rings: [
+          [-84.80, 25.45],
+          [-84.80, 29.70],
+          [-81.50, 29.70],
+          [-81.50, 25.45]
+        ]
+      });
+
+      var polyKEY = new Polygon({
+        rings: [
+          [-83.50, 23.00],
+          [-83.50, 26.00],
+          [-79.00, 26.00],
+          [-79.00, 23.00]
+        ]
+      });
+
+      var polyMFL = new Polygon({
+        rings: [
+          [-78.41, 27.7],
+          [-78.41, 24.1],
+          [-83.54, 24.1],
+          [-83.54, 27.7]
+        ]
+      });
+
+      var polyMLB = new Polygon({
+        rings: [
+          [-81.40, 26.50],
+          [-81.40, 30.00],
+          [-78.50, 30.00],
+          [-78.50, 26.50]
+        ]
+      });
+
+      var polyJAX = new Polygon({
+        rings: [
+          [-79.30, 32.0],
+          [-79.30, 28.7],
+          [-81.70, 28.7],
+          [-81.70, 32]
+        ]
+      });
+
+      var polySJU = new Polygon({
+        rings: [
+          [-68.00, 17.00],
+          [-68.00, 19.50],
+          [-64.00, 19.50],
+          [-64.00, 17.00]
+        ]
+      });
+
+      var polyCHS = new Polygon({
+        rings: [
+          [-81.70, 30.67],
+          [-81.70, 33.58],
+          [-78.10, 33.58],
+          [-78.10, 30.67]
+        ]
+      });
+
+      var polyILM = new Polygon({
+        rings: [
+          [-80.40, 32.50],
+          [-80.40, 34.80],
+          [-76.50, 34.80],
+          [-76.50, 32.50]
+        ]
+      });
+
+      var polyMHX = new Polygon({
+        rings: [
+          [-78.00, 33.85],
+          [-78.00, 36.60],
+          [-74.75, 36.60],
+          [-74.75, 33.85]
+        ]
+      });
+
+      var polyAKQ = new Polygon({
+        rings: [
+          [-77.30, 35.80],
+          [-77.30, 39.50],
+          [-74.25, 39.50],
+          [-74.25, 35.80]
+        ]
+      });
+
+      var polyLWX = new Polygon({
+        rings: [
+          [-77.80, 36.75],
+          [-77.80, 39.70],
+          [-75.40, 39.70],
+          [-75.40, 36.75]
+        ]
+      });
+
+      var polyPHI = new Polygon({
+        rings: [
+          [-75.75, 38.20],
+          [-75.75, 40.60],
+          [-73.35, 40.60],
+          [-73.35, 38.20]
+        ]
+      });
+
+      var polyOKX = new Polygon({
+        rings: [
+          [-74.45, 39.75],
+          [-74.45, 41.40],
+          [-71.05, 41.40],
+          [-71.05, 39.75]
+        ]
+      });
+
+      var polyBOX = new Polygon({
+        rings: [
+          [-72.50, 40.45],
+          [-72.50, 43.25],
+          [-68.85, 43.25],
+          [-68.85, 40.45]
+        ]
+      });
+
+      var polyGYX = new Polygon({
+        rings: [
+          [-71.75, 42.40],
+          [-71.75, 44.70],
+          [-67.85, 44.70],
+          [-67.85, 42.40]
+        ]
+      });
+
+      var polyGYX2 = new Polygon({
+        rings: [
+          [-70.64, 43.76],
+          [-70.64, 43.93],
+          [-70.46, 43.93],
+          [-70.46, 43.76]
+        ]
+      });
+
+      var polyGYX3 = new Polygon({
+        rings: [
+          [-71.50, 43.47],
+          [-71.50, 43.73],
+          [-71.19, 43.73],
+          [-71.19, 43.47]
+        ]
+      });
+
+      var polyCAR = new Polygon({
+        rings: [
+          [-69.20, 43.30],
+          [-69.20, 45.05],
+          [-66.30, 45.05],
+          [-66.30, 43.30]
+        ]
+      });
+
+      var polySGX = new Polygon({
+        rings: [
+          [-119.00, 32.08],
+          [-119.00, 33.82],
+          [-116.50, 33.82],
+          [-116.50, 32.08]
+        ]
+      });
+
+      var polyLOX = new Polygon({
+        rings: [
+          [-123.36, 32.60],
+          [-123.36, 36.10],
+          [-117.30, 36.10],
+          [-117.30, 32.60]
+        ]
+      });
+
+      var polyMTR = new Polygon({
+        rings: [
+          [-125.80, 35.00],
+          [-125.80, 39.40],
+          [-120.74, 39.40],
+          [-120.74, 35.00]
+        ]
+      });
+
+      var polyEKA = new Polygon({
+        rings: [
+          [-126.27, 38.40],
+          [-126.27, 42.20],
+          [-123.35, 42.20],
+          [-123.35, 38.40]
+        ]
+      });
+
+      var polyMFR = new Polygon({
+        rings: [
+          [-127.30, 41.00],
+          [-127.30, 44.45],
+          [-123.65, 44.45],
+          [-123.65, 41.00]
+        ]
+      });
+
+      var polyPQR = new Polygon({
+        rings: [
+          [-126.28, 43.50],
+          [-126.28, 47.15],
+          [-123.30, 47.15],
+          [-123.30, 43.50]
+        ]
+      });
+
+      var polySEW = new Polygon({
+        rings: [
+          [-127.00, 46.10],
+          [-127.00, 49.42],
+          [-121.91, 49.42],
+          [-121.91, 46.10]
+        ]
+      });
+
+      var polyAJK = new Polygon({
+        rings: [
+          [-144.50, 53.90],
+          [-144.50, 60.25],
+          [-130.00, 60.25],
+          [-130.00, 53.90]
+        ]
+      });
+
+      var polyAER = new Polygon({
+        rings: [
+          [-158.00, 55.00],
+          [-158.00, 61.60],
+          [-142.85, 61.60],
+          [-142.85, 55.00]
+        ]
+      });
+
+      var polyALU = new Polygon({
+        rings: [
+          [-177.00, 53.15],
+          [-177.00, 62.00],
+          [-152.40, 62.00],
+          [-152.40, 53.15]
+        ]
+      });
+
+      var polyAFG = new Polygon({
+        rings: [
+          [-176.50, 61.00],
+          [-176.50, 73.00],
+          [-139.00, 73.00],
+          [-139.00, 61.00]
+        ]
+      });
+
+      var polyHFO = new Polygon({
+        rings: [
+          [-161.50, 18.07],
+          [-161.50, 23.09],
+          [-153.90, 23.09],
+          [-153.90, 18.07]
+        ]
+      });
+
+      var polyGUM = new Polygon({
+        rings: [
+          [143.67, 12.34],
+          [143.67, 16.81],
+          [148.29, 16.81],
+          [148.29, 12.34]
+        ]
+      });
+
+      // Create a symbol for rendering the graphic
+      var fillSymbol = new SimpleFillSymbol({
+        color: [227, 139, 79, 0.35],
+        outline: { // autocasts as new SimpleLineSymbol()
+          color: "red",
+          width: 1
+        }
+      });
+
+      // Add the geometry and symbol to a new graphic
+      var polyGrapBRO = new Graphic({
+        geometry: polyBRO,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Brownsville, Texas</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=BRO&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapCRP = new Graphic({
+        geometry: polyCRP,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Corpus Christi, Texas</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=CRP&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapHGX = new Graphic({
+        geometry: polyHGX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Houston/Galveston, Texas</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=HGX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapLCH = new Graphic({
+        geometry: polyLCH,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Lake Charles, Louisiana</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=LCH&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapLIX = new Graphic({
+        geometry: polyLIX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO New Orleans/Baton Rouge, Louisiana</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=LIX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapMOB = new Graphic({
+        geometry: polyMOB,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Mobile/Pensacola, Alabama/Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=MOB&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapTAE = new Graphic({
+        geometry: polyTAE,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Tallahassee, Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=TAE&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapTBW = new Graphic({
+        geometry: polyTBW,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Tampa Bay, Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=TBW&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapKEY = new Graphic({
+        geometry: polyKEY,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Key West, Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=KEY&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapMFL = new Graphic({
+        geometry: polyMFL,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Miami-South Florida, Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=MFL&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+      
+      var polyGrapMLB = new Graphic({
+        geometry: polyMLB,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Melbourne, Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=MLB&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapJAX = new Graphic({
+        geometry: polyJAX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Jacksonville, Florida</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=JAX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapSJU = new Graphic({
+        geometry: polySJU,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO San Juan, Puerto Rico</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=SJU&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapCHS = new Graphic({
+        geometry: polyCHS,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Charleston, South Carolina</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=CHS&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapILM = new Graphic({
+        geometry: polyILM,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Wilmington, North Carolina</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=ILM&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapMHX = new Graphic({
+        geometry: polyMHX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Morehead City, North Carolina</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=MHX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapAKQ = new Graphic({
+        geometry: polyAKQ,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Wakefield, North Carolina</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=AKQ&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapLWX = new Graphic({
+        geometry: polyLWX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Baltimore Washington</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=LWX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapPHI = new Graphic({
+        geometry: polyPHI,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Philadelphia/Mt Holly, New Jersey</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=PHI&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapOKX = new Graphic({
+        geometry: polyOKX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO New York, New York</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=OKX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapBOX = new Graphic({
+        geometry: polyBOX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Boston/Taunton, Massachusetts</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=BOX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapGYX = new Graphic({
+        geometry: polyGYX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Gray/Portland, Maine</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=GYX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapGYX2 = new Graphic({
+        geometry: polyGYX2,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Lake Sebago, Maine</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=GYX&cg=2 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapGYX3 = new Graphic({
+        geometry: polyGYX3,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>Lake Winnipesaukee, Maine</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=GYX&cg=3 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapCAR = new Graphic({
+        geometry: polyCAR,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Caribou, Maine</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=CAR&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapSGX = new Graphic({
+        geometry: polySGX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO San Diego, California</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=SGX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapLOX = new Graphic({
+        geometry: polyLOX,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Los Angeles/Oxnard, California</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=LOX&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapMTR = new Graphic({
+        geometry: polyMTR,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Monterey, California</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=MTR&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapEKA = new Graphic({
+        geometry: polyEKA,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Eureka, California</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=EKA&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapMFR = new Graphic({
+        geometry: polyMFR,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Medford, Oregon</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=MFR&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapPQR = new Graphic({
+        geometry: polyPQR,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Portland, Oregon</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=PQR&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapSEW = new Graphic({
+        geometry: polySEW,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Seattle, Washington</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=SEW&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapAJK = new Graphic({
+        geometry: polyAJK,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Juneau, Alaska</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=AJK&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapAER = new Graphic({
+        geometry: polyAER,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Anchorage, Alaska</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=AER&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapALU = new Graphic({
+        geometry: polyALU,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Anchorage-Aleutian Islands, Alaska</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=ALU&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapAFG = new Graphic({
+        geometry: polyAFG,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Fairbanks, Alaska</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=AFG&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapHFO = new Graphic({
+        geometry: polyHFO,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Honolulu, Hawaii</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=HFO&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      var polyGrapGUM = new Graphic({
+        geometry: polyGUM,
+        symbol: fillSymbol,
+        popupTemplate: { // autocasts as new PopupTemplate()
+          content: [{
+            type: "text",
+            text: "<p><strong>WFO Tiyan, Guam</strong></p><p><a href=http://polar.ncep.noaa.gov/nwps/nwpsloop.php?site=GUM&cg=1 target=_blank>Model Field Animations</p>",
+          }]
+        }
+      });
+
+      // Add the graphics to the view's graphics layer
+      view.graphics.addMany([polyGrapBRO, polyGrapCRP, polyGrapHGX, polyGrapLCH, polyGrapLIX, polyGrapMOB, polyGrapTAE, polyGrapTBW,
+                             polyGrapKEY, polyGrapMFL, polyGrapMLB, polyGrapJAX, polyGrapSJU, polyGrapCHS, polyGrapILM, polyGrapMHX, 
+                             polyGrapAKQ, polyGrapLWX, polyGrapPHI, polyGrapOKX, polyGrapBOX, polyGrapGYX, polyGrapGYX2, polyGrapGYX3, 
+                             polyGrapCAR, polyGrapSGX, polyGrapLOX, polyGrapMTR, polyGrapEKA, polyGrapMFR, polyGrapPQR, polyGrapSEW, 
+                             polyGrapAJK, polyGrapAER, polyGrapALU, polyGrapAFG, polyGrapHFO, polyGrapGUM, 
+pointGraphic, pointGraphic2, pointGraphic3, pointGraphic4,pointGraphic5,pointGraphic6,pointGraphic7,pointGraphic8,pointGraphic9,pointGraphic10, pointGraphic11,pointGraphic12,pointGraphic13,pointGraphic14,pointGraphic15,pointGraphic16,pointGraphic17,pointGraphic18,pointGraphic19,pointGraphic20,pointGraphic21,pointGraphic22,pointGraphic23,pointGraphic24,pointGraphic25,pointGraphic26,pointGraphic27,pointGraphic28,pointGraphic29,pointGraphic30,pointGraphic31,pointGraphic32,pointGraphic33,pointGraphic34,pointGraphic35, pointGraphic35a,pointGraphic36,pointGraphic37,pointGraphic38,pointGraphic39,pointGraphic40,pointGraphic41,pointGraphic42,pointGraphic43,pointGraphic44,pointGraphic45,pointGraphic46,pointGraphic47,pointGraphic48,pointGraphic49,pointGraphic50,pointGraphic51,pointGraphic52,pointGraphic53,pointGraphic54,pointGraphic55,pointGraphic56,pointGraphic57,pointGraphic58,pointGraphic59,pointGraphic60,pointGraphic61,pointGraphic62,pointGraphic63,pointGraphic64,pointGraphic65,pointGraphic66,pointGraphic67,pointGraphic68,pointGraphic69,pointGraphic70,pointGraphic71,pointGraphic72,pointGraphic73,pointGraphic74,pointGraphic75,pointGraphic76,pointGraphic77,pointGraphic78]);
+    });

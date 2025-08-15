@@ -1,0 +1,76 @@
+<!--include virtual="/nwps/templates/nwps_format_top.shtml" -->
+<!--if expr="$HTTP_USER_AGENT != /Windows CE/ && $HTTP_USER_AGENT != /Android/ && $HTTP_USER_AGENT != /Mobile/" -->
+  <!--include virtual="/nwps/templates/mmab_standard_emc_top.shtml" -->
+<!--endif -->  
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
+<link rel="stylesheet" href="https://js.arcgis.com/4.1/esri/css/main.css">
+<script src="https://js.arcgis.com/4.1/"></script>
+<style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 90%;
+      width: 100%;
+    }
+</style>
+<script type="text/javascript" src="/nwps/js/esri_viewer_test.js"></script>
+<style>
+    .esriPopup .sizer
+    {
+      width: 200px;
+    }
+</style>
+<script>
+window.addEventListener('touchmove', function(event) {  
+	// Prevent scrolling on this element  
+    event.preventDefault();  
+  }, false); 
+</script>
+
+<div align="center" style="padding: 4px; font-family: Arial, sans-serif; font-size: x-large; font-weight: bold;">
+  NWPS <span style="font-style: italic;">Nearshore Wave Prediction System</span> 
+</div>
+
+<div id="viewDiv"></div>
+
+
+<!-- DAP --script-->
+<script src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NOAA" id="_fed_an_ua_tag"></script>
+
+
+<table align="center" width="95%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tr>
+<td align="left">
+  <img valign="absmiddle" alt="Observation Legend" src="pointmarker.png"> Observations
+</td>
+</td>
+<td align="right">
+  <a href="https://www.weather.gov/disclaimer" target="_blank">Disclaimer</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+  <hr style="margin:0px;">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<tr>
+<td width="41%">Nearshore Wave Prediction System</td>
+<td width="59%">
+<a href="/nwps" target="_blank">Project Details</a>
+&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+<a href="https://products.weather.gov/PDD/PDD%20NWPS%20Model%20Output%20060413.pdf" target="_blank">Product Description</a>
+&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+<a href="https://www.weather.gov/credits.php#googlemapping" target="_blank">
+</td>
+</tr>
+</table>
+<!--if expr="$HTTP_USER_AGENT != /Windows CE/ && $HTTP_USER_AGENT != /Android/ && $HTTP_USER_AGENT != /Mobile/" -->
+  <!--include virtual="/nwps/templates/mmab_standard_emc_bottom.shtml" -->
+<!--endif -->  
+</body>
+</html>

@@ -1,0 +1,13 @@
+  var theimg;  
+  function load_img(theimg){
+    var $dialog = $('<div></div>')
+    .html('<img src="' + theimg + '" width="800" border="0">')
+    .dialog({
+       autoOpen: true,
+       width: 850,
+       //height: 700,
+       title: 'If close button (right side) is not visible, then press Esc.',
+       position: { at: "top"}
+  });
+  return;
+}    
